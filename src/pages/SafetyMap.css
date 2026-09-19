@@ -1,0 +1,10 @@
+.safeyatri-place-marker { background: transparent; border: 0; }
+.safeyatri-place-marker__pin { display: block; width: 30px; height: 30px; border: 3px solid #fff; border-radius: 50% 50% 50% 0; background: #2563eb; box-shadow: 0 5px 12px rgba(15, 23, 42, .28); transform: rotate(-45deg); transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease; }
+.safeyatri-place-marker__pin span { display: block; width: 8px; height: 8px; margin: 8px auto 0; border-radius: 50%; background: #fff; }
+.safeyatri-place-marker__pin.is-selected { background: #dc2626; box-shadow: 0 0 0 6px rgba(220, 38, 38, .18), 0 7px 16px rgba(15, 23, 42, .3); transform: rotate(-45deg) scale(1.2); }
+.safeyatri-user-marker { background: transparent; border: 0; }
+.safeyatri-user-marker__dot { display: block; width: 24px; height: 24px; border: 3px solid #fff; border-radius: 50%; background: rgba(37, 99, 235, .22); box-shadow: 0 0 0 6px rgba(37, 99, 235, .18), 0 4px 12px rgba(15, 23, 42, .3); }
+.safeyatri-user-marker__dot span { display: block; width: 10px; height: 10px; margin: 4px auto; border-radius: 50%; background: #2563eb; }
+.leaflet-container { z-index: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+.leaflet-control-zoom a { color: #0f172a; }
+.leaflet-control-attribution a:nth-of-type(2) { display: none; }
