@@ -9,6 +9,7 @@ export interface EmergencyService {
   id: string;
   name: string;
   type: EmergencyServiceType;
+  facility_subtype?: string | null;
   district: string;
   address: string | null;
   latitude: number | null;

@@ -13,6 +13,11 @@ import Emergency from '@/pages/Emergency';
 import AIAssistant from '@/pages/AIAssistant';
 import Admin from '@/pages/Admin';
 import ArSafety from '@/pages/ArSafety';
+import Login from '@/pages/Login';
+import Register from '@/pages/Register';
+import { AuthProvider } from '@/auth/AuthProvider';
+import RequireRole from '@/components/RequireRole';
+import ResetPassword from '@/pages/ResetPassword';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -34,7 +39,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 
 function App() {
   return (
-    <BrowserRouter>
+    <AuthProvider><BrowserRouter>
       <ScrollToTop />
       <Routes>
         <Route
@@ -53,10 +58,15 @@ function App() {
         <Route path="/geo-fencing" element={<GeoFencing />} />
         <Route path="/emergency" element={<Emergency />} />
         <Route path="/ai-assistant" element={<AIAssistant />} />
-        <Route path="/admin" element={<Admin />} />
         <Route path="/ar-safety" element={<ArSafety />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route element={<RequireRole role="admin" />}>
+          <Route path="/admin" element={<Admin />} />
+        </Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter></AuthProvider>
   );
 }
 

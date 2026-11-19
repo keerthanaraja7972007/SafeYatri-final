@@ -15,16 +15,26 @@ import {
   ArrowRight,
   Sparkles,
   Cpu,
-  Database,
   Activity,
   Layers,
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Hero from '@/components/Hero';
 import ProductPreview from '@/components/ProductPreview';
 import SectionHeader from '@/components/SectionHeader';
 import FeatureCard from '@/components/FeatureCard';
 import DestinationCard from '@/components/DestinationCard';
 import CTASection from '@/components/CTASection';
+import { realWorldDistrictCoverage } from '@/data/realWorldDistrictCoverage';
+
+const FEATURED_DISTRICT_STYLES = [
+  { gradient: 'gradient-sky-cyan', emoji: '🏖️' },
+  { gradient: 'gradient-cyan-blue', emoji: '🏛️' },
+  { gradient: 'gradient-orange-red', emoji: '🛕' },
+  { gradient: 'gradient-green-cyan', emoji: '⛰️' },
+  { gradient: 'gradient-blue-indigo', emoji: '🌊' },
+  { gradient: 'gradient-blue-violet', emoji: '🌅' },
+];
 
 const PROBLEM_CARDS = [
   {
@@ -127,45 +137,6 @@ const JOURNEY_STEPS = [
   },
 ];
 
-const DESTINATIONS = [
-  {
-    name: 'Chennai',
-    description: 'Coastal capital city with vibrant culture, beaches and urban energy.',
-    gradient: 'gradient-sky-cyan',
-    emoji: '🏖️',
-  },
-  {
-    name: 'Mahabalipuram',
-    description: 'Ancient shore temple town with stone carvings by the Bay of Bengal.',
-    gradient: 'gradient-cyan-blue',
-    emoji: '🏛️',
-  },
-  {
-    name: 'Madurai',
-    description: 'Historic temple city known for the Meenakshi Amman Temple.',
-    gradient: 'gradient-orange-red',
-    emoji: '🛕',
-  },
-  {
-    name: 'Ooty',
-    description: 'Serene hill station with tea gardens and cool mountain air.',
-    gradient: 'gradient-green-cyan',
-    emoji: '⛰️',
-  },
-  {
-    name: 'Rameswaram',
-    description: 'Sacred island town connected by the iconic Pamban Bridge.',
-    gradient: 'gradient-blue-indigo',
-    emoji: '🌊',
-  },
-  {
-    name: 'Kanyakumari',
-    description: 'India\'s southernmost tip where three oceans meet at sunrise.',
-    gradient: 'gradient-blue-violet',
-    emoji: '🌅',
-  },
-];
-
 const AI_FACTORS = [
   { icon: MapPin, label: 'Location Conditions', color: 'text-saf-blue' },
   { icon: CloudRain, label: 'Environmental Factors', color: 'text-saf-cyan' },
@@ -175,8 +146,13 @@ const AI_FACTORS = [
 ];
 
 export default function Home() {
+  const featuredDistricts = [...realWorldDistrictCoverage]
+    .filter((entry) => entry.touristPlaceCount > 0)
+    .sort((left, right) => right.touristPlaceCount - left.touristPlaceCount)
+    .slice(0, FEATURED_DISTRICT_STYLES.length);
+
   return (
-    <div>
+    <div className="home-page-root">
       <Hero />
       <ProductPreview />
 
@@ -266,17 +242,18 @@ export default function Home() {
           <SectionHeader
             eyebrow="Tamil Nadu"
             title="Built for exploring Tamil Nadu"
-            subtitle="From coastal destinations to hill stations and heritage cities, SAFEYATRI is designed around the diverse travel environment of Tamil Nadu."
+            subtitle="Counts reflect tourist locations in the integrated source data. Coverage varies by source district label."
           />
           <div className="mt-12 flex gap-5 overflow-x-auto pb-4 no-scrollbar sm:grid sm:grid-cols-2 sm:overflow-visible lg:grid-cols-3">
-            {DESTINATIONS.map((dest) => (
-              <DestinationCard
-                key={dest.name}
-                name={dest.name}
-                description={dest.description}
-                gradient={dest.gradient}
-                emoji={dest.emoji}
-              />
+            {featuredDistricts.map((district, index) => (
+              <Link key={district.district} to={`/safety-map?district=${encodeURIComponent(district.district)}`} className="block rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-saf-blue">
+                <DestinationCard
+                  name={district.district}
+                  description={`${district.touristPlaceCount} integrated tourist places in the source data.`}
+                  gradient={FEATURED_DISTRICT_STYLES[index].gradient}
+                  emoji={FEATURED_DISTRICT_STYLES[index].emoji}
+                />
+              </Link>
             ))}
           </div>
         </div>

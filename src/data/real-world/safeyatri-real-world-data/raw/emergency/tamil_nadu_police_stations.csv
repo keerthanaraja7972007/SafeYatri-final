@@ -1,0 +1,447 @@
+facility_id,facility_name,facility_type,district,latitude,longitude,address,city_town,postcode,phone_contact,operator,source_url
+node/247177690,Thudiyalur Police Station,Police Station,Coimbatore,11.082068,76.941241,"Mettupalayam-Coimbatore Road, Coimbatore, 641034",,641034,,,https://www.openstreetmap.org/node/247177690
+node/250363729,Mambalam Police Station,Police Station,Chennai,13.034957,80.22946,Chennai,,,,,https://www.openstreetmap.org/node/250363729
+node/259773441,Royapettah PS,Police Station,Chennai,13.052011,80.263735,Chennai,,,,,https://www.openstreetmap.org/node/259773441
+node/264481213,Nungambakkam F3 police station,Police Station,Chennai,13.059617,80.242768,Chennai,,,,,https://www.openstreetmap.org/node/264481213
+node/300468066,S-8 Adambakkam Police Station,Police Station,Chennai,12.989396,80.201968,"Chennai, 600088",,600088,,,https://www.openstreetmap.org/node/300468066
+node/301949978,Teynampet E3 PS,Police Station,Chennai,13.048651,80.249488,Chennai,,,,,https://www.openstreetmap.org/node/301949978
+node/308446629,Police Station,Police Station,Coimbatore,10.657116,77.008351,Coimbatore,,,,,https://www.openstreetmap.org/node/308446629
+node/308449858,Police Station (node/308449858),Police Station,Coimbatore,10.656573,77.018471,Coimbatore,,,,,https://www.openstreetmap.org/node/308449858
+node/312025133,Adyar J2,Police Station,Chennai,12.997814,80.255718,Chennai,,,,,https://www.openstreetmap.org/node/312025133
+node/313951548,Police Station (node/313951548),Police Station,Chennai,12.981469,80.192063,Chennai,,,,,https://www.openstreetmap.org/node/313951548
+node/320968223,Central Station PS,Police Station,Chennai,13.081828,80.275507,Chennai,,,,,https://www.openstreetmap.org/node/320968223
+node/320968578,Chennai Central RPF,Police Station,Chennai,13.083061,80.2733,Chennai,,,,,https://www.openstreetmap.org/node/320968578
+node/334644593,RTO Check Post,Police Station,Kanyakumari,8.330708,77.174279,Kanyakumari,,,,,https://www.openstreetmap.org/node/334644593
+node/334644595,Tax Check Post,Police Station,Kanyakumari,8.324225,77.181764,Kanyakumari,,,,,https://www.openstreetmap.org/node/334644595
+node/339282419,B1 Saint Thomas Mount PS,Police Station,Chennai,12.999121,80.200262,Chennai,,,,,https://www.openstreetmap.org/node/339282419
+node/353073504,Kalpakkam Police Station,Police Station,Chengalpattu,12.503769,80.15337,Chengalpattu,,,,,https://www.openstreetmap.org/node/353073504
+node/354836500,Dharapuram Police Station,Police Station,Tiruppur,10.731227,77.524015,Tiruppur,,,,,https://www.openstreetmap.org/node/354836500
+node/354890203,Sadras Police Station,Police Station,Chengalpattu,12.525165,80.162667,Chengalpattu,,,,,https://www.openstreetmap.org/node/354890203
+node/366075241,Koyambedu Police Station,Police Station,Chennai,13.069641,80.200459,Chennai,,,,,https://www.openstreetmap.org/node/366075241
+node/369183249,E1 Police Station,Police Station,Nilgiris,11.412076,76.688478,Nilgiris,,,,,https://www.openstreetmap.org/node/369183249
+node/370481197,"Office, Police Commissioner",Police Station,Chennai,13.010086,80.199093,Chennai,,,,,https://www.openstreetmap.org/node/370481197
+node/370969674,T15 SRMC PS,Police Station,Chennai,13.034199,80.160249,Chennai,,,,,https://www.openstreetmap.org/node/370969674
+node/389948945,KK Nagar PS,Police Station,Chennai,13.041511,80.205442,Chennai,,,,,https://www.openstreetmap.org/node/389948945
+node/390852677,N4 PS,Police Station,Chennai,13.134541,80.29746,Chennai,,,,,https://www.openstreetmap.org/node/390852677
+node/411318042,Virugambakkam Police Station,Police Station,Chennai,13.049112,80.199256,Chennai,,,,,https://www.openstreetmap.org/node/411318042
+node/416412274,Police Station (node/416412274),Police Station,Chennai,13.03694,80.267418,Chennai,,,,,https://www.openstreetmap.org/node/416412274
+node/687175330,Police Booth,Police Station,Chennai,13.073748,80.192342,Chennai,,,,,https://www.openstreetmap.org/node/687175330
+node/687177364,Police Booth,Police Station,Chennai,13.065691,80.193571,Chennai,,,,,https://www.openstreetmap.org/node/687177364
+node/725513774,Police Station,Police Station,Erode,11.277733,77.586581,Erode,,,,,https://www.openstreetmap.org/node/725513774
+node/747616884,Velachery,Police Station,Chennai,12.985013,80.220871,Chennai,,,,,https://www.openstreetmap.org/node/747616884
+node/803271976,Police Station (node/803271976),Police Station,Coimbatore,10.995271,76.968182,Coimbatore,,,,,https://www.openstreetmap.org/node/803271976
+node/803272013,District Police Office,Police Station,Coimbatore,10.999002,76.967781,Coimbatore,,,,,https://www.openstreetmap.org/node/803272013
+node/934859086,Police Booth,Police Station,Chennai,13.044732,80.186216,Chennai,,,,,https://www.openstreetmap.org/node/934859086
+node/951833229,E6,Police Station,Chennai,13.271806,80.262509,Chennai,,,,,https://www.openstreetmap.org/node/951833229
+node/966556101,Chintadripet,Police Station,Chennai,13.074909,80.272504,Chennai,,,,,https://www.openstreetmap.org/node/966556101
+node/983961147,S6 Shankar Nagar Police Station,Police Station,Chennai,12.96928,80.125796,Chennai,,,,,https://www.openstreetmap.org/node/983961147
+node/984217571,Vadapalani Police station,Police Station,Chennai,13.049673,80.211731,Chennai,,,,,https://www.openstreetmap.org/node/984217571
+node/1015569835,Ramapuram Police Station,Police Station,Chennai,13.031774,80.179007,Chennai,,,,,https://www.openstreetmap.org/node/1015569835
+node/1051328308,Ukkadam Police Station(B2),Police Station,Coimbatore,10.989004,76.961534,Coimbatore,,,,,https://www.openstreetmap.org/node/1051328308
+node/1051328344,Womens Police Station,Police Station,Coimbatore,11.015569,76.968346,Coimbatore,,,,,https://www.openstreetmap.org/node/1051328344
+node/1051328360,Kattor Police Station,Police Station,Coimbatore,11.015303,76.968307,Coimbatore,,,,,https://www.openstreetmap.org/node/1051328360
+node/1051328368,Madukkarai Police Station,Police Station,Coimbatore,10.911453,76.94904,Coimbatore,,,,,https://www.openstreetmap.org/node/1051328368
+node/1153096222,Police Station (node/1153096222),Police Station,Theni,10.328936,76.957448,Theni,,,,,https://www.openstreetmap.org/node/1153096222
+node/1186119073,TIRUPPUR NORTH,Police Station,Tiruppur,11.107892,77.345051,Tiruppur,,,,,https://www.openstreetmap.org/node/1186119073
+node/1315141190,Police booth,Police Station,Chennai,12.965163,80.206035,Chennai,,,,,https://www.openstreetmap.org/node/1315141190
+node/1391252125,Police Station (node/1391252125),Police Station,Chennai,13.124493,80.277169,Chennai,,,,,https://www.openstreetmap.org/node/1391252125
+node/1423854834,Karamadai Police Station,Police Station,Coimbatore,11.239522,76.95959,Coimbatore,,,,,https://www.openstreetmap.org/node/1423854834
+node/1451946829,Porur Police Station,Police Station,Chennai,13.034307,80.160129,Chennai,,,,,https://www.openstreetmap.org/node/1451946829
+node/1470432055,"C2- Race Course Police Station, Coimbatore",Police Station,Coimbatore,11.001692,76.971318,"Government Arts College Road, Gopalapuram, Coimbatore, 641018",Gopalapuram,641018,,,https://www.openstreetmap.org/node/1470432055
+node/1471854713,C-3 Saibaba Colony Police Station,Police Station,Coimbatore,11.026635,76.951597,Coimbatore,,,,,https://www.openstreetmap.org/node/1471854713
+node/1474350853,Saravanampatti Police Station,Police Station,Coimbatore,11.07473,77.002712,Coimbatore,,,,,https://www.openstreetmap.org/node/1474350853
+node/1474518443,Ramanathapuram police station,Police Station,Coimbatore,10.997583,76.997871,Coimbatore,,,,,https://www.openstreetmap.org/node/1474518443
+node/1474803271,B1 POLICE STATION,Police Station,Coimbatore,10.992485,76.959131,Coimbatore,,,,,https://www.openstreetmap.org/node/1474803271
+node/1597178645,Police Station (node/1597178645),Police Station,Chennai,13.057685,80.204155,Chennai,,,,,https://www.openstreetmap.org/node/1597178645
+node/1623278302,Kollencode Police Station,Police Station,Kanyakumari,8.293763,77.114347,Kanyakumari,,,,,https://www.openstreetmap.org/node/1623278302
+node/1668204092,Police Station,Police Station,Erode,11.363018,77.747651,Erode,,,,,https://www.openstreetmap.org/node/1668204092
+node/1680232798,Police Station (node/1680232798),Police Station,Coimbatore,10.988383,76.935453,Coimbatore,,,,,https://www.openstreetmap.org/node/1680232798
+node/1685476656,Tisaiyanvillai Police Station,Police Station,Tirunelveli,8.336671,77.854162,Tirunelveli,,,,,https://www.openstreetmap.org/node/1685476656
+node/1711627907,Shastri Nagar Police Station,Police Station,Chennai,13.000612,80.265931,Chennai,,,,,https://www.openstreetmap.org/node/1711627907
+node/1754861237,Bagayam Police Station,Police Station,Vellore,12.875751,79.133696,Vellore,,,,,https://www.openstreetmap.org/node/1754861237
+node/1769189559,Police Station (node/1769189559),Police Station,Ramanathapuram,9.239918,78.781927,Ramanathapuram,,,,,https://www.openstreetmap.org/node/1769189559
+node/1771171090,Palani Town Police Station,Police Station,Theni,10.452874,77.51557,Theni,,,,,https://www.openstreetmap.org/node/1771171090
+node/1803675803,Police Station (node/1803675803),Police Station,Dharmapuri,12.304355,78.203113,Dharmapuri,,,,,https://www.openstreetmap.org/node/1803675803
+node/1813686211,Tiruppur North,Police Station,Tiruppur,11.106625,77.342794,Tiruppur,,,,,https://www.openstreetmap.org/node/1813686211
+node/1821366073,Police Station (node/1821366073),Police Station,Krishnagiri,12.529286,78.205727,Krishnagiri,,,,,https://www.openstreetmap.org/node/1821366073
+node/1865961947,Police Outpost,Police Station,Chennai,13.215617,80.169439,Chennai,,,,,https://www.openstreetmap.org/node/1865961947
+node/1896342668,HVF,Police Station,Chennai,13.129146,80.107379,Chennai,,,,,https://www.openstreetmap.org/node/1896342668
+node/1909667210,Railway police station,Police Station,Tenkasi,8.964551,77.306303,Tenkasi,,,,,https://www.openstreetmap.org/node/1909667210
+node/1911051522,"Krishnagiri Taluk office, fire station, Police station",Police Station,Krishnagiri,12.525454,78.217182,Krishnagiri,,,,,https://www.openstreetmap.org/node/1911051522
+node/1918541999,Police Stations,Police Station,Tenkasi,8.97242,77.419293,Tenkasi,,,,,https://www.openstreetmap.org/node/1918541999
+node/1948632616,K11 CMBT Police Station,Police Station,Chennai,13.068701,80.204667,Chennai,,,,,https://www.openstreetmap.org/node/1948632616
+node/1974104672,Komarapalayam Police station,Police Station,Erode,11.441314,77.693112,Erode,,,,,https://www.openstreetmap.org/node/1974104672
+node/1988390146,Adirampattinam Police Station,Police Station,Tiruvarur,10.34041,79.385532,Tiruvarur,,,,,https://www.openstreetmap.org/node/1988390146
+node/1998095213,Commissioner's office,Police Station,Cuddalore,11.755369,79.768858,Cuddalore,,,,,https://www.openstreetmap.org/node/1998095213
+node/2039963456,J2 Police Station Kedar Jurisdiction,Police Station,Viluppuram,12.009122,79.402968,Viluppuram,,,,,https://www.openstreetmap.org/node/2039963456
+node/2061123092,J9 Police Station,Police Station,Chennai,12.947613,80.241625,Chennai,,,,,https://www.openstreetmap.org/node/2061123092
+node/2086712180,Madipakkam Police Station,Police Station,Chennai,12.955986,80.185307,Chennai,,,,,https://www.openstreetmap.org/node/2086712180
+node/2139742510,Police Station (node/2139742510),Police Station,Chennai,13.022974,80.199917,Chennai,,,,,https://www.openstreetmap.org/node/2139742510
+node/2152043251,All Women Police Station,Police Station,Kanyakumari,8.082443,77.54952,Kanyakumari,,,,,https://www.openstreetmap.org/node/2152043251
+node/2152043264,Police Station,Police Station,Kanyakumari,8.082173,77.549541,Kanyakumari,,,,,https://www.openstreetmap.org/node/2152043264
+node/2152463911,Police Srirangam,Police Station,Tiruchirappalli,10.857176,78.689643,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/2152463911
+node/2153276888,Taluk Police Station Kumbakonam,Police Station,Thanjavur,10.955503,79.365503,Thanjavur,,,,,https://www.openstreetmap.org/node/2153276888
+node/2154131305,Traffic Police Station,Police Station,Chengalpattu,12.621268,80.195552,Chengalpattu,,,,,https://www.openstreetmap.org/node/2154131305
+node/2156885345,"Police Station, Vettavalam",Police Station,Tiruvannamalai,12.109881,79.244725,Tiruvannamalai,,,,,https://www.openstreetmap.org/node/2156885345
+node/2210021510,Police Booth,Police Station,Chennai,12.897566,80.182321,Chennai,,,,,https://www.openstreetmap.org/node/2210021510
+node/2214183884,police station,Police Station,Tiruchirappalli,10.703507,78.550401,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/2214183884
+node/2221603034,Police Assistance Booth Mugalivakam,Police Station,Chennai,13.020716,80.166324,Chennai,,,,,https://www.openstreetmap.org/node/2221603034
+node/2296700944,B2 Police Station,Police Station,Tiruchirappalli,10.82282,78.682729,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/2296700944
+node/2344385363,Trafic Police Station,Police Station,Krishnagiri,12.727932,77.827051,Krishnagiri,,,,,https://www.openstreetmap.org/node/2344385363
+node/2344410073,Hosur Town Police Station,Police Station,Krishnagiri,12.726755,77.827283,Krishnagiri,,,,,https://www.openstreetmap.org/node/2344410073
+node/2364874938,Police Station (node/2364874938),Police Station,Kanyakumari,8.17833,77.431646,Kanyakumari,,,,,https://www.openstreetmap.org/node/2364874938
+node/2375997491,Police,Police Station,Chengalpattu,12.621489,80.194274,Chengalpattu,,,,,https://www.openstreetmap.org/node/2375997491
+node/2442814216,Jaihindpuram Police Station,Police Station,Madurai,9.906609,78.111904,Madurai,,,,,https://www.openstreetmap.org/node/2442814216
+node/2445795300,City Police HQ,Police Station,Virudhunagar,9.556549,77.94531,Virudhunagar,,,,,https://www.openstreetmap.org/node/2445795300
+node/2535205986,Koothanallur Police Station,Police Station,Tiruvarur,10.716188,79.517231,"Kamarajar Colony Street, Lakshmangudi, Koothanallur, Tiruvarur, 614102",Koothanallur,614102,,,https://www.openstreetmap.org/node/2535205986
+node/2578986487,Women's Police Station,Police Station,Viluppuram,12.252348,79.416322,"Thiruvannamalai Road, Gingee, Viluppuram, 604202",Gingee,604202,,,https://www.openstreetmap.org/node/2578986487
+node/2578986788,Police Station,Police Station,Viluppuram,12.251784,79.418129,"Tindivanam Road, gingee, Viluppuram, 604202",gingee,604202,,,https://www.openstreetmap.org/node/2578986788
+node/2587520257,J6 Police Station,Police Station,Chennai,12.98746,80.255932,Chennai,,,,,https://www.openstreetmap.org/node/2587520257
+node/2678764369,Mailam Police Station,Police Station,Viluppuram,12.128186,79.619576,"Pondicherry - Tindivanam Road, Mailam, Viluppuram",Mailam,,,,https://www.openstreetmap.org/node/2678764369
+node/3097014588,S-10 Police Station (Pallikaranai),Police Station,Chennai,12.917383,80.195081,Chennai,,,,,https://www.openstreetmap.org/node/3097014588
+node/3154720635,Perumalpuram C3 Police station,Police Station,Tirunelveli,8.704094,77.73199,Tirunelveli,,,,,https://www.openstreetmap.org/node/3154720635
+node/3195423909,Chetpet,Police Station,Chennai,13.070691,80.242119,Chennai,,,,,https://www.openstreetmap.org/node/3195423909
+node/3197680841,Police Station (node/3197680841),Police Station,Mayiladuthurai,11.397633,79.691131,Mayiladuthurai,,,,,https://www.openstreetmap.org/node/3197680841
+node/3571694093,Rathinapuri Police Station,Police Station,Coimbatore,11.025034,76.971575,Coimbatore,,,,,https://www.openstreetmap.org/node/3571694093
+node/3591907532,Thirukovilur Police Station,Police Station,Viluppuram,11.966414,79.2021,"Bazzar Street, Thirukovilur, Viluppuram",Thirukovilur,,,,https://www.openstreetmap.org/node/3591907532
+node/3686857438,Boiler Plant Police Station,Police Station,Tiruchirappalli,10.771008,78.795665,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/3686857438
+node/3730202122,Police Station (node/3730202122),Police Station,Tiruchirappalli,10.816185,78.694203,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/3730202122
+node/3983676959,Police Station,Police Station,Viluppuram,11.940195,79.486505,Viluppuram,,,,,https://www.openstreetmap.org/node/3983676959
+node/3983763747,Police Station,Police Station,Viluppuram,11.944095,79.495803,Viluppuram,,,,,https://www.openstreetmap.org/node/3983763747
+node/4199785690,Police Station (node/4199785690),Police Station,Karur,10.852349,77.848586,Karur,,,,,https://www.openstreetmap.org/node/4199785690
+node/4299434191,Salem Town Police Station,Police Station,Salem,11.65394,78.160485,Salem,,,,,https://www.openstreetmap.org/node/4299434191
+node/4305413795,Alagapuram Police station,Police Station,Salem,11.676995,78.142262,Salem,,,,,https://www.openstreetmap.org/node/4305413795
+node/4308319495,R6 KUMARAN NAGAR POLICE STATION ,Police Station,Chennai,13.028368,80.216311,"3rd St, Ragavan Colony, Mettuppalayam, Ashok Nagar, Chennai, Tamil Nadu 600083, Chennai",,,044 2345 2629,,https://www.openstreetmap.org/node/4308319495
+node/4322649892,Denkanikottai Police Station,Police Station,Krishnagiri,12.520897,77.790337,"GHS SCHOOL ROAD, Krishnagiri",,,,,https://www.openstreetmap.org/node/4322649892
+node/4436123523,Airport Police Station,Police Station,Tiruchirappalli,10.758803,78.707742,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/4436123523
+node/4444954749,G4 Vandavasi north police station,Police Station,Kanchipuram,12.506871,79.604537,"Uttiramerur, kanchipuram, Kanchipuram, 603406",kanchipuram,603406,+(91)4427272232,,https://www.openstreetmap.org/node/4444954749
+node/4445174109,superitendent of police,Police Station,Kanchipuram,12.822483,79.697313,"Uttiramerur, Kanchipuram, Kanchipuram, 603406",Kanchipuram,603406,+(91)4427272232,,https://www.openstreetmap.org/node/4445174109
+node/4445183306,Walajabad police station,Police Station,Kanchipuram,12.793747,79.816216,"Chavadi Street,walajabad, kanchipuram, Kanchipuram, 631605",kanchipuram,631605,+(91)4427256044,,https://www.openstreetmap.org/node/4445183306
+node/4445204054,c3 police station Manimangalam,Police Station,Kanchipuram,12.916386,80.039842,"Mudichur Road Kanchipuram HO, kanchipuram, Kanchipuram, 631501",kanchipuram,631501,+(91)4427178131,,https://www.openstreetmap.org/node/4445204054
+node/4445288963,Cheyur Police station,Police Station,Kanchipuram,12.351715,79.997508,"Cheyur, Kanchipuram, Kanchipuram, 603302",Kanchipuram,603302,+(91)4427531124,,https://www.openstreetmap.org/node/4445288963
+node/4445321696,sup,Police Station,Kanchipuram,12.822712,79.69497,Kanchipuram,,,,,https://www.openstreetmap.org/node/4445321696
+node/4445321697,anna nagar police superitendent station,Police Station,Kanchipuram,12.823777,79.697428,"Vedachalam Nagar, Anna Street, Kanchipuram, Kanchipuram, 631502",Kanchipuram,631502,+(91)9952495164,,https://www.openstreetmap.org/node/4445321697
+node/4445352945,Chengalpatu AwPolice Station,Police Station,Chengalpattu,12.69714,79.977163,"Chengalpatu,Kancheepuram, kancheepuram, Chengalpattu, 60300",kancheepuram,60300,+91(044)– 27432101,,https://www.openstreetmap.org/node/4445352945
+node/4445363957,Guduvancherry Police Station,Police Station,Chengalpattu,12.843923,80.061586,"Kancheepuram, kancheepuram, Chengalpattu, 603202",kancheepuram,603202,+91 (044 )– 27465331,,https://www.openstreetmap.org/node/4445363957
+node/4445386757,Baluchetty Chatram Police station,Police Station,Kanchipuram,12.876807,79.616011,"Kancheepuram, kancheepuram, Kanchipuram, 603202",kancheepuram,603202,+91(044)27465331,,https://www.openstreetmap.org/node/4445386757
+node/4445409369,Melmaruvathur Police Station,Police Station,Chengalpattu,12.431692,79.831919,"Kancheepuram, kancheepuram, Chengalpattu, 603319",kancheepuram,603319,044 – 27529241,,https://www.openstreetmap.org/node/4445409369
+node/4445425089,Mathur Police Station,Police Station,Tirupathur,12.382841,78.412551,"Kancheepuram, kancheepuram, Tirupathur, 603110",kancheepuram,603110,044 – 27537728,,https://www.openstreetmap.org/node/4445425089
+node/4445488162,Otteri Police Station,Police Station,Chennai,13.087452,80.245879,"Kancheepuram, kancheepuram, Chennai, 600048",kancheepuram,600048,044 – 22750987,,https://www.openstreetmap.org/node/4445488162
+node/4445825097,Palur Police station,Police Station,Chengalpattu,12.767664,79.903491,"Chengalpattu Rd,palur, kancheepuram, Chengalpattu, 603101",kancheepuram,603101,044-27437100,,https://www.openstreetmap.org/node/4445825097
+node/4446290798,Ammapet B 6  Police Station,Police Station,Salem,11.65303,78.161785,"Ammapettai Bazaar, salem, Salem, 636003",salem,636003,,,https://www.openstreetmap.org/node/4446290798
+node/4446318185,Ammapet B 6  Police Station,Police Station,Salem,11.659002,78.18161,"Ammapettai Bazaar, salem, Salem, 636003",salem,636003,+91427-2262610,,https://www.openstreetmap.org/node/4446318185
+node/4446321544,Annadanapatti B 4 Police Station,Police Station,Salem,11.642403,78.140478,"Annadanapatti, salem, Salem, 636002",salem,636002,+91427-2270513,,https://www.openstreetmap.org/node/4446321544
+node/4446325349,Attayampati C 1 Police Station,Police Station,Salem,11.531353,78.050867,"Attayampatti, salem, Salem, 637501",salem,637501,+91427-2471230,,https://www.openstreetmap.org/node/4446325349
+node/4446333993,Hastampatti B 7 Police Station,Police Station,Salem,11.677809,78.16458,"Hastampatti, Salem, Salem, 636007",Salem,636007,+91427-2412615,,https://www.openstreetmap.org/node/4446333993
+node/4446337753,Kannankurichi B 8 Police Station,Police Station,Salem,11.696746,78.176976,"Kannankurichi, Salem, Salem, 636008",Salem,636008,+91427-2402660,,https://www.openstreetmap.org/node/4446337753
+node/4446339678,Karipatti Police Station,Police Station,Salem,9.677116,78.103429,"Karipatti, salem, Salem, 636106",salem,636106,+91427-2482235,,https://www.openstreetmap.org/node/4446339678
+node/4446341974,Kitchipalayam B 5 Police Station,Police Station,Salem,11.647253,78.170258,"Kitchipalayam, Kurumenkadu, salem, Salem, 636015",salem,636015,,,https://www.openstreetmap.org/node/4446341974
+node/4446350980,Mallur Police Station,Police Station,Salem,11.545299,78.142883,"Mallur, salem, Salem, 636001",salem,636001,+91427-2422239,,https://www.openstreetmap.org/node/4446350980
+node/4446359348,Palapatti B 10 Police Station,Police Station,Salem,11.669956,78.139485,"Palapatti, salem, Salem, 636009",salem,636009,+91427-2443839,,https://www.openstreetmap.org/node/4446359348
+node/4446368920,Panamarathupatti Police Station,Police Station,Salem,11.561495,78.163966,"Panamarathupatti, salem, Salem, 636204",salem,636204,+91427-2443839,,https://www.openstreetmap.org/node/4446368920
+node/4446378287,Police Control Room Police Station,Police Station,Salem,11.64257,78.145951,"Police Inspector Quarters, Linemedu, salem, Salem, 636006",salem,636006,+91427-2210002,,https://www.openstreetmap.org/node/4446378287
+node/4446385831,Suramangalam Police Station,Police Station,Salem,11.670801,78.116886,"Suramangalam, salem, Salem, 636005",salem,636005,+91427-2447315,,https://www.openstreetmap.org/node/4446385831
+node/4446388122,Shevapet B 2 Police Station,Police Station,Salem,11.651475,78.152261,"Shevapet, salem, Salem, 636002",salem,636002,+91427-2211601,,https://www.openstreetmap.org/node/4446388122
+node/4446398757,Veeranam Police Station,Police Station,Salem,11.686222,78.212865,"Veeranam, Salem, Salem, 636122",Salem,636122,+91427-2240735,Tamil Nadu Police Department,https://www.openstreetmap.org/node/4446398757
+node/4446403140,Women Ammapet W 2 Police Station,Police Station,Salem,11.659062,78.181859,"Ammapettai Bazaar, salem, Salem, 636003",salem,636003,+91427-2263800,,https://www.openstreetmap.org/node/4446403140
+node/4446409862,Women Salem Town W 1 Police Station,Police Station,Salem,11.654013,78.160101,"Salem H O, Salem, Salem, 636001",Salem,636001,+91427-2264509,,https://www.openstreetmap.org/node/4446409862
+node/4446984572,police station s11,Police Station,Kanchipuram,12.925417,80.112898,"Muthulinga Street, New Market, Tambaram West,5, kanchipuram, Kanchipuram, 600045",kanchipuram,600045,044 2345 2769,,https://www.openstreetmap.org/node/4446984572
+node/4446987278,Somangalam police station,Police Station,Kanchipuram,12.945931,80.035564,"somangalam ,kanchipuram, kanchipuram, Kanchipuram, 602109",kanchipuram,602109,044 – 27178126,,https://www.openstreetmap.org/node/4446987278
+node/4446991785,thiroporur police station,Police Station,Kanchipuram,12.72368,80.188729,"thiruporur,kanchipuram, kanchipuram, Kanchipuram, 603110",kanchipuram,603110,044 – 27446221,,https://www.openstreetmap.org/node/4446991785
+node/4446993625,Uthiranerur police station,Police Station,Kanchipuram,12.616288,79.753766,"uthiraneur, kanchipuram, Kanchipuram, 603406",kanchipuram,603406,044 – 27272232,,https://www.openstreetmap.org/node/4446993625
+node/4446999050,Acirapakkam Police Station,Police Station,Kanchipuram,12.403834,79.817431,"acirapakkam, kanchipuram, Kanchipuram, 603301",kanchipuram,603301,044 – 27522338,,https://www.openstreetmap.org/node/4446999050
+node/4446999051,Sriperumbudur Police Station,Police Station,Kanchipuram,12.963799,79.949174,"kanchipuram, Kanchipuram, 602105",kanchipuram,602105,+(91)4427162224,,https://www.openstreetmap.org/node/4446999051
+node/4449926670,Cheyyar Police Station,Police Station,Kanchipuram,12.666742,79.540611,"Arcot Rd, Cheyyar,, cheyyar,tamilnadu, Kanchipuram, 604407","cheyyar,tamilnadu",604407,04182 224 644,,https://www.openstreetmap.org/node/4449926670
+node/4449967759,J.J Nagar Police Booth (V3),Police Station,Chennai,13.087695,80.187889,"ambattur Industrial Estate Road, Anna Nagar, J J Nagar, Mogappair East,, Chennai, Tamil Nadu, Chennai, 600040","Chennai, Tamil Nadu",600040,N/A,,https://www.openstreetmap.org/node/4449967759
+node/4449972552,Anna Nagar Police Station,Police Station,Madurai,9.935441,78.144284,"Anna Salai, Mellur, Vinayaga Nagar, Madurai, Tamil Nadu 625002, Tallakulam, Madurai, Madurai, 625002","Tallakulam, Madurai",625002,"+(91)9952495164,",,https://www.openstreetmap.org/node/4449972552
+node/4449998376,D6 Police Station,Police Station,Chengalpattu,12.789065,80.030987,"Sidco Industrial, Periyar Salai Maraimalai Nagar, Chennai -603209, Maraimalai Nagar,, Tamil Nadu, Chengalpattu, 603209",Tamil Nadu,603209,044 2745 272,,https://www.openstreetmap.org/node/4449998376
+node/4450002469,Police Station (node/4450002469),Police Station,Chennai,12.432521,79.83176,"mhennai Theni Hwy, Melmaruvathur,, chennai, Chennai, 603319",chennai,603319,044 2752 9100,,https://www.openstreetmap.org/node/4450002469
+node/4450005607,Orathi Police Station,Police Station,Kanchipuram,12.380675,79.692834,"trindivanam Orathi Road, Orathi,, kanchipuram,TN, Kanchipuram, 603307","kanchipuram,TN",603307,044 – 27549938,,https://www.openstreetmap.org/node/4450005607
+node/4450010503,Thalambur Police Station,Police Station,Kanchipuram,12.846901,80.227177,"Navallur,, kanchipuram,TN, Kanchipuram, 600130","kanchipuram,TN",600130,044-27437100,,https://www.openstreetmap.org/node/4450010503
+node/4450449989,Police Station (node/4450449989),Police Station,Coimbatore,10.987568,76.963933,Coimbatore,,,,,https://www.openstreetmap.org/node/4450449989
+node/4471710291,Temple police station,Police Station,Ramanathapuram,9.289324,79.318526,Ramanathapuram,,,,,https://www.openstreetmap.org/node/4471710291
+node/4517325189,Help Booth,Police Station,Salem,11.618796,78.144628,Salem,,,,,https://www.openstreetmap.org/node/4517325189
+node/4517325190,Police Help Booth,Police Station,Salem,11.633694,78.149501,Salem,,,,,https://www.openstreetmap.org/node/4517325190
+node/4517325389,Annadhanapatti Police Station,Police Station,Salem,11.642212,78.145413,Salem,,,,,https://www.openstreetmap.org/node/4517325389
+node/4528055734,Police Station (node/4528055734),Police Station,Erode,11.454985,77.427091,Erode,,,,,https://www.openstreetmap.org/node/4528055734
+node/4543308094,Police Station (node/4543308094),Police Station,Tiruchirappalli,10.826616,78.694649,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/4543308094
+node/4546946582,West Police Station,Police Station,Virudhunagar,9.592453,77.953474,Virudhunagar,,,,,https://www.openstreetmap.org/node/4546946582
+node/4578007190,"Marine Police Station, Kanyakumari",Police Station,Kanyakumari,8.081021,77.533706,Kanyakumari,,,,,https://www.openstreetmap.org/node/4578007190
+node/4584953596,Erode district check post,Police Station,Karur,11.052831,77.922189,Karur,,,,,https://www.openstreetmap.org/node/4584953596
+node/4592158996,TSP Police Camp,Police Station,Tiruchirappalli,10.789584,78.680331,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/4592158996
+node/4603492001,Police station,Police Station,Madurai,9.910564,78.149597,"Teppakulam, Madurai, 625009",,625009,,,https://www.openstreetmap.org/node/4603492001
+node/4693434975,Viruthampattu police station,Police Station,Vellore,12.953427,79.14142,Vellore,,,,,https://www.openstreetmap.org/node/4693434975
+node/4701650874,Gandhi Market Police Station,Police Station,Tiruchirappalli,10.81618,78.694401,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/4701650874
+node/4707055100,Cuddalore old town station,Police Station,Cuddalore,11.718949,79.769645,Cuddalore,,,,,https://www.openstreetmap.org/node/4707055100
+node/4748988045,Arakkonam Town Police Station,Police Station,Tiruvallur,13.083861,79.669965,"Arakkonam, Tiruvallur",Arakkonam,,,,https://www.openstreetmap.org/node/4748988045
+node/4857137121,CISF barracks,Police Station,Chengalpattu,12.490435,80.158571,"MAPP Main Road, Chengalpattu",,,,,https://www.openstreetmap.org/node/4857137121
+node/4878937211,Police Station (node/4878937211),Police Station,Karur,10.987623,78.336143,Karur,,,,,https://www.openstreetmap.org/node/4878937211
+node/4881957124,Kadampuliyur Police Station,Police Station,Cuddalore,11.702588,79.550908,Cuddalore,,,,,https://www.openstreetmap.org/node/4881957124
+node/4951080243,H1 - Kulithalai Police Station,Police Station,Tiruchirappalli,10.940776,78.419817,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/4951080243
+node/5029745421,Odanchatram,Police Station,Dindigul,10.487462,77.75124,Dindigul,,,,,https://www.openstreetmap.org/node/5029745421
+node/5079396769,District Commissioner Office,Police Station,Tiruchirappalli,10.780682,78.70155,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/5079396769
+node/5079397364,Police Assistance Booth,Police Station,Chennai,13.069926,80.271418,Chennai,,,,,https://www.openstreetmap.org/node/5079397364
+node/5079397452,Mandiyur Police Station,Police Station,Tiruchirappalli,10.659679,78.74089,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/5079397452
+node/5079397456,District Police Office,Police Station,Tiruchirappalli,10.784943,78.699011,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/5079397456
+node/5225890331,Police Quarters,Police Station,Cuddalore,11.751607,79.760243,"Bharathi Rd, Cuddalore, Cuddalore, 607001",Cuddalore,607001,,,https://www.openstreetmap.org/node/5225890331
+node/5225891829,Cuddalore New Town Police Station,Police Station,Cuddalore,11.751301,79.761018,"Cuddalore, Cuddalore, 607001",Cuddalore,607001,+91 94865 29887,,https://www.openstreetmap.org/node/5225891829
+node/5226071789,Police Booth,Police Station,Tiruvallur,13.103772,80.058543,Tiruvallur,,,,,https://www.openstreetmap.org/node/5226071789
+node/5226197960,T9 Police Station Pattabiram,Police Station,Tiruvallur,13.122251,80.062416,Tiruvallur,,,,,https://www.openstreetmap.org/node/5226197960
+node/5226262920,J-10 Semmenchery Police Station,Police Station,Chennai,12.900856,80.228016,Chennai,,,,,https://www.openstreetmap.org/node/5226262920
+node/5232302356,Police Station,Police Station,Thanjavur,10.774367,79.132875,"Thanjavur, Thanjavur",Thanjavur,,,,https://www.openstreetmap.org/node/5232302356
+node/5234779869,Tamil nadu special police battalion,Police Station,Tiruchirappalli,10.790125,78.68258,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/5234779869
+node/5235144279,Ayyampettai Police Station,Police Station,Thanjavur,10.890505,79.189006,"Ayyampettai to Soolamangalam Road, Ayyampet, Thanjavur",Ayyampet,,,,https://www.openstreetmap.org/node/5235144279
+node/5338402894,Karunya nagar police station,Police Station,Coimbatore,10.941951,76.753685,Coimbatore,,,,,https://www.openstreetmap.org/node/5338402894
+node/5367536437,Police Booth,Police Station,Chennai,13.014976,80.181643,Chennai,,,,Chennai Police,https://www.openstreetmap.org/node/5367536437
+node/5601012628,Prohibition Check Post,Police Station,Cuddalore,11.98271,79.845087,Cuddalore,,,,,https://www.openstreetmap.org/node/5601012628
+node/5692259731,B6 Kandamangalam Police Station,Police Station,Viluppuram,11.918972,79.678575,Viluppuram,,,,,https://www.openstreetmap.org/node/5692259731
+node/5893838815,G3,Police Station,Tiruvarur,10.34062,79.385481,Tiruvarur,,,,,https://www.openstreetmap.org/node/5893838815
+node/5970940185,All women police station,Police Station,Coimbatore,11.082175,76.94119,"Mettupalayam-Coimbatore Road, Coimbatore, 641034",,641034,,,https://www.openstreetmap.org/node/5970940185
+node/6029686231,Police Station - Annamalai Nagar,Police Station,Mayiladuthurai,11.38697,79.711153,"Manroad, Annamalai Nagar, Mayiladuthurai, 608002",Annamalai Nagar,608002,,,https://www.openstreetmap.org/node/6029686231
+node/6169678221,Paramathi velur police station,Police Station,Karur,11.109895,78.009606,Karur,,,,Tamilnadu Government,https://www.openstreetmap.org/node/6169678221
+node/6176739305,Jedarpalayam Police station,Police Station,Erode,11.149689,77.892141,"Jedarpalayam, Erode",Jedarpalayam,,,Tamilnadu Government,https://www.openstreetmap.org/node/6176739305
+node/6209719671,Kangeyam Police Station,Police Station,Tiruppur,11.001141,77.562688,"Near Roundabout Signal, Kalimedu, Kangeyam, Tiruppur, 638701",Kangeyam,638701,,,https://www.openstreetmap.org/node/6209719671
+node/6236032560,Police Station (node/6236032560),Police Station,Pudukkottai,10.382805,78.818983,Pudukkottai,,,,,https://www.openstreetmap.org/node/6236032560
+node/6354550885,T-11 Tiruninravur Police Station,Police Station,Tiruvallur,13.125114,80.028604,Tiruvallur,,,,,https://www.openstreetmap.org/node/6354550885
+node/6367890840,Police Station,Police Station,Dharmapuri,12.306512,78.073656,Dharmapuri,,,,,https://www.openstreetmap.org/node/6367890840
+node/6403262985,Police Station,Police Station,Tiruppur,10.556287,77.364906,Tiruppur,,,,,https://www.openstreetmap.org/node/6403262985
+node/6765543397,Pattamadai Police Station,Police Station,Tirunelveli,8.667191,77.584097,Tirunelveli,,,,,https://www.openstreetmap.org/node/6765543397
+node/6780251054,Railway Police,Police Station,Chennai,13.034137,80.266441,Chennai,,,,,https://www.openstreetmap.org/node/6780251054
+node/6854765885,Police Booth,Police Station,Chennai,12.993186,80.267493,Chennai,,,,,https://www.openstreetmap.org/node/6854765885
+node/6859575314,Alagappapuram Police Station,Police Station,Pudukkottai,10.080723,78.793617,Pudukkottai,,,,,https://www.openstreetmap.org/node/6859575314
+node/6859609827,North Police Station,Police Station,Pudukkottai,10.075483,78.779177,Pudukkottai,,,,,https://www.openstreetmap.org/node/6859609827
+node/6869192346,Police Station (node/6869192346),Police Station,Pudukkottai,10.079089,78.780442,Pudukkottai,,,,,https://www.openstreetmap.org/node/6869192346
+node/6892846811,Police Station (node/6892846811),Police Station,Pudukkottai,10.093955,78.788295,Pudukkottai,,,,,https://www.openstreetmap.org/node/6892846811
+node/7060019586,Coast Guard Store Depot,Police Station,Chennai,13.118823,80.297462,"OM Pettai Rd, Chennai, 600013",,600013,,,https://www.openstreetmap.org/node/7060019586
+node/7060026186,Indian Army DB AREA,Police Station,Chennai,13.075738,80.277593,Chennai,,,,,https://www.openstreetmap.org/node/7060026186
+node/7067369294,Ketti Village Police Station,Police Station,Coimbatore,11.381683,76.735848,"Ketti Valley Road, coimbatore, Coimbatore, 643215",coimbatore,643215,,,https://www.openstreetmap.org/node/7067369294
+node/7161554515,Police Station Rasipuram,Police Station,Namakkal,11.461782,78.184741,"Salem Main Road, Rasipuram, Namakkal, 637408",Rasipuram,637408,,,https://www.openstreetmap.org/node/7161554515
+node/7169322645,"Diatrict Police Station, Kallakurichi",Police Station,Kallakurichi,11.703,78.943088,Kallakurichi,,,,,https://www.openstreetmap.org/node/7169322645
+node/7199661754,Temple Police Station,Police Station,Ramanathapuram,9.287095,79.309877,Ramanathapuram,,,,,https://www.openstreetmap.org/node/7199661754
+node/7216689413,West Police Station,Police Station,Thanjavur,10.958471,79.374896,Thanjavur,,,,,https://www.openstreetmap.org/node/7216689413
+node/7251517085,Chinnasalem Police Station,Police Station,Kallakurichi,11.635668,78.877471,Kallakurichi,,,,,https://www.openstreetmap.org/node/7251517085
+node/7266279885,Police station,Police Station,Kanchipuram,12.820464,79.718117,Kanchipuram,,,,,https://www.openstreetmap.org/node/7266279885
+node/7279582468,Police Checkpost,Police Station,Theni,10.264866,77.539468,Theni,,,,,https://www.openstreetmap.org/node/7279582468
+node/7476292498,Anjugramam Police Station,Police Station,Kanyakumari,8.148773,77.570497,"National Highway 7, Kanyakumari",,,,,https://www.openstreetmap.org/node/7476292498
+node/7880331736,pachal police station,Police Station,Tiruvannamalai,12.270105,78.941679,Tiruvannamalai,,,,,https://www.openstreetmap.org/node/7880331736
+node/7880514352,Police station,Police Station,Tenkasi,8.938751,77.449152,"main road, Tenkasi",,,100,,https://www.openstreetmap.org/node/7880514352
+node/7881407653,Arakandanallur Police station,Police Station,Viluppuram,11.974109,79.225546,Viluppuram,,,,,https://www.openstreetmap.org/node/7881407653
+node/7930461092,Police Station (node/7930461092),Police Station,Krishnagiri,12.533181,78.213626,Krishnagiri,,,,,https://www.openstreetmap.org/node/7930461092
+node/7973358298,Police station,Police Station,Tiruchirappalli,10.752608,78.822881,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/7973358298
+node/7994867411,Police Station (node/7994867411),Police Station,Chennai,12.973831,80.186835,Chennai,,,,,https://www.openstreetmap.org/node/7994867411
+node/8096280337,R10 MGR Nagar Police Station,Police Station,Chennai,13.031089,80.201703,"Guru Siva St, Sapthagiri Colony, West Jafferkhanpet, Chennai, Tamil Nadu 600083, Chennai",,,,,https://www.openstreetmap.org/node/8096280337
+node/8108600154,R6 Police Booth,Police Station,Chennai,13.026501,80.211624,"14A, Gangai Amman Koil St, VSM Garden, West Jafferkhanpet, Chennai, Tamil Nadu 600083, Chennai",,,,,https://www.openstreetmap.org/node/8108600154
+node/8151962606,Kunnathur Police Station,Police Station,Tiruppur,11.273083,77.411181,"Kunnathur, Tiruppur",,,04294263033,,https://www.openstreetmap.org/node/8151962606
+node/8477523432,Police Help Line,Police Station,Pudukkottai,10.07329,78.781396,Pudukkottai,,,,,https://www.openstreetmap.org/node/8477523432
+node/8495842126,Police Station (node/8495842126),Police Station,Chennai,13.05045,80.182862,Chennai,,,,,https://www.openstreetmap.org/node/8495842126
+node/8517767919,Police Station (node/8517767919),Police Station,Pudukkottai,10.067951,78.764972,Pudukkottai,,,,,https://www.openstreetmap.org/node/8517767919
+node/8541101418,"Narikudi, Virudhunagar",Police Station,Sivaganga,9.589038,78.316207,Sivaganga,,,,,https://www.openstreetmap.org/node/8541101418
+node/8541104017,Ponnamaravathy,Police Station,Pudukkottai,10.27645,78.538854,Pudukkottai,,,,,https://www.openstreetmap.org/node/8541104017
+node/8616517717,Railway Protection Force,Police Station,Pudukkottai,10.068032,78.791884,Pudukkottai,,,,Indian Railways,https://www.openstreetmap.org/node/8616517717
+node/8645780209,Velachery Police Station,Police Station,Chennai,12.980944,80.220923,Chennai,,,+91 44 2345 2605;+91 44 2345 2606,,https://www.openstreetmap.org/node/8645780209
+node/8766962805,Wellington Police Station,Police Station,Nilgiris,11.354788,76.784613,Nilgiris,,,,,https://www.openstreetmap.org/node/8766962805
+node/8770991976,DSP office,Police Station,Nilgiris,11.343066,76.790845,Nilgiris,,,,,https://www.openstreetmap.org/node/8770991976
+node/9022381123,கரட்டுப்பாளையம் காவல் நிலையம்,Police Station,Erode,11.357586,77.892254,Erode,,,,,https://www.openstreetmap.org/node/9022381123
+node/9104697728,SP Bungalow,Police Station,Dindigul,10.360902,77.986846,Dindigul,,,,,https://www.openstreetmap.org/node/9104697728
+node/9104697729,S.P. Police Station,Police Station,Dindigul,10.360997,77.986485,Dindigul,,,,,https://www.openstreetmap.org/node/9104697729
+node/9104697823,Police Station (node/9104697823),Police Station,Dindigul,10.363271,77.977575,Dindigul,,,,,https://www.openstreetmap.org/node/9104697823
+node/9135062024,"Police Station, Kattumannarkoil",Police Station,Mayiladuthurai,11.274887,79.546723,"Kutchery Street, Kattumannarkoil, Mayiladuthurai, 608301",Kattumannarkoil,608301,,,https://www.openstreetmap.org/node/9135062024
+node/9194950899,Pettai Police Station,Police Station,Tirunelveli,8.723389,77.663401,Tirunelveli,,,,,https://www.openstreetmap.org/node/9194950899
+node/9569071027,E5 Mattuthavani Station,Police Station,Madurai,9.943596,78.155173,Madurai,,,,,https://www.openstreetmap.org/node/9569071027
+node/9743027919,புதுக்கோட்டை காவல் நிலையம்,Police Station,Thoothukudi,8.736524,78.044525,Thoothukudi,,,,,https://www.openstreetmap.org/node/9743027919
+node/9776942617,Women Police Station,Police Station,Pudukkottai,10.075493,78.779394,Pudukkottai,,,,,https://www.openstreetmap.org/node/9776942617
+node/9994034342,Police Station (node/9994034342),Police Station,Chennai,13.041483,80.133136,Chennai,,,,,https://www.openstreetmap.org/node/9994034342
+node/10199917192,Police station,Police Station,Namakkal,11.384488,78.162288,Namakkal,,,,,https://www.openstreetmap.org/node/10199917192
+node/10200933102,Puduchathiram Police station,Police Station,Namakkal,11.384509,78.162426,Namakkal,,,,,https://www.openstreetmap.org/node/10200933102
+node/10688149980,HUDCO Police Station,Police Station,Krishnagiri,12.725805,77.857972,Krishnagiri,,,,,https://www.openstreetmap.org/node/10688149980
+node/10703074467,Police Station (node/10703074467),Police Station,Cuddalore,11.612467,79.488838,Cuddalore,,,,,https://www.openstreetmap.org/node/10703074467
+node/10703115523,Police Station (node/10703115523),Police Station,Viluppuram,11.79253,79.527809,Viluppuram,,,,,https://www.openstreetmap.org/node/10703115523
+node/10741550765,mangadu police station,Police Station,Chennai,13.035288,80.114521,"mangadu, Chennai, chennai, Chennai, 600122",chennai,600122,44 – 27178126,,https://www.openstreetmap.org/node/10741550765
+node/10833430957,Police Station (node/10833430957),Police Station,Vellore,12.940732,79.173311,Vellore,,,,,https://www.openstreetmap.org/node/10833430957
+node/10926155837,Ranipet Police Station,Police Station,Ranipet,12.927539,79.330457,Ranipet,,,,,https://www.openstreetmap.org/node/10926155837
+node/10949254831,F2 Auroville Police Station,Police Station,Cuddalore,11.991031,79.784012,Cuddalore,,,,,https://www.openstreetmap.org/node/10949254831
+node/10968036587,Government Railway Police Station,Police Station,Salem,11.67122,78.113029,Salem,,,,,https://www.openstreetmap.org/node/10968036587
+node/11105068155,Police station,Police Station,Nilgiris,11.441762,76.951508,Nilgiris,,,,,https://www.openstreetmap.org/node/11105068155
+node/11174459038,J1 Sethiathoppu Police Station,Police Station,Mayiladuthurai,11.452628,79.546251,Mayiladuthurai,,,,,https://www.openstreetmap.org/node/11174459038
+node/11282919361,Maavatta Kaaval Aluvalagam - Tiruppur,Police Station,Tiruppur,11.081183,77.34093,Tiruppur,,,,,https://www.openstreetmap.org/node/11282919361
+node/11351138787,Police Station (node/11351138787),Police Station,Kanyakumari,8.178981,77.436771,Kanyakumari,,,,,https://www.openstreetmap.org/node/11351138787
+node/11411647470,"Police Station, Kottur",Police Station,Coimbatore,10.540172,76.983101,Coimbatore,,,,,https://www.openstreetmap.org/node/11411647470
+node/11535349506,Police Station (node/11535349506),Police Station,Tirunelveli,8.625888,77.907796,Tirunelveli,,,,,https://www.openstreetmap.org/node/11535349506
+node/11535753770,Police Station (node/11535753770),Police Station,Kanyakumari,8.204933,77.571481,Kanyakumari,,,,,https://www.openstreetmap.org/node/11535753770
+node/11782326196,Police Station (node/11782326196),Police Station,Cuddalore,11.556333,79.555321,Cuddalore,,,,,https://www.openstreetmap.org/node/11782326196
+node/11799299456,L3 Kullanchavadi Police Station,Police Station,Cuddalore,11.628054,79.669051,Cuddalore,,,,,https://www.openstreetmap.org/node/11799299456
+node/11799300848,T-2 Reddichavady Police Station,Police Station,Cuddalore,11.83646,79.785852,Cuddalore,,,,,https://www.openstreetmap.org/node/11799300848
+node/11810827238,Thiruvarur Taluk Police Station,Police Station,Tiruvarur,10.780778,79.607607,Tiruvarur,,,,TamilNadu Government,https://www.openstreetmap.org/node/11810827238
+node/11816646131,Police Station,Police Station,Theni,10.146015,77.641992,Theni,,,,,https://www.openstreetmap.org/node/11816646131
+node/11816661282,Police station,Police Station,Dindigul,10.310788,77.643062,Dindigul,,,,,https://www.openstreetmap.org/node/11816661282
+node/11816672233,Police station,Police Station,Theni,10.122447,77.545984,Theni,,,,,https://www.openstreetmap.org/node/11816672233
+node/11816672814,DYSP Police station,Police Station,Theni,10.23689,77.494347,Theni,,,,,https://www.openstreetmap.org/node/11816672814
+node/11868319265,Munneerpallam Police Station,Police Station,Tirunelveli,8.681831,77.698663,Tirunelveli,,,,,https://www.openstreetmap.org/node/11868319265
+node/11905568731,Thottiyam Police station,Police Station,Karur,10.987441,78.3363,Karur,,,,,https://www.openstreetmap.org/node/11905568731
+node/12006228469,Thiruvarur Armed Reserve,Police Station,Tiruvarur,10.769522,79.605454,Tiruvarur,,,,TN Goverment,https://www.openstreetmap.org/node/12006228469
+node/12038551386,Tirupattur Town Police Station,Police Station,Tirupathur,12.495022,78.56748,Tirupathur,,,,,https://www.openstreetmap.org/node/12038551386
+node/12044030499,Malli Police Station,Police Station,Virudhunagar,9.494492,77.693785,"Srivilliputhur - Sivakasi - Virudhunagar - Aruppukottai - Narikudi - Parthibanur Road, Virudhunagar, 626141",,626141,,Tamilnadu Police,https://www.openstreetmap.org/node/12044030499
+node/12077887621,kanjanur police station,Police Station,Viluppuram,12.06616,79.465176,Viluppuram,,,,,https://www.openstreetmap.org/node/12077887621
+node/12078422762,Police Station (node/12078422762),Police Station,Dindigul,10.433727,77.860975,Dindigul,,,,,https://www.openstreetmap.org/node/12078422762
+node/12078439759,X1 Veppur Police Station,Police Station,Kallakurichi,11.529595,79.122387,Kallakurichi,,,,,https://www.openstreetmap.org/node/12078439759
+node/12122699748,Annur Police Station,Police Station,Coimbatore,11.231549,77.101432,Coimbatore,,,,,https://www.openstreetmap.org/node/12122699748
+node/12169790434,Control Room,Police Station,Chennai,13.084869,80.218247,Chennai,,,,,https://www.openstreetmap.org/node/12169790434
+node/12187065413,Police Station (node/12187065413),Police Station,Mayiladuthurai,11.349859,79.505899,Mayiladuthurai,,,,,https://www.openstreetmap.org/node/12187065413
+node/12287751638,"E4 Police Station, Thuraiyur",Police Station,Perambalur,11.144872,78.593571,Perambalur,,,+91 4327 222 330; +91 94981 00675,,https://www.openstreetmap.org/node/12287751638
+node/12289141065,Southgate Police Station,Police Station,Madurai,9.910744,78.119724,Madurai,,,0452 233 7041,,https://www.openstreetmap.org/node/12289141065
+node/12310097751,W.2. Oomangalam Police Station,Police Station,Cuddalore,11.538053,79.43263,Cuddalore,,,,,https://www.openstreetmap.org/node/12310097751
+node/12347266609,Mallasamudram Police Station,Police Station,Salem,11.499843,78.030303,Salem,,,,,https://www.openstreetmap.org/node/12347266609
+node/12459049285,M5 Ennore Police Booth,Police Station,Chennai,13.186418,80.307606,Chennai,,,,,https://www.openstreetmap.org/node/12459049285
+node/12473835683,Peelamedu E2 Police Station,Police Station,Coimbatore,11.025364,77.010163,"Avinashi Road, Coimbatore, Coimbatore, 641004",Coimbatore,641004,,,https://www.openstreetmap.org/node/12473835683
+node/12473896167,Podanur Police Station,Police Station,Coimbatore,10.967757,76.978101,"Podanur Main Rd, Kadaiveethi, Amman Nagar, Podanur, Coimbatore, 641023",Podanur,641023,,,https://www.openstreetmap.org/node/12473896167
+node/12473897891,Ramanathapuram Police Station,Police Station,Coimbatore,11.002826,76.991672,"Puliakulam Rd, Ramasamy Nagar,, Puliakulam, Coimbatore, 641045",Puliakulam,641045,,,https://www.openstreetmap.org/node/12473897891
+node/12473901192,C1 Katoor Police Station,Police Station,Coimbatore,11.014592,76.968262,"Sathy Rd, ATT Colony, Gopalapuram, Gandhipuram, Coimbatore, 641044",Gandhipuram,641044,,,https://www.openstreetmap.org/node/12473901192
+node/12473949936,Out Post Police Station - Singanallur,Police Station,Coimbatore,11.002596,77.028842,"Bus Stand, Singanallur, Coimbatore, 641005",Singanallur,641005,,,https://www.openstreetmap.org/node/12473949936
+node/12473970775,Rathinapuri B-15 Police Station,Police Station,Coimbatore,11.025297,76.968936,"P.M.Swamy Colony, Tatabad, PM Samy Colony, Rathinapuri, Ganapathy, Coimbatore, 641006",Ganapathy,641006,,,https://www.openstreetmap.org/node/12473970775
+node/12473983454,Thudiyalur Police Station,Police Station,Coimbatore,11.081943,76.941239,"Nagapattinam , Gundlupet Hwy, TNP Nagar,Kurudampalayam, Thudiyalur, Coimbatore, 641022",Thudiyalur,641022,,,https://www.openstreetmap.org/node/12473983454
+node/12564674797,C-1 Bargur Police Station,Police Station,Krishnagiri,12.543297,78.354871,Krishnagiri,,,,,https://www.openstreetmap.org/node/12564674797
+node/12622178058,Police Station (node/12622178058),Police Station,Virudhunagar,9.172998,77.871603,Virudhunagar,,,,,https://www.openstreetmap.org/node/12622178058
+node/12622199524,Police Station (node/12622199524),Police Station,Thoothukudi,8.915983,78.021168,Thoothukudi,,,,,https://www.openstreetmap.org/node/12622199524
+node/12650886972,"All Women Police Station, Vedaranyam",Police Station,Nagapattinam,10.377126,79.85158,Nagapattinam,,,,,https://www.openstreetmap.org/node/12650886972
+node/12650925865,Police Station (node/12650925865),Police Station,Cuddalore,11.606638,79.548969,Cuddalore,,,,,https://www.openstreetmap.org/node/12650925865
+node/12705216101,Muthupet Police Station,Police Station,Tiruvarur,10.399596,79.496982,"Tiruvarur - Mannargudi - Muthupet Road, Tiruvarur",,,,,https://www.openstreetmap.org/node/12705216101
+node/12705216901,Police Station (node/12705216901),Police Station,Tiruvarur,10.386782,79.460176,"East Coast Road, Tiruvarur",,,,,https://www.openstreetmap.org/node/12705216901
+node/12729125134,Police Station (node/12729125134),Police Station,Thoothukudi,8.743477,78.124523,Thoothukudi,,,,,https://www.openstreetmap.org/node/12729125134
+node/12818542389,Police Station (node/12818542389),Police Station,Thoothukudi,8.749181,78.166659,Thoothukudi,,,,,https://www.openstreetmap.org/node/12818542389
+node/12909709888,DSP Police station,Police Station,Theni,10.238877,77.494767,Theni,,,,,https://www.openstreetmap.org/node/12909709888
+node/13001849060,B-2 R.S.Puram police station,Police Station,Coimbatore,11.005326,76.950031,Coimbatore,,,+914222476869,,https://www.openstreetmap.org/node/13001849060
+node/13127975757,Srinagar colony police booth,Police Station,Chennai,13.012506,80.227246,Chennai,,,,,https://www.openstreetmap.org/node/13127975757
+node/13337897439,Yercaud Police Station,Police Station,Salem,11.774331,78.207721,Salem,,,,,https://www.openstreetmap.org/node/13337897439
+node/13415981854,Police Station (node/13415981854),Police Station,Thoothukudi,8.499297,78.126195,Thoothukudi,,,,,https://www.openstreetmap.org/node/13415981854
+node/13609197706,Madurai Traffic Police Station,Police Station,Madurai,9.924599,78.148858,Madurai,,,,,https://www.openstreetmap.org/node/13609197706
+node/13673527215,Thondamuthur Police Station,Police Station,Coimbatore,10.9913,76.84246,Coimbatore,,,,,https://www.openstreetmap.org/node/13673527215
+node/13774340101,Police Station (node/13774340101),Police Station,Dharmapuri,12.189088,78.126426,Dharmapuri,,,,,https://www.openstreetmap.org/node/13774340101
+node/13851193949,"All Women Police Station, Kulithalai",Police Station,Tiruchirappalli,10.940635,78.420054,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/13851193949
+node/13910328978,B3 South Police Station,Police Station,Thoothukudi,8.800502,78.136842,Thoothukudi,,,,,https://www.openstreetmap.org/node/13910328978
+node/13910328979,Thoothukudi All Women Police Station,Police Station,Thoothukudi,8.80064,78.136922,Thoothukudi,,,,,https://www.openstreetmap.org/node/13910328979
+node/13938799960,Andimadam Police Station,Police Station,Ariyalur,11.335945,79.377044,Ariyalur,,,,,https://www.openstreetmap.org/node/13938799960
+node/14057634446,Selaiyur Beat Post,Police Station,Chennai,12.933913,80.129568,Chennai,,,,,https://www.openstreetmap.org/node/14057634446
+node/14057710532,Kilpennathur Police Station,Police Station,Tiruvannamalai,12.246944,79.22493,Tiruvannamalai,,,,,https://www.openstreetmap.org/node/14057710532
+node/14066727702,"K2 Police Station, Ayanavaram",Police Station,Chennai,13.093795,80.240968,Chennai,,,044 2345 2714,,https://www.openstreetmap.org/node/14066727702
+node/14067751968,R-5 Virugambakkam Police Station,Police Station,Chennai,13.057182,80.199524,Chennai,,,,,https://www.openstreetmap.org/node/14067751968
+node/14088746402,GH Police station,Police Station,Tiruchirappalli,10.812464,78.678493,Tiruchirappalli,,,,,https://www.openstreetmap.org/node/14088746402
+node/14100068902,Kilambakkam Bus Terminus Police Booth,Police Station,Chengalpattu,12.874439,80.078167,"Grand Southern Trunk Road, Chengalpattu",,,,,https://www.openstreetmap.org/node/14100068902
+node/14121893948,E-3 Teynampet Police Help Station,Police Station,Chennai,13.041254,80.250355,Chennai,,,,,https://www.openstreetmap.org/node/14121893948
+node/14133768896,Hosur Town Police Station,Police Station,Krishnagiri,12.729066,77.832369,Krishnagiri,,,,,https://www.openstreetmap.org/node/14133768896
+node/14133797255,Police Station (node/14133797255),Police Station,Tiruvannamalai,12.230448,79.069752,Tiruvannamalai,,,,,https://www.openstreetmap.org/node/14133797255
+way/24385984,G1,Police Station,Nilgiris,11.411725,76.703156,Nilgiris,,,,,https://www.openstreetmap.org/way/24385984
+way/32747326,Police Quarters,Police Station,Nilgiris,11.411991,76.688892,Nilgiris,,,,,https://www.openstreetmap.org/way/32747326
+way/43316308,Women's Police Station,Police Station,Thanjavur,10.780963,79.133916,Thanjavur,,,,,https://www.openstreetmap.org/way/43316308
+way/43316417,Thanjavur District Police HQ,Police Station,Thanjavur,10.780147,79.133584,Thanjavur,,,,,https://www.openstreetmap.org/way/43316417
+way/130035512,Police training camp 4th battalion in coimbatore,Police Station,Coimbatore,10.941258,76.939639,Coimbatore,,,,,https://www.openstreetmap.org/way/130035512
+way/133585587,Commisioner Office,Police Station,Coimbatore,11.000747,76.968164,"Old Post Office Rd, Near Railway Station, Opp. Collector Office, Gopalapuram, Coimbatore, 641018",Gopalapuram,641018,,,https://www.openstreetmap.org/way/133585587
+way/133739505,B9 Saravanampatty Police Station,Police Station,Coimbatore,11.074717,77.00271,Coimbatore,,,0422 – 2666445,,https://www.openstreetmap.org/way/133739505
+way/151586128,Nilgiri armed reserve,Police Station,Nilgiris,11.423941,76.70929,Nilgiris,,,,,https://www.openstreetmap.org/way/151586128
+way/170941790,Police Station (way/170941790),Police Station,Krishnagiri,12.529302,78.205666,Krishnagiri,,,,,https://www.openstreetmap.org/way/170941790
+way/178616405,Pavoorchatram Police Station,Police Station,Tenkasi,8.915341,77.384199,Tenkasi,,,,,https://www.openstreetmap.org/way/178616405
+way/208569725,Mylapore E1 PS,Police Station,Chennai,13.035987,80.270142,Chennai,,,,,https://www.openstreetmap.org/way/208569725
+way/211435479,Periamet PS,Police Station,Chennai,13.083112,80.270914,Chennai,,,,,https://www.openstreetmap.org/way/211435479
+way/211864592,Police Station (way/211864592),Police Station,Chennai,13.059049,80.270657,Chennai,,,,,https://www.openstreetmap.org/way/211864592
+way/214356712,R1 Police Station,Police Station,Chennai,13.034764,80.22949,"Madley Road, Chennai, Chennai, 600017",Chennai,600017,044 2345 2608,,https://www.openstreetmap.org/way/214356712
+way/217637688,Esplanade PS,Police Station,Chennai,13.086472,80.28537,Chennai,,,,,https://www.openstreetmap.org/way/217637688
+way/217767201,F4 Greams Road PS,Police Station,Chennai,13.059839,80.254797,Chennai,,,,,https://www.openstreetmap.org/way/217767201
+way/217864794,Police Station (way/217864794),Police Station,Chennai,13.123194,80.287321,Chennai,,,,,https://www.openstreetmap.org/way/217864794
+way/217878794,Police Station (way/217878794),Police Station,Chennai,13.10003,80.260144,Chennai,,,,,https://www.openstreetmap.org/way/217878794
+way/217920494,Peravallur Police Station,Police Station,Chennai,13.111398,80.226378,Chennai,,,,,https://www.openstreetmap.org/way/217920494
+way/217921152,Police Station (way/217921152),Police Station,Chennai,13.093439,80.243456,Chennai,,,,,https://www.openstreetmap.org/way/217921152
+way/217960575,D1 Triplicane Police Station,Police Station,Chennai,13.067255,80.273649,Chennai,,,,,https://www.openstreetmap.org/way/217960575
+way/231052535,K4 Police Station,Police Station,Chennai,13.092545,80.21797,Chennai,,,,,https://www.openstreetmap.org/way/231052535
+way/240511203,R3 Ashok Nagar Police Station,Police Station,Chennai,13.044081,80.217304,"2nd Avenue, Ashok Nagar, Raghavan Colony, Kodambakkam, Chennai, Tamil Nadu 600024, Chennai",,,044 2345 2617,,https://www.openstreetmap.org/way/240511203
+way/241007895,Abhiramapuram,Police Station,Chennai,13.033256,80.255967,Chennai,,,,,https://www.openstreetmap.org/way/241007895
+way/241027985,F2 Egmore Police Station,Police Station,Chennai,13.075072,80.257014,"Egmore High Road, Chennai, Chennai, 600008",Chennai,600008,044 2345 2678,,https://www.openstreetmap.org/way/241027985
+way/295103984,Sulur Police Station,Police Station,Coimbatore,11.024861,77.120484,Coimbatore,,,,,https://www.openstreetmap.org/way/295103984
+way/297184195,Police Station (way/297184195),Police Station,Tenkasi,8.999029,77.388367,Tenkasi,,,,,https://www.openstreetmap.org/way/297184195
+way/297495780,Selaiyur Police Station,Police Station,Chennai,12.922946,80.135236,"Velachery - Tambaram Main Road, Chennai",,,,,https://www.openstreetmap.org/way/297495780
+way/306980743,Police Quarters,Police Station,Erode,11.474124,77.86735,Erode,,,,,https://www.openstreetmap.org/way/306980743
+way/342464013,Mohanur Police Station,Police Station,Karur,11.06154,78.138849,Karur,,,,,https://www.openstreetmap.org/way/342464013
+way/343141650,Police Station - J1 - Saidapet,Police Station,Chennai,13.022408,80.226078,"Anna Salai (Mount Road), Saidapet, Chennai, 600015",Saidapet,600015,,,https://www.openstreetmap.org/way/343141650
+way/344108979,Police Station (way/344108979),Police Station,Cuddalore,11.61292,79.51815,Cuddalore,,,,,https://www.openstreetmap.org/way/344108979
+way/345483870,Police Station,Police Station,Namakkal,11.218535,78.169535,Namakkal,,,,,https://www.openstreetmap.org/way/345483870
+way/345483871,Women Police Station,Police Station,Namakkal,11.218313,78.169268,Namakkal,,,,,https://www.openstreetmap.org/way/345483871
+way/354469200,E5 Foreshore Estate Police Station,Police Station,Chennai,13.024555,80.274816,Chennai,,,,,https://www.openstreetmap.org/way/354469200
+way/355104205,D3 Guduvancheri Police Station,Police Station,Chennai,12.844,80.060355,"NH Service Road, Guduvanchery,, chennai, Chennai, 603202",chennai,603202,044 – 27465331,,https://www.openstreetmap.org/way/355104205
+way/360995780,Police Station (way/360995780),Police Station,Nilgiris,11.421653,76.861181,Nilgiris,,,,,https://www.openstreetmap.org/way/360995780
+way/396363992,Police Station,Police Station,Cuddalore,11.746409,79.74544,"Sankara Naidu Street, Thiruppapuliyur, Cuddalore, 607002",Thiruppapuliyur,607002,,,https://www.openstreetmap.org/way/396363992
+way/580408779,K G Chavadi Police,Police Station,Coimbatore,10.875524,76.895057,Coimbatore,,,,,https://www.openstreetmap.org/way/580408779
+way/677255714,Police Station (way/677255714),Police Station,Chennai,12.984586,80.261146,Chennai,,,,,https://www.openstreetmap.org/way/677255714
+way/683879393,Sipcot Police Station,Police Station,Ranipet,12.956211,79.304405,"MBT Road, Ranipet, Ranipet, 632403",Ranipet,632403,+91 4172 244 399,Government of India,https://www.openstreetmap.org/way/683879393
+way/685342422,vadavalli police station,Police Station,Coimbatore,11.045288,76.894905,Coimbatore,,,,,https://www.openstreetmap.org/way/685342422
+way/815415916,நாச்சியார்புரம் காவல் நிலையம்,Police Station,Sivaganga,10.080004,78.672115,Sivaganga,,,,,https://www.openstreetmap.org/way/815415916
+way/824803689,Police Station (way/824803689),Police Station,Nilgiris,11.38166,76.735945,Nilgiris,,,,,https://www.openstreetmap.org/way/824803689
+way/835251736,Ambattur T1 Police Station,Police Station,Chennai,13.107314,80.152557,Chennai,,,,,https://www.openstreetmap.org/way/835251736
+way/844760299,District Police Office,Police Station,Tiruvannamalai,12.271718,79.074927,"vengikkal, Tiruvannamalai, Tiruvannamalai, 606604",Tiruvannamalai,606604,,,https://www.openstreetmap.org/way/844760299
+way/914095632,Rajapalayam South Police Station,Police Station,Virudhunagar,9.449989,77.554669,Virudhunagar,,,+91 04563 230739,Tamil Nadu Police Department,https://www.openstreetmap.org/way/914095632
+way/914095633,Rajapalayam North Police Station,Police Station,Virudhunagar,9.458909,77.555629,Virudhunagar,,,+91 04563 230749,Tamil Nadu Police Department,https://www.openstreetmap.org/way/914095633
+way/923519789,Police Station (way/923519789),Police Station,Coimbatore,11.026644,76.951654,Coimbatore,,,,,https://www.openstreetmap.org/way/923519789
+way/1029921184,B4 Taluk Police Station,Police Station,Viluppuram,11.93668,79.506641,Viluppuram,,,,,https://www.openstreetmap.org/way/1029921184
+way/1038741390,Guindy J3 Police station,Police Station,Chennai,13.009353,80.210692,Chennai,,,,,https://www.openstreetmap.org/way/1038741390
+way/1065857124,Coastal Police Station Pazhaverkadu,Police Station,Chennai,13.420161,80.317592,Chennai,,,,,https://www.openstreetmap.org/way/1065857124
+way/1076565133,Police Station (way/1076565133),Police Station,Virudhunagar,9.511879,77.633397,Virudhunagar,,,,,https://www.openstreetmap.org/way/1076565133
+way/1076586613,B1 North Beach Police Station,Police Station,Chennai,13.089922,80.290458,Chennai,,,,,https://www.openstreetmap.org/way/1076586613
+way/1077452521,Police Station (way/1077452521),Police Station,Virudhunagar,9.498242,77.64584,Virudhunagar,,,,,https://www.openstreetmap.org/way/1077452521
+way/1083677252,Police Station (way/1083677252),Police Station,Virudhunagar,9.511505,77.633524,Virudhunagar,,,,,https://www.openstreetmap.org/way/1083677252
+way/1089835073,C3 Seven Wells Police Station,Police Station,Chennai,13.098888,80.281695,Chennai,,,,,https://www.openstreetmap.org/way/1089835073
+way/1089863482,C5 Kothavalchavadi Police Station,Police Station,Chennai,13.094035,80.28546,Chennai,,,,,https://www.openstreetmap.org/way/1089863482
+way/1090653955,C1 Flower Bazaar Police Station,Police Station,Chennai,13.088408,80.281703,Chennai,,,,,https://www.openstreetmap.org/way/1090653955
+way/1090653956,C1 Flower Bazaar Police Booth,Police Station,Chennai,13.088372,80.282394,Chennai,,,,,https://www.openstreetmap.org/way/1090653956
+way/1090950056,H1 Washermanpet Police Station,Police Station,Chennai,13.108661,80.28092,Chennai,,,,,https://www.openstreetmap.org/way/1090950056
+way/1091003580,P2 Otteri Police Station,Police Station,Chennai,13.100333,80.251563,Chennai,,,,,https://www.openstreetmap.org/way/1091003580
+way/1095915240,E3 Teynampet Police Assistance Booth,Police Station,Chennai,13.031311,80.239832,Chennai,,,,,https://www.openstreetmap.org/way/1095915240
+way/1095915254,Office of the Director General of Police Civil Supplies CID Chennai,Police Station,Chennai,13.030052,80.243235,Chennai,,,,,https://www.openstreetmap.org/way/1095915254
+way/1105182350,Perungudi Police Station,Police Station,Madurai,9.829415,78.100909,Madurai,,,,,https://www.openstreetmap.org/way/1105182350
+way/1105971900,C2 Elephant Gate Police Station,Police Station,Chennai,13.092631,80.275012,Chennai,,,,,https://www.openstreetmap.org/way/1105971900
+way/1107911282,"Office of the Deputy Commissioner of Police, Pudupet",Police Station,Chennai,13.068639,80.262058,Chennai,,,,,https://www.openstreetmap.org/way/1107911282
+way/1110191293,N3 Muthialpet Police Station,Police Station,Chennai,13.099838,80.287025,Chennai,,,,,https://www.openstreetmap.org/way/1110191293
+way/1112851437,D5 Marina Police Station,Police Station,Chennai,13.039151,80.279321,Chennai,,,,,https://www.openstreetmap.org/way/1112851437
+way/1116154383,B1 North Beach Police Station,Police Station,Chennai,13.096622,80.291512,Chennai,,,,,https://www.openstreetmap.org/way/1116154383
+way/1120328241,Armed Reserve Police,Police Station,Salem,11.667886,78.160701,"Hasthampatty - Cherry Road, Salem, Salem, 636007",Salem,636007,,Police Dept.,https://www.openstreetmap.org/way/1120328241
+way/1120601888,T.S.P. Camp,Police Station,Theni,10.464288,77.517534,Theni,,,,Tamil Nadu Police,https://www.openstreetmap.org/way/1120601888
+way/1122926992,G7 Chetpet Police Station,Police Station,Chennai,13.072535,80.252068,Chennai,,,,,https://www.openstreetmap.org/way/1122926992
+way/1123051523,D2 Anna Salai (Mount Road) Poice Station,Police Station,Chennai,13.061062,80.262232,Chennai,,,,,https://www.openstreetmap.org/way/1123051523
+way/1130577724,VEERANAM POLICE STATION,Police Station,Salem,11.686222,78.212881,"Perumapalayam Road, Salem, Salem, 636122",Salem,636122,,Government of Tamil Nadu,https://www.openstreetmap.org/way/1130577724
+way/1131693908,Tamil Nadu Police Computer Communication Centre,Police Station,Chennai,13.022507,80.271388,Chennai,,,,,https://www.openstreetmap.org/way/1131693908
+way/1131693910,Tamil Nadu State Crime Records Bureau,Police Station,Chennai,13.022806,80.271634,Chennai,,,,,https://www.openstreetmap.org/way/1131693910
+way/1132145713,Elliots Beach Police Outpost,Police Station,Chennai,13.000714,80.27122,Chennai,,,,,https://www.openstreetmap.org/way/1132145713
+way/1149353353,E1 Singanallur Police Station,Police Station,Coimbatore,11.0004,77.029689,"Agraharam,, Singanallur, Coimbatore, 641005",Singanallur,641005,,,https://www.openstreetmap.org/way/1149353353
+way/1149353354,Police Station (way/1149353354),Police Station,Coimbatore,11.000159,77.029625,Coimbatore,,,,,https://www.openstreetmap.org/way/1149353354
+way/1149353355,Police Station (way/1149353355),Police Station,Coimbatore,11.000041,77.02968,Coimbatore,,,,,https://www.openstreetmap.org/way/1149353355
+way/1149353356,Police Station (way/1149353356),Police Station,Coimbatore,10.999916,77.029711,Coimbatore,,,,,https://www.openstreetmap.org/way/1149353356
+way/1149353357,Police Station (way/1149353357),Police Station,Coimbatore,11.000146,77.029844,Coimbatore,,,,,https://www.openstreetmap.org/way/1149353357
+way/1176848837,C5 Kothavalchavadi Police Station,Police Station,Chennai,13.095344,80.280724,Chennai,,,,,https://www.openstreetmap.org/way/1176848837
+way/1182101834,D1 Chengalpattu Police Station,Police Station,Chengalpattu,12.69655,79.977339,Chengalpattu,,,,,https://www.openstreetmap.org/way/1182101834
+way/1184563415,All Women's Police Station,Police Station,Chengalpattu,12.674184,79.978428,Chengalpattu,,,,,https://www.openstreetmap.org/way/1184563415
+way/1184563416,Office Of Assistant Superintendent Of Police,Police Station,Chengalpattu,12.674332,79.978295,Chengalpattu,,,,,https://www.openstreetmap.org/way/1184563416
+way/1226498570,Police Station (way/1226498570),Police Station,Salem,11.461786,78.184727,Salem,,,,,https://www.openstreetmap.org/way/1226498570
+way/1227711041,Palapatti Police Station,Police Station,Salem,11.669908,78.139521,Salem,,,,,https://www.openstreetmap.org/way/1227711041
+way/1231867886,Police Recruit School Thiruvallur,Police Station,Tiruvallur,13.146887,79.838758,Tiruvallur,,,,,https://www.openstreetmap.org/way/1231867886
+way/1236765220,T13 Kundrathur Police Station,Police Station,Chennai,12.997405,80.091852,Chennai,,,,,https://www.openstreetmap.org/way/1236765220
+way/1237329086,Gandhimanagar Police Station,Police Station,Coimbatore,11.041279,77.006204,"Gandhima Nagar Road,Gauthama Puri Nagar, Peelamedu, Coimbatore, 641004",Peelamedu,641004,,,https://www.openstreetmap.org/way/1237329086
+way/1281445046,"Office of Deputy Superintendent of Police, Thiruvarur",Police Station,Tiruvarur,10.775372,79.615179,Tiruvarur,,,,,https://www.openstreetmap.org/way/1281445046
+way/1299705525,C3 Appan Thiruppathi Police Station,Police Station,Madurai,10.014387,78.190654,Madurai,,,,,https://www.openstreetmap.org/way/1299705525
+way/1302295328,Palladam Police Station,Police Station,Tiruppur,10.996697,77.279193,"Coimbatore - Tiruchirapalli Nedunchalai, Palladam, Tiruppur, 641664",Palladam,641664,,,https://www.openstreetmap.org/way/1302295328
+way/1302295330,Karumathampatti Police Station,Police Station,Coimbatore,11.109346,77.18021,"Coimbatore, 641659",,641659,,,https://www.openstreetmap.org/way/1302295330
+way/1305366954,Thiruvarur Town Police Station,Police Station,Tiruvarur,10.774575,79.632249,Tiruvarur,,,,Tamil Nadu Government,https://www.openstreetmap.org/way/1305366954
+way/1330398918,T-1 Police Station,Police Station,Chennai,13.130662,80.158703,Chennai,,,,,https://www.openstreetmap.org/way/1330398918
+way/1337331154,BS-1 Vellore South Police Station,Police Station,Vellore,12.916405,79.132812,Vellore,,,,Tamil Nadu Police,https://www.openstreetmap.org/way/1337331154
+way/1337331156,Ideal North Police Station,Police Station,Vellore,12.923314,79.131528,Vellore,,,,,https://www.openstreetmap.org/way/1337331156
+way/1348530473,Chettipalayam Police Station,Police Station,Coimbatore,10.917471,77.03774,"Podanur Main Road, , opposite SBI bank, Chettipalayam, Coimbatore, 641201",Chettipalayam,641201,,,https://www.openstreetmap.org/way/1348530473
+way/1349540967,District Police Station,Police Station,Ranipet,12.946862,79.318238,Ranipet,,,,,https://www.openstreetmap.org/way/1349540967
+way/1381963782,Railway Police Station,Police Station,Nilgiris,11.40454,76.696088,Nilgiris,,,,"Railway Police Force, Tamil Nadu Police",https://www.openstreetmap.org/way/1381963782
+way/1425843725,Pudumund Police Station,Police Station,Nilgiris,11.431153,76.702764,"Marlimund Road, Ootacamund, Nilgiris",Ootacamund,,,Tamil Nadu Police,https://www.openstreetmap.org/way/1425843725
+way/1454368627,Police Station (way/1454368627),Police Station,Salem,11.774323,78.207721,Salem,,,,,https://www.openstreetmap.org/way/1454368627
+way/1460005482,Podanur Police Station,Police Station,Coimbatore,10.965879,76.985466,Coimbatore,,,,,https://www.openstreetmap.org/way/1460005482
+way/1468160426,TN Police Battallion,Police Station,Coimbatore,10.941424,76.939124,Coimbatore,,,,,https://www.openstreetmap.org/way/1468160426
+way/1471879856,Police Station (way/1471879856),Police Station,Krishnagiri,12.530606,78.210572,Krishnagiri,,,,,https://www.openstreetmap.org/way/1471879856
+way/1486069895,Manavala Nagar Police Station,Police Station,Tiruvallur,13.08393,79.899111,"Melnallathur, Tiruvallur, 602002",Melnallathur,602002,,,https://www.openstreetmap.org/way/1486069895
+way/1531132888,T-13 Chitlapakkam Police Station,Police Station,Chennai,12.93954,80.138001,Chennai,,,,,https://www.openstreetmap.org/way/1531132888
+way/1535747119,Thiruverumbur Police Station,Police Station,Tiruchirappalli,10.781391,78.78102,Tiruchirappalli,,,,,https://www.openstreetmap.org/way/1535747119
+way/1544073582,டி-16 செம்மஞ்சேரி காவல் நிலையம்,Police Station,Chennai,12.8997,80.227558,Chennai,,,,,https://www.openstreetmap.org/way/1544073582
+way/1544916625,டி-3 பல்லாவரம் காவல் நிலையம்,Police Station,Chennai,12.971566,80.148569,Chennai,,,,,https://www.openstreetmap.org/way/1544916625
+way/1545967238,எஸ்4 நந்தம்பாக்கம் காவல் நிலையம்,Police Station,Chennai,13.018224,80.186565,Chennai,,,+914423452765,,https://www.openstreetmap.org/way/1545967238
+way/1551398607,Police station,Police Station,Tiruppur,11.098201,77.354749,Tiruppur,,,,,https://www.openstreetmap.org/way/1551398607
+way/1553492424,Town Crime Police Station,Police Station,Tiruvannamalai,12.230218,79.070316,Tiruvannamalai,,,,,https://www.openstreetmap.org/way/1553492424

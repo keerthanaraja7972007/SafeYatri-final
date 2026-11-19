@@ -10,12 +10,11 @@ import {
   AlertCircle,
   Compass,
   ArrowLeft,
-  Navigation,
-  ShieldAlert,
-  Cloud,
-  Sun,
+  ChevronLeft,
 } from 'lucide-react';
-import type { TouristPlace, TouristCategory } from '@/types/touristPlaces';
+import type { TouristPlace, TouristCategory, TouristRiskLevel } from '@/types/touristPlaces';
+import RiskAssessmentBadge from '@/components/RiskAssessmentBadge';
+import RiskAssessmentPanel from '@/components/RiskAssessmentPanel';
 
 const CATEGORIES: TouristCategory[] = [
   'Heritage',
@@ -49,10 +48,15 @@ type ExploreDashboardProps = {
   onRetry: () => void;
 };
 
+const PAGE_SIZE = 36;
+
 export default function ExploreDashboard({ places, state, onRetry }: ExploreDashboardProps) {
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<TouristCategory | 'All'>('All');
   const [selectedDistrict, setSelectedDistrict] = useState<string>('All');
+  const [selectedRiskLevel, setSelectedRiskLevel] = useState<TouristRiskLevel | 'All'>('All');
+  const [selectedLocation, setSelectedLocation] = useState('');
+  const [page, setPage] = useState(1);
   const [selectedPlace, setSelectedPlace] = useState<TouristPlace | null>(null);
 
   const districts = useMemo(() => {
@@ -62,16 +66,18 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
 
   const filteredPlaces = useMemo(() => {
     return places.filter((place) => {
-      const matchesSearch =
-        search.trim() === '' ||
-        place.name.toLowerCase().includes(search.toLowerCase()) ||
-        place.city?.toLowerCase().includes(search.toLowerCase()) ||
-        place.district.toLowerCase().includes(search.toLowerCase());
+      const matchesSearch = search.trim() === '' ||
+        `${place.name} ${place.city ?? ''} ${place.location_label ?? ''} ${place.district} ${place.category}`.toLowerCase().includes(search.trim().toLowerCase());
       const matchesCategory = selectedCategory === 'All' || place.category === selectedCategory;
       const matchesDistrict = selectedDistrict === 'All' || place.district === selectedDistrict;
-      return matchesSearch && matchesCategory && matchesDistrict;
+      const matchesRiskLevel = selectedRiskLevel === 'All' || place.risk_assessment?.risk_level === selectedRiskLevel;
+      const matchesLocation = !selectedLocation.trim() || `${place.city ?? ''} ${place.location_label ?? ''} ${place.district}`.toLowerCase().includes(selectedLocation.trim().toLowerCase());
+      return matchesSearch && matchesCategory && matchesDistrict && matchesLocation && matchesRiskLevel;
     });
-  }, [places, search, selectedCategory, selectedDistrict]);
+  }, [places, search, selectedCategory, selectedDistrict, selectedLocation, selectedRiskLevel]);
+
+  const pageCount = Math.max(1, Math.ceil(filteredPlaces.length / PAGE_SIZE));
+  const visiblePlaces = filteredPlaces.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   // --- Destination details view ---
   if (selectedPlace) {
@@ -85,6 +91,9 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
             <ArrowLeft className="h-4 w-4" />
             Back to destinations
           </button>
+          <Link to={`/safety-map?placeId=${encodeURIComponent(selectedPlace.id)}`} className="mb-6 ml-3 inline-flex items-center gap-1.5 rounded-xl bg-saf-blue px-4 py-2.5 text-sm font-semibold text-white">
+            <MapPin className="h-4 w-4" />Open in safety map
+          </Link>
 
           <div className="overflow-hidden rounded-3xl border border-saf-border bg-saf-white shadow-card">
             {/* Header */}
@@ -117,9 +126,11 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
                     <h2 className="text-sm font-semibold uppercase tracking-wider text-saf-muted">
                       About this destination
                     </h2>
+                    {selectedPlace.name_ta && <p className="mt-2 text-sm text-saf-muted">{selectedPlace.name_ta}</p>}
                     <p className="mt-2 text-base leading-relaxed text-saf-text">
                       {selectedPlace.description}
                     </p>
+                    {selectedPlace.source_url && <a href={selectedPlace.source_url} target="_blank" rel="noreferrer" className="mt-3 inline-block text-sm font-semibold text-saf-blue hover:underline">Open source record</a>}
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
@@ -146,39 +157,7 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
                   </div>
                 </div>
 
-                {/* Right: future safety intelligence placeholder */}
-                <div>
-                  <div className="rounded-2xl border border-dashed border-saf-border bg-saf-bg p-6">
-                    <div className="flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-saf-blue/10">
-                        <ShieldAlert className="h-5 w-5 text-saf-blue" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-bold text-saf-text">Safety Intelligence</p>
-                        <p className="text-xs text-saf-muted">Coming in a later stage</p>
-                      </div>
-                    </div>
-                    <p className="mt-4 text-sm leading-relaxed text-saf-muted">
-                      Safety intelligence will be available in a later development stage.
-                      This will include AI-powered safety insights, route guidance and
-                      emergency information for this destination.
-                    </p>
-                    <div className="mt-4 space-y-2">
-                      <div className="flex items-center gap-2 rounded-lg border border-saf-border bg-saf-white p-3 opacity-60">
-                        <Sun className="h-4 w-4 text-saf-orange" />
-                        <span className="text-xs text-saf-muted">Weather conditions</span>
-                      </div>
-                      <div className="flex items-center gap-2 rounded-lg border border-saf-border bg-saf-white p-3 opacity-60">
-                        <Navigation className="h-4 w-4 text-saf-blue" />
-                        <span className="text-xs text-saf-muted">Safer route guidance</span>
-                      </div>
-                      <div className="flex items-center gap-2 rounded-lg border border-saf-border bg-saf-white p-3 opacity-60">
-                        <Cloud className="h-4 w-4 text-saf-cyan" />
-                        <span className="text-xs text-saf-muted">Travel conditions</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <RiskAssessmentPanel assessment={selectedPlace.risk_assessment} />
               </div>
             </div>
           </div>
@@ -219,7 +198,7 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
             <input
               type="text"
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={(e) => { setSearch(e.target.value); setPage(1); }}
               placeholder="Search destinations by name, city, or district..."
               className="w-full rounded-xl border border-saf-border bg-saf-white py-3 pl-12 pr-4 text-sm text-saf-text shadow-soft outline-none transition-all placeholder:text-saf-muted focus:border-saf-blue/40 focus:ring-2 focus:ring-saf-blue/10"
             />
@@ -237,7 +216,7 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-wrap gap-2">
               <button
-                onClick={() => setSelectedCategory('All')}
+                onClick={() => { setSelectedCategory('All'); setPage(1); }}
                 className={`rounded-lg px-3.5 py-2 text-xs font-semibold transition-all ${
                   selectedCategory === 'All'
                     ? 'gradient-blue-indigo text-white shadow-soft'
@@ -249,7 +228,7 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
               {CATEGORIES.map((cat) => (
                 <button
                   key={cat}
-                  onClick={() => setSelectedCategory(cat)}
+                  onClick={() => { setSelectedCategory(cat); setPage(1); }}
                   className={`rounded-lg px-3.5 py-2 text-xs font-semibold transition-all ${
                     selectedCategory === cat
                       ? 'gradient-blue-indigo text-white shadow-soft'
@@ -265,7 +244,7 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
               <Filter className="h-4 w-4 text-saf-muted" />
               <select
                 value={selectedDistrict}
-                onChange={(e) => setSelectedDistrict(e.target.value)}
+                onChange={(e) => { setSelectedDistrict(e.target.value); setPage(1); }}
                 className="rounded-xl border border-saf-border bg-saf-white px-4 py-2.5 text-sm font-medium text-saf-text shadow-soft outline-none transition-all focus:border-saf-blue/40 focus:ring-2 focus:ring-saf-blue/10"
               >
                 {districts.map((d) => (
@@ -274,6 +253,24 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
                   </option>
                 ))}
               </select>
+              <select
+                aria-label="Filter by ML risk level"
+                value={selectedRiskLevel}
+                onChange={(e) => { setSelectedRiskLevel(e.target.value as TouristRiskLevel | 'All'); setPage(1); }}
+                className="rounded-xl border border-saf-border bg-saf-white px-4 py-2.5 text-sm font-medium text-saf-text shadow-soft outline-none transition-all focus:border-saf-blue/40 focus:ring-2 focus:ring-saf-blue/10"
+              >
+                <option value="All">All Risk Levels</option>
+                <option value="LOW RISK">Low Risk</option>
+                <option value="MODERATE RISK">Moderate Risk</option>
+                <option value="HIGH RISK">High Risk</option>
+              </select>
+              <input
+                value={selectedLocation}
+                onChange={(e) => { setSelectedLocation(e.target.value); setPage(1); }}
+                aria-label="Filter by city or source location"
+                placeholder="Filter city / location"
+                className="w-full rounded-xl border border-saf-border bg-saf-white px-4 py-2.5 text-sm font-medium text-saf-text shadow-soft outline-none transition-all focus:border-saf-blue/40 focus:ring-2 focus:ring-saf-blue/10"
+              />
             </div>
           </div>
         </div>
@@ -287,12 +284,15 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
               </>
             )}
           </p>
-          {(selectedCategory !== 'All' || selectedDistrict !== 'All' || search) && (
+          {(selectedCategory !== 'All' || selectedDistrict !== 'All' || selectedRiskLevel !== 'All' || selectedLocation || search) && (
             <button
               onClick={() => {
                 setSearch('');
                 setSelectedCategory('All');
                 setSelectedDistrict('All');
+                setSelectedRiskLevel('All');
+                setSelectedLocation('');
+                setPage(1);
               }}
               className="text-sm font-medium text-saf-blue transition-colors hover:text-saf-indigo"
             >
@@ -341,8 +341,9 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
           )}
 
           {state === 'success' && filteredPlaces.length > 0 && (
+            <>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {filteredPlaces.map((place) => (
+              {visiblePlaces.map((place) => (
                 <button
                   key={place.id}
                   onClick={() => setSelectedPlace(place)}
@@ -358,6 +359,7 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
                     >
                       {place.category}
                     </span>
+                    <RiskAssessmentBadge level={place.risk_assessment?.risk_level} className="absolute right-3 top-3" />
                   </div>
 
                   {/* Content */}
@@ -379,6 +381,14 @@ export default function ExploreDashboard({ places, state, onRetry }: ExploreDash
                 </button>
               ))}
             </div>
+            <div className="mt-6 flex items-center justify-between gap-3 text-sm text-saf-muted">
+              <span>Page {page} of {pageCount} · Showing {visiblePlaces.length} of {filteredPlaces.length}</span>
+              <div className="flex gap-2">
+                <button onClick={() => setPage((current) => Math.max(1, current - 1))} disabled={page === 1} aria-label="Previous page" className="inline-flex items-center gap-1 rounded-lg border border-saf-border bg-saf-white px-3 py-2 font-semibold text-saf-text disabled:opacity-40"><ChevronLeft className="h-4 w-4" />Previous</button>
+                <button onClick={() => setPage((current) => Math.min(pageCount, current + 1))} disabled={page === pageCount} aria-label="Next page" className="inline-flex items-center gap-1 rounded-lg border border-saf-border bg-saf-white px-3 py-2 font-semibold text-saf-text disabled:opacity-40">Next<ChevronRight className="h-4 w-4" /></button>
+              </div>
+            </div>
+            </>
           )}
         </div>
       </div>

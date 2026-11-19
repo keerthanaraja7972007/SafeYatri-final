@@ -1,79 +1,102 @@
 import { supabase } from '@/lib/supabase';
 import type { WeatherData, WeatherDataInput } from '@/types/weatherData';
 
-export async function getWeatherData(): Promise<WeatherData[]> {
-  if (!supabase) throw new Error('Database is not configured.');
-
-  const pageSize = 1000;
-  const records: WeatherData[] = [];
-
-  for (let from = 0; ; from += pageSize) {
-    const { data, error } = await supabase
-      .from('weather_data')
-      .select('*')
-      .order('recorded_at', { ascending: false })
-      .range(from, from + pageSize - 1);
-
-    if (error) throw error;
-    records.push(...((data ?? []) as WeatherData[]));
-    if (!data || data.length < pageSize) break;
+async function safeQuery<T>(request: () => Promise<T>, fallback: T): Promise<T> {
+  try {
+    return await request();
+  } catch {
+    return fallback;
   }
+}
 
-  return records;
+export async function getWeatherData(): Promise<WeatherData[]> {
+  const client = supabase;
+  if (!client) return [];
+
+  return safeQuery(async () => {
+    const pageSize = 1000;
+    const records: WeatherData[] = [];
+
+    for (let from = 0; ; from += pageSize) {
+      const { data, error } = await client
+        .from('weather_data')
+        .select('*')
+        .order('recorded_at', { ascending: false })
+        .range(from, from + pageSize - 1);
+
+      if (error) throw error;
+      records.push(...((data ?? []) as WeatherData[]));
+      if (!data || data.length < pageSize) break;
+    }
+
+    return records;
+  }, []);
 }
 
 export async function getWeatherDataCount(): Promise<number> {
-  if (!supabase) throw new Error('Database is not configured.');
+  const client = supabase;
+  if (!client) return 0;
 
-  const { count, error } = await supabase
-    .from('weather_data')
-    .select('id', { count: 'exact', head: true });
+  return safeQuery(async () => {
+    const { count, error } = await client
+      .from('weather_data')
+      .select('id', { count: 'exact', head: true });
 
-  if (error) throw error;
-  return count ?? 0;
+    if (error) throw error;
+    return count ?? 0;
+  }, 0);
 }
 
 export async function getWeatherDataByTouristPlace(touristPlaceId: string): Promise<WeatherData[]> {
-  if (!supabase) throw new Error('Database is not configured.');
+  const client = supabase;
+  if (!client) return [];
 
-  const { data, error } = await supabase
-    .from('weather_data')
-    .select('*')
-    .eq('tourist_place_id', touristPlaceId)
-    .order('recorded_at', { ascending: false });
+  return safeQuery(async () => {
+    const { data, error } = await client
+      .from('weather_data')
+      .select('*')
+      .eq('tourist_place_id', touristPlaceId)
+      .order('recorded_at', { ascending: false });
 
-  if (error) throw error;
-  return (data ?? []) as WeatherData[];
+    if (error) throw error;
+    return (data ?? []) as WeatherData[];
+  }, []);
 }
 
 export async function getRecentWeatherDataByTouristPlace(
   touristPlaceId: string,
   limit = 24
 ): Promise<WeatherData[]> {
-  if (!supabase) throw new Error('Database is not configured.');
+  const client = supabase;
+  if (!client) return [];
 
-  const { data, error } = await supabase
-    .from('weather_data')
-    .select('*')
-    .eq('tourist_place_id', touristPlaceId)
-    .order('recorded_at', { ascending: false })
-    .range(0, Math.max(0, limit - 1));
+  return safeQuery(async () => {
+    const { data, error } = await client
+      .from('weather_data')
+      .select('*')
+      .eq('tourist_place_id', touristPlaceId)
+      .order('recorded_at', { ascending: false })
+      .range(0, Math.max(0, limit - 1));
 
-  if (error) throw error;
-  return (data ?? []) as WeatherData[];
+    if (error) throw error;
+    return (data ?? []) as WeatherData[];
+  }, []);
 }
 
 export async function getWeatherDataByDistrict(district: string): Promise<WeatherData[]> {
-  if (!supabase) throw new Error('Database is not configured.');
+  const client = supabase;
+  if (!client) return [];
 
-  const { data, error } = await supabase
-    .from('weather_data')
-    .select('*')
-    .eq('district', district)
-    .order('recorded_at', { ascending: false });
+  return safeQuery(async () => {
+    const { data, error } = await client
+      .from('weather_data')
+      .select('*')
+      .eq('district', district)
+      .order('recorded_at', { ascending: false });
 
-  if (error) throw error;
-  return (data ?? []) as WeatherData[];
+    if (error) throw error;
+    return (data ?? []) as WeatherData[];
+  }, []);
 }
 
 export async function createWeatherData(input: WeatherDataInput): Promise<WeatherData> {

@@ -71,11 +71,16 @@
   background: #94A3B8;
 }
 
-/* Hide horizontal scrollbar for scroll containers */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+/* Keep scrollbars visible so long destination lists remain discoverable. */
 .no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  scrollbar-width: auto;
 }
+
+/* Home page uses one consistent black border and blue accent. */
+.home-page-root .rounded-xl, .home-page-root .rounded-2xl, .home-page-root .rounded-3xl { border-color: #111827; border-width: 2px; }
+.home-page-root .text-saf-cyan, .home-page-root .text-saf-indigo { color: #2563eb; }
+.home-page-root .bg-saf-cyan\/10, .home-page-root .bg-saf-indigo\/10 { background-color: rgb(37 99 235 / 0.08); }
+
+.home-page-root [class*="gradient-"] { background-image: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); }
+.home-page-root .text-saf-green, .home-page-root .text-saf-red, .home-page-root .text-saf-orange, .home-page-root .text-saf-yellow, .home-page-root .text-saf-sky { color: #2563eb; }
+.home-page-root [class*="bg-saf-green/"], .home-page-root [class*="bg-saf-red/"], .home-page-root [class*="bg-saf-orange/"], .home-page-root [class*="bg-saf-yellow/"], .home-page-root [class*="bg-saf-sky/"] { background-color: rgb(37 99 235 / 0.08); }

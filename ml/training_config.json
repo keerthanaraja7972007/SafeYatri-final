@@ -1,0 +1,73 @@
+{
+  "dataset": "data/ml/tourist_safety_features.csv",
+  "dataset_sha256": "7887e5cd4a2bb81a1b7757c617ca5f6441549a94c586be14f93e87e93dc04478",
+  "rows": 1958,
+  "selected_features": [
+    "nearest_police_distance_km",
+    "police_count_1km",
+    "police_count_5km",
+    "nearest_hospital_distance_km",
+    "hospital_count_1km",
+    "hospital_count_5km",
+    "nearest_phc_distance_km",
+    "phc_count_1km",
+    "nearest_fire_rescue_distance_km",
+    "weather_2024_nearest_station_mean_temperature_c",
+    "weather_2024_nearest_station_mean_daily_precipitation_mm",
+    "weather_2024_nearest_station_mean_daily_max_wind_speed_kmh",
+    "weather_2024_nearest_station_mean_relative_humidity_pct",
+    "district_macro_total_cognizable_crime_ipc_sll_rate_2023_per_100k",
+    "district_macro_road_accident_rate_2023_per_100k",
+    "district_listed_historical_disaster_record_count"
+  ],
+  "transformed_feature_names": [
+    "nearest_police_distance_km",
+    "police_count_1km",
+    "police_count_5km",
+    "nearest_hospital_distance_km",
+    "hospital_count_1km",
+    "hospital_count_5km",
+    "nearest_phc_distance_km",
+    "phc_count_1km",
+    "nearest_fire_rescue_distance_km",
+    "weather_2024_nearest_station_mean_temperature_c",
+    "weather_2024_nearest_station_mean_daily_precipitation_mm",
+    "weather_2024_nearest_station_mean_daily_max_wind_speed_kmh",
+    "weather_2024_nearest_station_mean_relative_humidity_pct",
+    "district_macro_total_cognizable_crime_ipc_sll_rate_2023_per_100k",
+    "district_macro_road_accident_rate_2023_per_100k",
+    "district_listed_historical_disaster_record_count",
+    "missingindicator_district_macro_total_cognizable_crime_ipc_sll_rate_2023_per_100k",
+    "missingindicator_district_macro_road_accident_rate_2023_per_100k",
+    "missingindicator_district_listed_historical_disaster_record_count"
+  ],
+  "random_state": 42,
+  "k_values": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "selected_k": 5,
+  "kmeans": {
+    "init": "k-means++",
+    "n_init": 50,
+    "max_iter": 500
+  },
+  "isolation_forest": {
+    "n_estimators": 300,
+    "max_samples": "auto",
+    "contamination": "auto"
+  },
+  "preprocessing": {
+    "imputer": "median",
+    "add_missing_indicators": true,
+    "scaler": "StandardScaler"
+  },
+  "python": "3.12.10",
+  "pandas": "3.0.3",
+  "numpy": "2.5.0",
+  "scikit_learn": "1.9.0",
+  "joblib": "1.5.3"
+}

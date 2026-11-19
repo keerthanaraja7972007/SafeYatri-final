@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import ExploreDashboard from '@/components/ExploreDashboard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { getTouristPlaces, isSupabaseConfigured } from '@/services/touristPlacesService';
+import { getTouristPlaces } from '@/services/touristPlacesService';
 import type { TouristPlace } from '@/types/touristPlaces';
 
 type State = 'loading' | 'success' | 'error' | 'empty';
@@ -23,10 +23,6 @@ export default function Dashboard() {
   }, []);
 
   useEffect(() => {
-    if (!isSupabaseConfigured) {
-      setState('error');
-      return;
-    }
     fetchPlaces();
   }, [fetchPlaces]);
 

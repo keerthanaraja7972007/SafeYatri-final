@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, ChevronRight } from 'lucide-react';
 import Logo from './Logo';
 import LanguageSelector from './LanguageSelector';
 import { useTranslation } from '@/i18n';
+import { useAuth } from '@/auth/AuthContext';
+import { supabase } from '@/lib/supabase';
+import { recordActivity } from '@/services/activityService';
 
 const NAV_LINKS = [
   { label: 'home', href: '/' },
@@ -19,6 +22,19 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const { t } = useTranslation();
+  const { user, profile, isDemoAdmin, clearDemoAdmin } = useAuth();
+  const navigate = useNavigate();
+
+  const logout = async () => {
+    if (isDemoAdmin) {
+      clearDemoAdmin();
+      navigate('/', { replace: true });
+      return;
+    }
+    await recordActivity('logout');
+    await supabase?.auth.signOut();
+    navigate('/', { replace: true });
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -88,6 +104,11 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <LanguageSelector />
+          {isDemoAdmin ? <><Link to="/admin" className="rounded-lg px-3 py-2 text-sm font-semibold text-saf-blue">Admin</Link><span className="max-w-36 truncate text-sm font-semibold text-saf-muted">Demo administrator</span><button onClick={logout} className="rounded-lg border border-saf-border px-3 py-2 text-sm font-semibold text-saf-text">Sign out</button></> : user ? <>
+            {profile?.role === 'admin' && <Link to="/admin" className="rounded-lg px-3 py-2 text-sm font-semibold text-saf-blue">Admin</Link>}
+            <span className="max-w-36 truncate text-sm font-semibold text-saf-muted">{profile?.full_name || user.email}</span>
+            <button onClick={logout} className="rounded-lg border border-saf-border px-3 py-2 text-sm font-semibold text-saf-text">Sign out</button>
+          </> : <Link to="/login" className="rounded-lg px-3 py-2 text-sm font-semibold text-saf-blue">Sign in</Link>}
           <Link
             to="/dashboard"
             className="inline-flex items-center gap-1.5 rounded-xl gradient-blue-indigo px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition-all hover:shadow-float hover:-translate-y-0.5"
@@ -140,6 +161,7 @@ export default function Navbar() {
                 {t('getStarted')}
                 <ChevronRight className="h-4 w-4" />
               </Link>
+              {isDemoAdmin ? <div className="mt-2 flex items-center justify-between rounded-xl bg-saf-bg px-4 py-3"><span className="truncate text-sm font-semibold text-saf-text">Demo administrator</span><button onClick={logout} className="ml-2 text-sm font-bold text-saf-blue">Sign out</button></div> : user ? <div className="mt-2 flex items-center justify-between rounded-xl bg-saf-bg px-4 py-3"><span className="truncate text-sm font-semibold text-saf-text">{profile?.full_name || user.email}</span><button onClick={logout} className="ml-2 text-sm font-bold text-saf-blue">Sign out</button></div> : <Link to="/login" className="mt-2 rounded-xl px-4 py-3 text-sm font-bold text-saf-blue">Sign in</Link>}
               <LanguageSelector className="mt-2 justify-center" />
             </div>
           </div>

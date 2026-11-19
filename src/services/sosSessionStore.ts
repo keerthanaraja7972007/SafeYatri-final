@@ -5,8 +5,9 @@ export interface SosSession {
   startedAt: string;
   endedAt: string | null;
   status: SosSessionStatus;
-  latitude: number;
-  longitude: number;
+  latitude: number | null;
+  longitude: number | null;
+  accuracy: number | null;
 }
 
 interface SosSnapshot {

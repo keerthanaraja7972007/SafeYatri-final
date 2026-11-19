@@ -21,7 +21,7 @@ import {
   BarChart3,
 } from 'lucide-react';
 import type { FeatureEngineeringResult } from '@/services/featureEngineering/featureEngineeringService';
-import { runFeatureEngineering, isSupabaseConfigured, FEATURE_REGISTRY } from '@/services/featureEngineering/featureEngineeringService';
+import { runFeatureEngineering, FEATURE_REGISTRY } from '@/services/featureEngineering/featureEngineeringService';
 import { RISK_LABEL_DEFINITIONS } from '@/services/riskMethodology/riskLabelDefinitions';
 import { THRESHOLD_VALIDATION_NOTE } from '@/services/riskMethodology/riskLabelRules';
 
@@ -59,10 +59,6 @@ export default function FeatureEngineeringDashboard() {
 
   const run = useCallback(async () => {
     setLoadState('loading');
-    if (!isSupabaseConfigured) {
-      setLoadState('error');
-      return;
-    }
     try {
       const res = await runFeatureEngineering();
       setResult(res);
@@ -73,10 +69,6 @@ export default function FeatureEngineeringDashboard() {
   }, []);
 
   useEffect(() => {
-    if (!isSupabaseConfigured) {
-      setLoadState('error');
-      return;
-    }
     run();
   }, [run]);
 

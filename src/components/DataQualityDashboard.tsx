@@ -23,7 +23,6 @@ import type { DatasetQualitySummary } from '@/utils/dataQuality';
 import {
   preprocessAll,
   getPreprocessingLogs,
-  isSupabaseConfigured,
 } from '@/services/preprocessing/preprocessingService';
 
 type LoadState = 'idle' | 'loading' | 'success' | 'error';
@@ -53,10 +52,6 @@ export default function DataQualityDashboard() {
 
   const runPreprocessing = useCallback(async () => {
     setLoadState('loading');
-    if (!isSupabaseConfigured) {
-      setLoadState('error');
-      return;
-    }
     try {
       const allResults = await preprocessAll();
       setResults(allResults);
@@ -70,10 +65,6 @@ export default function DataQualityDashboard() {
 
   useEffect(() => {
     // Load existing logs on mount without running preprocessing
-    if (!isSupabaseConfigured) {
-      setLoadState('error');
-      return;
-    }
     getPreprocessingLogs()
       .then((data) => {
         setLogs(data);

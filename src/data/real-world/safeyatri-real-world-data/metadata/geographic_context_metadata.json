@@ -1,0 +1,16 @@
+{
+  "dataset_name": "Tamil Nadu 38 Districts Administrative Boundaries & Spatial Extents",
+  "source": "OpenStreetMap Authoritative Relations (admin_level=5)",
+  "download_status": "SUCCESS",
+  "csv_file": "raw\\geographic\\tamil_nadu_38_districts_administrative_boundaries.csv",
+  "geojson_file": "raw\\geographic\\tamil_nadu_38_districts_boundaries.geojson",
+  "raw_source_file": "source_files\\osm_tamil_nadu_districts_admin_raw.json",
+  "record_count": 38,
+  "district_count": 38,
+  "geographic_coverage": "All 38 Districts of Tamil Nadu",
+  "date_coverage": "Current 2026 Administrative Boundaries",
+  "collection_date": "2026-10-01",
+  "status": "COMPLETED",
+  "missing_information": "None",
+  "notes": "Verified bounding boxes, centroids, and OSM administrative relation IDs for all 38 districts"
+}

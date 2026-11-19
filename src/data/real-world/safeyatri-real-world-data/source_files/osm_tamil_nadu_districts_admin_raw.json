@@ -1,0 +1,809 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-01T16:52:15Z",
+    "timestamp_areas_base": "2026-09-30T08:16:49Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "relation",
+      "id": 448985,
+      "center": {
+        "lat": 11.4466664,
+        "lon": 76.6238646
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Nilgiris",
+        "name:kn": "\u0ca8\u0cc0\u0cb2\u0c97\u0cbf\u0cb0\u0cbf \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ml": "\u0d28\u0d40\u0d32\u0d17\u0d3f\u0d30\u0d3f \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0ba8\u0bc0\u0bb2\u0b95\u0bbf\u0bb0\u0bbf \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Nilgiris District",
+        "old_name": "\u0ba4\u0bc8\u0bb2\u0bae\u0bcd",
+        "ref:LGD:district": "587",
+        "type": "boundary",
+        "wikidata": "Q15188",
+        "wikipedia": "en:Nilgiris district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1818782,
+      "center": {
+        "lat": 8.3278707,
+        "lon": 77.3427437
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Kanniyakumari",
+        "name:kn": "\u0c95\u0ca8\u0ccd\u0caf\u0cbe\u0c95\u0cc1\u0cae\u0cbe\u0cb0\u0cbf \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ml": "\u0d15\u0d28\u0d4d\u0d2f\u0d3e\u0d15\u0d41\u0d2e\u0d3e\u0d30\u0d3f \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0b95\u0ba9\u0bcd\u0ba9\u0bbf\u0baf\u0bbe\u0b95\u0bc1\u0bae\u0bb0\u0bbf \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Kanniyakumari District",
+        "ref:LGD:district": "575",
+        "type": "boundary",
+        "wikidata": "Q15158",
+        "wikipedia": "en:Kanyakumari district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1818783,
+      "center": {
+        "lat": 8.549733,
+        "lon": 77.5740623
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Tirunelveli",
+        "name:kn": "\u0ca4\u0cbf\u0cb0\u0cc1\u0ca8\u0cc6\u0cb2\u0ccd\u0cb5\u0cc7\u0cb2\u0cbf \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ml": "\u0d24\u0d3f\u0d30\u0d41\u0d28\u0d46\u0d7d\u0d35\u0d47\u0d32\u0d3f \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0ba4\u0bbf\u0bb0\u0bc1\u0ba8\u0bc6\u0bb2\u0bcd\u0bb5\u0bc7\u0bb2\u0bbf \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Tirunelveli District",
+        "ref:LGD:district": "592",
+        "type": "boundary",
+        "wikidata": "Q15200",
+        "wikipedia": "en:Tirunelveli district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819211,
+      "center": {
+        "lat": 10.2901427,
+        "lon": 78.8465609
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "is_in:country": "India",
+        "is_in:state": "Tamil Nadu",
+        "name": "Pudukkottai",
+        "name:kn": "\u0caa\u0cc1\u0ca6\u0cc1\u0c95\u0ccd\u0c95\u0ccb\u0c9f\u0ccd\u0c9f\u0cc8 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0baa\u0bc1\u0ba4\u0bc1\u0b95\u0bcd\u0b95\u0bcb\u0b9f\u0bcd\u0b9f\u0bc8 \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Pudukkottai District",
+        "ref:LGD:district": "582",
+        "source:geometry": "census2011",
+        "type": "boundary",
+        "wikidata": "Q15190",
+        "wikipedia": "en:Pudukkottai district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819212,
+      "center": {
+        "lat": 9.9650283,
+        "lon": 78.5683679
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Sivagangai",
+        "name:kn": "\u0cb6\u0cbf\u0cb5\u0c97\u0c82\u0c97\u0cc8 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0b9a\u0bbf\u0bb5\u0b95\u0b99\u0bcd\u0b95\u0bc8 \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Sivagangai District",
+        "ref:LGD:district": "585",
+        "type": "boundary",
+        "wikidata": "Q15195",
+        "wikipedia": "en:Sivaganga district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819213,
+      "center": {
+        "lat": 9.492676,
+        "lon": 77.8852997
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Virudhunagar",
+        "name:kn": "\u0cb5\u0cbf\u0cb0\u0cc1\u0ca6\u0cc1\u0ca8\u0c97\u0cb0\u0ccd \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ml": "\u0d35\u0d3f\u0d30\u0d41\u0d26\u0d41\u0d28\u0d17\u0d7c \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0bb5\u0bbf\u0bb0\u0bc1\u0ba4\u0bc1\u0ba8\u0b95\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Virudhunagar District",
+        "ref:LGD:district": "597",
+        "type": "boundary",
+        "wikidata": "Q15209",
+        "wikipedia": "en:Virudhunagar district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819273,
+      "center": {
+        "lat": 10.4262145,
+        "lon": 77.8029336
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Dindigul",
+        "name:kn": "\u0ca6\u0cbf\u0c82\u0ca1\u0cc1\u0c97\u0cb2\u0ccd \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ko": "\ub518\ub514\uad74\uad6c",
+        "name:ml": "\u0d26\u0d3f\u0d23\u0d4d\u0d1f\u0d41\u0d15\u0d4d\u0d15\u0d7d \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0ba4\u0bbf\u0ba3\u0bcd\u0b9f\u0bc1\u0b95\u0bcd\u0b95\u0bb2\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Dindigul District",
+        "ref:LGD:district": "572",
+        "type": "boundary",
+        "wikidata": "Q15154",
+        "wikipedia": "en:Dindigul district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819275,
+      "center": {
+        "lat": 9.9367431,
+        "lon": 77.9685857
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Madurai",
+        "name:kn": "\u0cae\u0ca6\u0cc1\u0cb0\u0cc8 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ko": "\ub9c8\ub450\ub77c\uc774\uad6c",
+        "name:ml": "\u0d2e\u0d27\u0d41\u0d30 \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0bae\u0ba4\u0bc1\u0bb0\u0bc8 \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Madurai District",
+        "ref:LGD:district": "578",
+        "type": "boundary",
+        "wikidata": "Q15184",
+        "wikipedia": "en:Madurai district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819276,
+      "center": {
+        "lat": 9.8687882,
+        "lon": 77.4476351
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Theni",
+        "name:kn": "\u0ca4\u0cc7\u0ca8\u0cbf \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ml": "\u0d24\u0d47\u0d28\u0d3f \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0ba4\u0bc7\u0ba9\u0bbf \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Theni District",
+        "ref:LGD:district": "588",
+        "type": "boundary",
+        "wikidata": "Q15196",
+        "wikipedia": "en:Theni district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819317,
+      "center": {
+        "lat": 10.8128302,
+        "lon": 76.9747994
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Coimbatore",
+        "name:kn": "\u0c95\u0cca\u0caf\u0c82\u0cac\u0ca4\u0ccd\u0ca4\u0cc2\u0cb0\u0cc1 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ml": "\u0d15\u0d4b\u0d2f\u0d2e\u0d4d\u0d2a\u0d24\u0d4d\u0d24\u0d42\u0d7c \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0b95\u0bcb\u0baf\u0bae\u0bcd\u0baa\u0bc1\u0ba4\u0bcd\u0ba4\u0bc2\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Coimbatore District",
+        "ref:LGD:district": "569",
+        "type": "boundary",
+        "wikidata": "Q15136",
+        "wikipedia": "en:Coimbatore district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819318,
+      "center": {
+        "lat": 11.4886607,
+        "lon": 77.3833421
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Erode",
+        "name:kn": "\u0c88\u0cb0\u0ccb\u0ca1\u0cc1 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ml": "\u0d08\u0d31\u0d4b\u0d21\u0d4d\u200c \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0b88\u0bb0\u0bcb\u0b9f\u0bc1 \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Erode District",
+        "ref:LGD:district": "573",
+        "type": "boundary",
+        "wikidata": "Q15155",
+        "wikipedia": "en:Erode district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819319,
+      "center": {
+        "lat": 10.82201,
+        "lon": 78.1680358
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Karur",
+        "name:kn": "\u0c95\u0cb0\u0cc2\u0cb0\u0cc1 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0b95\u0bb0\u0bc2\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Karur District",
+        "ref:LGD:district": "576",
+        "type": "boundary",
+        "wikidata": "Q15182",
+        "wikipedia": "en:Karur district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819320,
+      "center": {
+        "lat": 11.305191,
+        "lon": 78.0864269
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Namakkal",
+        "name:kn": "\u0ca8\u0cbe\u0cae\u0c95\u0ccd\u0c95\u0cb2\u0ccd \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0ba8\u0bbe\u0bae\u0b95\u0bcd\u0b95\u0bb2\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Namakkal District",
+        "ref:LGD:district": "580",
+        "type": "boundary",
+        "wikidata": "Q15187",
+        "wikipedia": "en:Namakkal district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819322,
+      "center": {
+        "lat": 11.64689,
+        "lon": 78.2446718
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Salem",
+        "name:ar": "\u0636\u0627\u062d\u064a\u0629 \u0633\u0627\u0644\u0645",
+        "name:de": "Distrikt Salem",
+        "name:es": "Distrito de Salem",
+        "name:fa": "\u0628\u062e\u0634 \u0633\u06cc\u0644\u0645",
+        "name:kn": "\u0cb8\u0cc7\u0cb2\u0c82\u200c \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ko": "\uc0b4\ub818\uad6c",
+        "name:ta": "\u0b9a\u0bc7\u0bb2\u0bae\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "name:ur": "\u0633\u06cc\u0644\u0645 \u0636\u0644\u0639",
+        "official_name": "Salem District",
+        "ref:LGD:district": "584",
+        "type": "boundary",
+        "wikidata": "Q15192",
+        "wikipedia": "en:Salem district",
+        "wikipedia:ur": "\u0633\u06cc\u0644\u0645 \u0636\u0644\u0639"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819323,
+      "center": {
+        "lat": 10.8511612,
+        "lon": 78.5877048
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Tiruchirappalli",
+        "name:kn": "\u0ca4\u0cbf\u0cb0\u0cc1\u0c9a\u0ccd\u0c9a\u0cbf\u0cb0\u0cbe\u0caa\u0ccd\u0caa\u0cb3\u0ccd\u0cb3\u0cbf \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ko": "\ud2f0\ub8e8\uce58\ub77c\ud314\ub9ac\uad6c",
+        "name:ta": "\u0ba4\u0bbf\u0bb0\u0bc1\u0b9a\u0bcd\u0b9a\u0bbf\u0bb0\u0bbe\u0baa\u0bcd\u0baa\u0bb3\u0bcd\u0bb3\u0bbf \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Tiruchirappalli District",
+        "ref:LGD:district": "591",
+        "type": "boundary",
+        "wikidata": "Q15201",
+        "wikipedia": "en:Tiruchirappalli district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819362,
+      "center": {
+        "lat": 12.1450743,
+        "lon": 78.2105265
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Dharmapuri",
+        "name:kn": "\u0ca7\u0cb0\u0ccd\u0cae\u0caa\u0cc1\u0cb0\u0cbf \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0ba4\u0bb0\u0bcd\u0bae\u0baa\u0bc1\u0bb0\u0bbf \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Dharmapuri District",
+        "ref:LGD:district": "571",
+        "type": "boundary",
+        "wikidata": "Q15152",
+        "wikipedia": "en:Dharmapuri district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819586,
+      "center": {
+        "lat": 11.1528374,
+        "lon": 79.2253196
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Ariyalur",
+        "name:kn": "\u0c85\u0cb0\u0cbf\u0caf\u0cb2\u0cc2\u0cb0\u0cc1 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0b85\u0bb0\u0bbf\u0baf\u0bb2\u0bc2\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Ariyalur District",
+        "ref:LGD:district": "610",
+        "type": "boundary",
+        "wikidata": "Q15112",
+        "wikipedia": "en:Ariyalur district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819588,
+      "center": {
+        "lat": 11.5281581,
+        "lon": 79.3451917
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Cuddalore",
+        "name:kn": "\u0c95\u0ca1\u0cb2\u0cc2\u0cb0\u0cc1 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ml": "\u0d15\u0d1f\u0d32\u0d42\u0d7c \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0b95\u0b9f\u0bb2\u0bc2\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "name:uk": "\u041a\u0443\u0434\u0434\u0430\u043b\u0443\u0440",
+        "official_name": "Cuddalore District",
+        "ref:LGD:district": "570",
+        "type": "boundary",
+        "wikidata": "Q15150",
+        "wikipedia": "en:Cuddalore district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819589,
+      "center": {
+        "lat": 12.7938277,
+        "lon": 79.8310983
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Kanchipuram",
+        "name:kn": "\u0c95\u0cbe\u0c82\u0c9a\u0cbf\u0caa\u0cc1\u0cb0\u0c82 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0b95\u0bbe\u0b9e\u0bcd\u0b9a\u0bbf\u0baa\u0bc1\u0bb0\u0bae\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Kanchipuram District",
+        "population": "164384",
+        "ref:LGD:district": "574",
+        "type": "boundary",
+        "wikidata": "Q15157",
+        "wikipedia": "en:Kanchipuram district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819591,
+      "center": {
+        "lat": 10.6026321,
+        "lon": 79.6764767
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Nagapattinam",
+        "name:en": "Nagapattinam District",
+        "name:kn": "\u0ca8\u0cbe\u0c97\u0caa\u0c9f\u0ccd\u0c9f\u0cbf\u0ca8\u0c82 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0ba8\u0bbe\u0b95\u0baa\u0bcd\u0baa\u0b9f\u0bcd\u0b9f\u0bbf\u0ba9\u0bae\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Nagapattinam District",
+        "ref:LGD:district": "579",
+        "type": "boundary",
+        "wikidata": "Q15185",
+        "wikipedia": "en:Nagapattinam district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819592,
+      "center": {
+        "lat": 11.2897695,
+        "lon": 78.9017694
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Perambalur",
+        "name:kn": "\u0caa\u0cc6\u0cb0\u0c82\u0cac\u0cb2\u0cc2\u0cb0\u0cc1 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0baa\u0bc6\u0bb0\u0bae\u0bcd\u0baa\u0bb2\u0bc2\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Perambalur District",
+        "ref:LGD:district": "581",
+        "type": "boundary",
+        "wikidata": "Q15186",
+        "wikipedia": "en:Perambalur district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819594,
+      "center": {
+        "lat": 10.6591471,
+        "lon": 79.174143
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Thanjavur",
+        "name:kn": "\u0ca4\u0c82\u0c9c\u0cbe\u0cb5\u0cc2\u0cb0\u0cc1 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0ba4\u0b9e\u0bcd\u0b9a\u0bbe\u0bb5\u0bc2\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Thanjavur District",
+        "ref:LGD:district": "586",
+        "type": "boundary",
+        "wikidata": "Q15194",
+        "wikipedia": "en:Thanjavur district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819595,
+      "center": {
+        "lat": 13.2540719,
+        "lon": 79.8212933
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Thiruvallur",
+        "name:kn": "\u0ca4\u0cbf\u0cb0\u0cc1\u0cb5\u0cb3\u0ccd\u0cb3\u0cc2\u0cb0\u0cc1 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0ba4\u0bbf\u0bb0\u0bc1\u0bb5\u0bb3\u0bcd\u0bb3\u0bc2\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Thiruvallur District",
+        "ref:LGD:district": "589",
+        "type": "boundary",
+        "wikidata": "Q15204",
+        "wikipedia": "en:Tiruvallur district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819596,
+      "center": {
+        "lat": 10.6881471,
+        "lon": 79.5149445
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Thiruvarur",
+        "name:kn": "\u0ca4\u0cbf\u0cb0\u0cc1\u0cb5\u0cb0\u0cc2\u0cb0\u0ccd \u0c9c\u0cc6\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0ba4\u0bbf\u0bb0\u0bc1\u0bb5\u0bbe\u0bb0\u0bc2\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Thiruvarur District",
+        "ref:LGD:district": "590",
+        "type": "boundary",
+        "wikidata": "Q15197",
+        "wikipedia": "en:Tiruvarur district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819597,
+      "center": {
+        "lat": 12.4287929,
+        "lon": 79.1933048
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Tiruvannamalai",
+        "name:kn": "\u0ca4\u0cbf\u0cb0\u0cc1\u0cb5\u0ca3\u0ccd\u0ca3\u0cbe\u0cae\u0cb2\u0cc8 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ko": "\ud2f0\ub8e8\ubc18\ub098\ub9d0\ub77c\uc774",
+        "name:ta": "\u0ba4\u0bbf\u0bb0\u0bc1\u0bb5\u0ba3\u0bcd\u0ba3\u0bbe\u0bae\u0bb2\u0bc8 \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Tiruvannamalai District",
+        "ref:LGD:district": "593",
+        "type": "boundary",
+        "wikidata": "Q15207",
+        "wikipedia": "en:Tiruvannamalai district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819598,
+      "center": {
+        "lat": 12.9017775,
+        "lon": 78.9481508
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Vellore",
+        "name:kn": "\u0cb5\u0cc7\u0cb2\u0cc2\u0cb0\u0cc1 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ko": "\ubca8\ub85c\ub974\uad6c",
+        "name:ta": "\u0bb5\u0bc7\u0bb2\u0bc2\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Vellore District",
+        "ref:LGD:district": "595",
+        "type": "boundary",
+        "wikidata": "Q15206",
+        "wikipedia": "en:Vellore district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819599,
+      "center": {
+        "lat": 12.1166623,
+        "lon": 79.5878114
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Viluppuram",
+        "name:ja": "\u30f4\u30a3\u30eb\u30c3\u30d7\u30e9\u30e0",
+        "name:kn": "\u0cb5\u0cbf\u0cb3\u0cc1\u0caa\u0cc1\u0cb0\u0c82 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0bb5\u0bbf\u0bb4\u0bc1\u0baa\u0bcd\u0baa\u0bc1\u0bb0\u0bae\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Viluppuram District",
+        "ref:LGD:district": "596",
+        "type": "boundary",
+        "wikidata": "Q15205",
+        "wikipedia": "en:Viluppuram district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819773,
+      "center": {
+        "lat": 9.5173434,
+        "lon": 78.8380117
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Ramanathapuram",
+        "name:kn": "\u0cb0\u0cbe\u0cae\u0ca8\u0cbe\u0ca5\u0caa\u0cc1\u0cb0\u0c82 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0b87\u0bb0\u0bbe\u0bae\u0ba8\u0bbe\u0ba4\u0baa\u0bc1\u0bb0\u0bae\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Ramanathapuram District",
+        "ref:LGD:district": "583",
+        "type": "boundary",
+        "wikidata": "Q15191",
+        "wikipedia": "en:Ramanathapuram district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 1819774,
+      "center": {
+        "lat": 8.8458053,
+        "lon": 78.030083
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Thoothukudi",
+        "name:ja": "\u30c8\u30a5\u30fc\u30c3\u30c8\u30a5\u30c3\u30af\u30c7\u30a3",
+        "name:kn": "\u0ca4\u0cc2\u0ca4\u0cc1\u0c95\u0ccd\u0c95\u0cc1\u0ca1\u0cbf \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ko": "\ud22c\ud22c\ucfe0\ub514",
+        "name:ta": "\u0ba4\u0bc2\u0ba4\u0bcd\u0ba4\u0bc1\u0b95\u0bcd\u0b95\u0bc1\u0b9f\u0bbf \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Thoothukudi District",
+        "ref:LGD:district": "594",
+        "type": "boundary",
+        "wikidata": "Q15198",
+        "wikipedia": "en:Thoothukudi district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 7910817,
+      "center": {
+        "lat": 13.0008649,
+        "lon": 80.212606
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Chennai",
+        "name:kn": "\u0c9a\u0cc6\u0ca8\u0ccd\u0ca8\u0cc8 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ml": "\u0d1a\u0d46\u0d28\u0d4d\u0d28\u0d48 \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0b9a\u0bc6\u0ba9\u0bcd\u0ba9\u0bc8 \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "name:uk": "\u0427\u0435\u043d\u043d\u0430\u0457",
+        "name:ur": "\u0636\u0644\u0639 \u0686\u0646\u0626\u06cc",
+        "official_name": "Chennai District",
+        "old_name:uk": "\u041c\u0430\u0434\u0440\u0430\u0441",
+        "ref:LGD:district": "568",
+        "type": "boundary",
+        "wikidata": "Q15116",
+        "wikipedia": "en:Chennai district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 9537174,
+      "center": {
+        "lat": 12.5152971,
+        "lon": 78.0708689
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Krishnagiri",
+        "name:kn": "\u0c95\u0cc3\u0cb7\u0ccd\u0ca3\u0c97\u0cbf\u0cb0\u0cbf \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0b95\u0bbf\u0bb0\u0bc1\u0bb7\u0bcd\u0ba3\u0b95\u0bbf\u0bb0\u0bbf \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "name:uk": "\u041a\u0440\u0456\u0448\u043d\u0430\u0491\u0456\u0440\u0456",
+        "official_name": "Krishnagiri District",
+        "ref:LGD:district": "577",
+        "type": "boundary",
+        "wikidata": "Q15183",
+        "wikipedia": "en:Krishnagiri district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 9538519,
+      "center": {
+        "lat": 10.791461,
+        "lon": 77.4666864
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Tiruppur",
+        "name:kn": "\u0ca4\u0cbf\u0cb0\u0cc1\u0caa\u0ccd\u0caa\u0cc1\u0cb0\u0ccd \u0c9c\u0cc6\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0bc2\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Tiruppur District",
+        "ref:LGD:district": "634",
+        "type": "boundary",
+        "wikidata": "Q15202",
+        "wikipedia": "en:Tiruppur district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 9602893,
+      "center": {
+        "lat": 11.7939405,
+        "lon": 79.0449517
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Kallakurichi",
+        "name:kn": "\u0c95\u0cb2\u0ccd\u0cb2\u0c95\u0cc1\u0cb0\u0cbf\u0c9a\u0cbf \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0b95\u0bb3\u0bcd\u0bb3\u0b95\u0bcd\u0b95\u0bc1\u0bb1\u0bbf\u0b9a\u0bcd\u0b9a\u0bbf \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Kallakurichi District",
+        "ref:LGD:district": "729",
+        "type": "boundary",
+        "wikidata": "Q60493360",
+        "wikipedia": "en:Kallakurichi district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 10303764,
+      "center": {
+        "lat": 9.0931655,
+        "lon": 77.5033786
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Tenkasi",
+        "name:kn": "\u0ca4\u0cc6\u0c82\u0c95\u0cbe\u0cb8\u0cbf \u0c9c\u0cc6\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ml": "\u0d24\u0d46\u0d19\u0d4d\u0d15\u0d3e\u0d36\u0d3f \u0d1c\u0d3f\u0d32\u0d4d\u0d32",
+        "name:ta": "\u0ba4\u0bc6\u0ba9\u0bcd\u0b95\u0bbe\u0b9a\u0bbf \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Tenkasi District",
+        "ref:LGD:district": "733",
+        "type": "boundary",
+        "wikidata": "Q75094121",
+        "wikipedia": "en:Tenkasi district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 10329991,
+      "center": {
+        "lat": 12.6363125,
+        "lon": 79.948563
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Chengalpattu",
+        "name:kn": "\u0c9a\u0cc6\u0c82\u0c97\u0cbe\u0cb2\u0ccd\u0caa\u0c9f\u0ccd\u0c9f\u0cc1 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0b9a\u0bc6\u0b99\u0bcd\u0b95\u0bb2\u0bcd\u0baa\u0b9f\u0bcd\u0b9f\u0bc1 \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Chengalpattu District",
+        "ref:LGD:district": "730",
+        "type": "boundary",
+        "wikidata": "Q65976177",
+        "wikipedia": "en:Chengalpattu district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 10330031,
+      "center": {
+        "lat": 12.5840315,
+        "lon": 78.6618478
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Tirupattur",
+        "name:kn": "\u0ca4\u0cbf\u0cb0\u0cc1\u0caa\u0ca4\u0ccd\u0ca4\u0cc1\u0cb0\u0ccd \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0ba4\u0bbf\u0bb0\u0bc1\u0baa\u0bcd\u0baa\u0ba4\u0bcd\u0ba4\u0bc2\u0bb0\u0bcd \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Tirupattur District",
+        "ref:LGD:district": "732",
+        "type": "boundary",
+        "wikidata": "Q66659621",
+        "wikipedia": "en:Tirupathur district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 10330032,
+      "center": {
+        "lat": 12.9186119,
+        "lon": 79.4853437
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Ranipet",
+        "name:kn": "\u0cb0\u0cbe\u0ca3\u0cbf\u0caa\u0cc7\u0c9f\u0ccd \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0b87\u0bb0\u0bbe\u0ba3\u0bbf\u0baa\u0bcd\u0baa\u0bc7\u0b9f\u0bcd\u0b9f\u0bc8 \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Ranipet District",
+        "ref:LGD:district": "731",
+        "type": "boundary",
+        "wikidata": "Q66659623",
+        "wikipedia": "en:Ranipet district"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 11698709,
+      "center": {
+        "lat": 11.1890251,
+        "lon": 79.6837076
+      },
+      "tags": {
+        "admin_level": "5",
+        "boundary": "administrative",
+        "name": "Mayiladuthurai",
+        "name:kn": "\u0cae\u0caf\u0cbf\u0cb2\u0ca6\u0cc1\u0ca4\u0cc1\u0cb0\u0cc8 \u0c9c\u0cbf\u0cb2\u0ccd\u0cb2\u0cc6",
+        "name:ta": "\u0bae\u0baf\u0bbf\u0bb2\u0bbe\u0b9f\u0bc1\u0ba4\u0bc1\u0bb1\u0bc8 \u0bae\u0bbe\u0bb5\u0b9f\u0bcd\u0b9f\u0bae\u0bcd",
+        "official_name": "Mayiladuthurai District",
+        "ref:LGD:district": "735",
+        "type": "boundary",
+        "wikidata": "Q89918869",
+        "wikipedia": "en:Mayiladuthurai district"
+      }
+    }
+  ]
+}

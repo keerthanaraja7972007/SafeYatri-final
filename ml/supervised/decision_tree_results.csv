@@ -1,0 +1,393 @@
+place_id,place_name,actual_cluster,predicted_cluster,probability_cluster_0,probability_cluster_1,probability_cluster_2,probability_cluster_3,probability_cluster_4
+real-world-tourist-vivekanandar-illam-chennai-1457,Vivekanandar Illam,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-chinnakottaimedu-beach-mayiladuthurai-1830,Chinnakottaimedu Beach,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-camel-ride-theni-1043,Camel Ride,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-silver-beach-cuddalore-1838,Silver Beach,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-rajaji-memorial-chennai-14,Rajaji Memorial,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-pitch-ground-coimbatore-315,Pitch Ground,1,1,0.0,0.5,0.0,0.5,0.0
+real-world-tourist-monument-node-2390631750-krishnagiri-155,Monument (node/2390631750),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-ruins-way-1218944184-dindigul-1742,Ruins (way/1218944184),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-anderson-church-chennai-1679,Anderson Church,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-place-tenkasi-490,കൊണ്ടകെട്ടി മല,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-idiviludhan-malai-vellore-402,Idiviludhan Malai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-peak-node-7813748874-tenkasi-717,Peak (node/7813748874),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-rajarajan-mani-mandapam-thanjavur-1414,Rajarajan Mani Mandapam,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-peak-node-7813748882-tenkasi-721,Peak (node/7813748882),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-devi-karumari-amman-status-chengalpattu-1074,Devi Karumari Amman Status,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-bharathiyar-chennai-8,Bharathiyar,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-viewpoint-way-283085862-chengalpattu-1475,Viewpoint (way/283085862),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-keezhadi-archeological-museum-madurai-1909,Keezhadi Archeological Museum,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-olakkannesvara-temple-chengalpattu-527,Olakkannesvara Temple,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-tenkal-malai-vellore-401,Tenkal Malai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-revenue-divisional-office-ranipet-1705,Revenue Divisional Office,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-6-36-nilgiris-579,6 | 36,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-dr-maruthur-gopalan-ramachandran-museum-chennai-1716,Dr. Maruthur Gopalan Ramachandran Museum,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-chathurangapara-view-point-theni-1041,Chathurangapara View Point,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-madurai-virudhunagar-22,Madurai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-place-chennai-54,காமராஜ் நினைவு வீடு,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-jain-monument-tiruchirappalli-564,Jain Monument,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-artwork-node-13612854080-madurai-1298,Artwork (node/13612854080),3,1,0.0,0.5,0.0,0.5,0.0
+real-world-tourist-chembarambakkam-lake-balcony-viewpoint-chennai-982,Chembarambakkam Lake Balcony Viewpoint,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-soman-kanavai-theni-857,Soman Kanavai,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-natarajar-statue-coimbatore-416,Natarajar statue,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-tiruchchirappalli-rail-museum-tiruchirappalli-1697,Tiruchchirappalli Rail Museum,3,2,0.0,0.0,0.8,0.2,0.0
+real-world-tourist-viewpoint-node-9517533432-tenkasi-809,Viewpoint (node/9517533432),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-nambiyar-nagar-beach-nagapattinam-1819,Nambiyar Nagar Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-panaikulam-beach-ramanathapuram-1798,Panaikulam Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-artwork-node-11687564735-cuddalore-1175,Artwork (node/11687564735),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-place-nilgiris-1480,"தேயிலை அருங்காட்சியகம், ஊட்டி",0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-kanishka-viluppuram-743,Kanishka,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-artwork-node-11491546016-chennai-1144,Artwork (node/11491546016),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-museum-way-387806929-cuddalore-1512,Museum (way/387806929),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-battle-of-pollilur-memorial-kanchipuram-896,Battle of Pollilur Memorial,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-south-india-house-chennai-1686,South India House,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-tiger-chengalpattu-1405,Tiger,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-rajathottam-view-point-tenkasi-1095,Rajathottam view Point,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-wonderla-amusement-park-chennai-chengalpattu-1930,"Wonderla Amusement Park, Chennai",1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-unnamed-heritage-site-node-11013412994-chengalpattu-1075,Unnamed Heritage Site (node/11013412994),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-pambadi-shola-malai-theni-847,Pambadi Shola Malai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-artwork-node-4957730330-ranipet-372,Artwork (node/4957730330),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-iron-age-grave-yard-thoothukudi-1888,Iron Age Grave Yard,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-peak-node-5330545394-kanyakumari-497,Peak (node/5330545394),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-beach-way-547034380-kanyakumari-1553,Beach (way/547034380),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-capped-langur-chengalpattu-1379,Capped Langur,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-shobhan-babu-chennai-1116,Shobhan Babu,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-samburavi-malai-theni-1314,Samburavi Malai,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-athi-narayana-perumal-temple-chennai-1581,Athi Narayana Perumal Temple,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-adichanallur-archaeological-site-tirunelveli-1492,Adichanallur Archaeological Site,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-viewpoint-node-12248644084-krishnagiri-1218,Viewpoint (node/12248644084),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-karikilli-wls-chengalpattu-1624,Karikilli WLS,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-gate-building-nilgiris-1935,Gate Building,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-peak-node-313386591-chennai-20,Peak (node/313386591),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-peak-node-5293437660-kanyakumari-469,Peak (node/5293437660),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-watch-tower-cuddalore-89,Watch Tower,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-viewpoint-node-4973472507-theni-373,Viewpoint (node/4973472507),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-artwork-node-10536468873-chennai-964,Artwork (node/10536468873),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-viewpoint-node-13704226945-nilgiris-1301,Viewpoint (node/13704226945),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-free-entry-theni-1180,Free entry,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-poombukar-kalaikoodam-art-showroom-thanjavur-113,Poombukar kalaikoodam (Art Showroom),3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-attraction-node-4398734692-theni-268,Attraction (node/4398734692),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-periya-anai-malai-theni-1318,Periya Anai Malai,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-former-site-of-binny-mills-building-chennai-1070,Former site of Binny Mills Building,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-hanuman-langur-chengalpattu-1377,Hanuman Langur,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-viewpoint-node-4621777397-theni-338,Viewpoint (node/4621777397),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-bhooth-banglou-erode-1631,bhooth banglou,1,1,0.0,0.5,0.0,0.5,0.0
+real-world-tourist-kamarajar-manimandapam-virudhunagar-1294,Kamarajar Manimandapam,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-pykara-waterfalls-nilgiris-520,Pykara Waterfalls,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-memorial-node-13355916663-ranipet-1284,Memorial (node/13355916663),1,1,0.0,0.8333333333333334,0.0,0.16666666666666666,0.0
+real-world-tourist-peak-node-7813787905-tenkasi-733,Peak (node/7813787905),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-artwork-node-11481496430-chennai-1111,Artwork (node/11481496430),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-pillai-thadam-cave-kanyakumari-1190,Pillai Thadam Cave,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-kamarajar-statue-tirunelveli-776,Kamarajar Statue,2,3,0.0,0.0,0.2,0.8,0.0
+real-world-tourist-amanakkanvilai-beach-kanyakumari-1540,Amanakkanvilai Beach,2,2,0.0,0.0,1.0,0.0,0.0
+kamakshi-amman-temple,Kamakshi Amman Temple,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-tnsc-building-chennai-1682,TNSC Building,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-gk-moopanar-memorial-chennai-52,GK Moopanar Memorial,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-tangrakottai-dharmapuri-1723,Tangrakottai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-arankanal-malai-theni-1307,Arankanal Malai,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-guna-s-cave-viewpoint-theni-271,Guna's cave viewpoint,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-beach-way-549725676-kanyakumari-1568,Beach (way/549725676),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-ruins-way-1218944185-dindigul-1743,Ruins (way/1218944185),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-danish-harbour-walls-mayiladuthurai-1507,Danish Harbour Walls,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-vallal-dr-alagappar-museum-pudukkottai-967,Vallal Dr. Alagappar Museum,3,2,0.0,0.0,0.6,0.4,0.0
+real-world-tourist-place-chennai-339,காந்தி சிலை,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-sri-senthurvel-agencies-tiruppur-236,Sri Senthurvel Agencies,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-matha-malai-tirupathur-427,Matha Malai,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-peak-node-5294526688-nilgiris-477,Peak (node/5294526688),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-monument-node-9982814779-chennai-877,Monument (node/9982814779),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-syrian-christian-house-chennai-1448,Syrian Christian House,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-beach-way-338653290-kanyakumari-1488,Beach (way/338653290),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-cave-salem-44,Cave,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-building-way-911713517-chengalpattu-1649,Building (way/911713517),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-chokalingampudur-pudukkottai-664,Chokalingampudur,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-marthandanthurai-beach-kanyakumari-114,Marthandanthurai Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-kamaraj-statue-nilgiris-545,Kamaraj Statue,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-kanchi-kudil-kanchipuram-93,Kanchi Kudil,1,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-peak-node-7813787911-kanyakumari-735,Peak (node/7813787911),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-sunset-viewpoint-kanyakumari-223,Sunset Viewpoint,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-ptr-palanivel-rajan-madurai-763,PTR Palanivel Rajan,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-karakattam-chennai-1122,Karakattam,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-kadamba-malai-tirupathur-425,Kadamba Malai,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-armenian-church-of-the-virgin-mary-chennai-1688,Armenian Church of the Virgin Mary,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-peak-node-7690394755-erode-685,Peak (node/7690394755),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-pilgrims-park-thoothukudi-1286,Pilgrims Park,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-zebra-chengalpattu-1386,Zebra,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-thalakulam-valiyaveedu-kanyakumari-991,Thalakulam Valiyaveedu,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-museum-node-1223934145-chennai-110,Museum (node/1223934145),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-vladimir-lenin-tirunelveli-1049,Vladimir Lenin,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-peak-node-5312416738-kanyakumari-489,Peak (node/5312416738),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-peak-node-7813748872-tenkasi-716,Peak (node/7813748872),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-jain-sculptures-and-inscriptions-viluppuram-1899,Jain Sculptures and Inscriptions,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-vellore-sepoy-mutiny-memorial-pillar-vellore-505,Vellore Sepoy Mutiny Memorial Pillar,1,1,0.0,0.8333333333333334,0.0,0.16666666666666666,0.0
+real-world-tourist-memorial-node-10943766878-ranipet-1066,Memorial (node/10943766878),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-chokkidhani-tiruvallur-1505,Chokkidhani,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-v-o-chidhambaranar-statue-madurai-1659,V.O.Chidhambaranar statue,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-theppakadu-elephant-camp-nilgiris-136,Theppakadu Elephant Camp,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-viewpoint-node-4601432390-nilgiris-326,Viewpoint (node/4601432390),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-highfield-tea-factory-nilgiris-1574,Highfield Tea Factory,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-peak-node-9235729234-perambalur-780,Peak (node/9235729234),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-thirumayam-fort-pudukkottai-121,Thirumayam Fort,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-kuppachi-malai-tirupathur-421,Kuppachi Malai,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-ponnezhilnathar-koil-ponninathar-temple-tiruvannamalai-1678,Ponnezhilnathar Koil (Ponninathar Temple),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-sangham-period-settlement-madurai-1527,Sangham Period settlement,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-thalamalai-hills-namakkal-196,Thalamalai hills,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-sittanavasal-cave-pudukkottai-239,Sittanavasal Cave,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-kattabomman-fort-thoothukudi-1885,Kattabomman Fort,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-ayyanar-kovil-nagapattinam-1438,AYYANAR Kovil,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-rajaji-statue-coimbatore-84,Rajaji Statue,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-place-nilgiris-201,"தேனீ அருங்காட்சியகம், ஊட்டி",0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-varaha-mandapam-cave-chengalpattu-41,Varaha Mandapam / Cave,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-s-sriram-chennai-264,s.sriram,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-panjal-beach-kanyakumari-1771,Panjal Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-vandavasi-fort-kanchipuram-1726,Vandavasi Fort,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-cholamandal-artists-village-chennai-214,Cholamandal Artists' Village,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-vivekananda-heritage-museum-chennai-1664,Vivekananda Heritage Museum,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-early-pandiya-kalvettup-padukkai-sivaganga-1880,Early Pandiya Kalvettup Padukkai,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-kodiyakkarai-pudukkottai-1809,Kodiyakkarai,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-peak-node-7690389907-erode-682,Peak (node/7690389907),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-colonel-john-pennycuick-memorial-hall-theni-1755,Colonel John Pennycuick Memorial Hall,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-danou-malai-vellore-403,Danou Malai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-museum-way-1092912285-tirunelveli-1693,Museum (way/1092912285),3,3,0.0,0.0,0.2,0.8,0.0
+real-world-tourist-memorial-node-10926247506-coimbatore-1061,Memorial (node/10926247506),3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-sivan-koil-ulagapuram-viluppuram-1862,"Sivan Koil, Ulagapuram",2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-unnamed-heritage-site-way-645607775-nagapattinam-1605,Unnamed Heritage Site (way/645607775),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-mahatma-gandhi-statue-coimbatore-165,Mahatma Gandhi Statue,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-watch-tower-theni-854,Watch tower,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-t-m-pettai-beach-cuddalore-1846,T. M. Pettai Beach,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-beach-way-338653292-kanyakumari-1489,Beach (way/338653292),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-monument-node-12787618884-tiruvallur-1245,Monument (node/12787618884),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-chitharal-kanyakumari-528,Chitharal,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-virgin-mary-chennai-838,Virgin Mary,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-tsunami-memorial-kanyakumari-1465,Tsunami Memorial,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-egp-biogas-plant-chennai-87,EGP Biogas Plant,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-pasal-kuppe-vellore-384,Pasal Kuppe,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-ruins-way-443083327-chengalpattu-1524,Ruins (way/443083327),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-mgm-dizee-world-chennai-29,MGM Dizee World,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-attur-fort-kallakurichi-1579,Attur Fort,3,1,0.0,0.6,0.0,0.4,0.0
+real-world-tourist-palmyra-circle-cuddalore-91,Palmyra Circle,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-artwork-node-10139529403-chennai-913,Artwork (node/10139529403),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-unnamed-heritage-site-node-12076683372-tiruvallur-1205,Unnamed Heritage Site (node/12076683372),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-walkers-park-dindigul-773,Walkers Park,3,3,0.0,0.4,0.0,0.6,0.0
+real-world-tourist-peak-node-10713139421-kanyakumari-997,Peak (node/10713139421),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-peak-node-5879603768-nilgiris-550,Peak (node/5879603768),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-tvs-mahalaksmi-store-dharmapuri-584,TVS mahalaksmi store,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-periyar-national-park-tiger-reserve-tenkasi-1627,Periyar National Park & Tiger Reserve,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-sangeetha-hostel-chennai-261,Sangeetha hostel,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-victoria-chennai-956,Victoria,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-ruins-way-1218944181-dindigul-1739,Ruins (way/1218944181),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-memorial-way-1391093797-chennai-1913,Memorial (way/1391093797),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-beach-way-1009354124-chennai-1663,Beach (way/1009354124),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-beach-way-549735332-kanyakumari-1572,Beach (way/549735332),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-yogaretreat-madurai-620,Yogaretreat,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-lion-chennai-941,Lion,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-viewpoint-node-4601414092-nilgiris-323,Viewpoint (node/4601414092),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-uppu-malai-theni-1312,Uppu Malai,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-nandanam-arch-chennai-60,Nandanam Arch,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-conjeevaram-natarajan-annadurai-chennai-960,Conjeevaram Natarajan Annadurai,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-peak-node-7693274220-salem-693,Peak (node/7693274220),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-sunset-point-kanyakumari-95,Sunset Point,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-swami-vivekananda-rock-memorial-kanyakumari-96,Swami Vivekananda Rock Memorial,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-sitraruvi-small-falls-tenkasi-537,Sitraruvi (Small Falls),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-dolphin-s-nose-theni-105,Dolphin's Nose,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-fourbeck-bridge-marmalong-brook-bridge-monument-chennai-1151,Fourbeck Bridge (Marmalong Brook Bridge) Monument,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-palanivalasai-beach-ramanathapuram-1801,Palanivalasai Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-velliangiri-coimbatore-612,Velliangiri,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-peak-node-9518427046-tirunelveli-811,Peak (node/9518427046),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-idumban-malai-theni-990,Idumban Malai,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-thanthai-periyar-statue-chennai-805,Thanthai Periyar Statue,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-thiruvalluvar-chennai-13,Thiruvalluvar,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-john-sullivan-memorial-nilgiris-546,John Sullivan Memorial,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-alu-alumni-park-pudukkottai-1187,ALU Alumni Park,2,2,0.0,0.0,0.6,0.4,0.0
+real-world-tourist-manjakuttai-view-point-salem-46,Manjakuttai view point,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-suganya-beach-thoothukudi-1786,Suganya Beach,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-peak-node-8554701429-kanyakumari-755,Peak (node/8554701429),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-beach-way-364757573-nagapattinam-1500,Beach (way/364757573),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-pattinam-becah-ramanathapuram-1807,Pattinam Becah,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-pura-kallu-vellore-395,Pura Kallu,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-thumkal-water-falls-dharmapuri-1101,சின்ன தும்கல் நீர் வீழ்ச்சி (thumkal water falls),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-peak-node-7690389908-erode-683,Peak (node/7690389908),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-public-works-department-chennai-1365,Public Works Department,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-thiruvalluvar-chennai-881,Thiruvalluvar,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-mgr-statue-tiruchirappalli-459,MGR statue,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-peak-node-9238836914-perambalur-782,Peak (node/9238836914),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-peak-node-7813748864-tenkasi-712,Peak (node/7813748864),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-ambedkar-statue-chennai-1219,Ambedkar Statue,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-arasu-arungatchiyagam-madurai-madurai-636,Arasu Arungatchiyagam - Madurai,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-kakershia-gudda-tirupathur-448,Kakershia Gudda,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-kalaingar-chennai-1346,Kalaingar,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-memorial-node-10201010890-chennai-922,Memorial (node/10201010890),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-tenkal-malai-vellore-407,Tenkal Malai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-cave-entrance-node-2154075003-tiruvannamalai-146,Cave Entrance (node/2154075003),2,2,0.0,0.0,0.8,0.2,0.0
+real-world-tourist-mahishamadhini-cave-chengalpattu-42,Mahishamadhini Cave,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-peak-node-7693274219-salem-692,Peak (node/7693274219),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-unnamed-heritage-site-node-13739758781-chengalpattu-1303,Unnamed Heritage Site (node/13739758781),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-periya-gutta-tirupathur-445,Periya Gutta,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-v-lm-kan-thar-chengalpattu-380,Vālmīkanāthar,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-picnic-site-node-4204156191-nilgiris-230,Picnic Site (node/4204156191),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-pappanuttu-mallai-tiruvannamalai-1196,Pappanuttu Mallai,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-suruli-falls-theni-127,Suruli Falls,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-park-1-erode-740,park 1,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-jawaharlal-nehru-chennai-976,Jawaharlal Nehru,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-boat-house-theni-106,Boat House,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-padmanabhapuram-palace-kanyakumari-1467,Padmanabhapuram Palace,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-nelli-malai-vellore-410,Nelli Malai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-maharaja-mettu-theni-1023,Maharaja Mettu,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-manmot-malai-vellore-404,Manmot Malai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-kamarajar-statue-madurai-1658,Kamarajar statue,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-viewpoint-node-11861648277-chennai-1186,Viewpoint (node/11861648277),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-brooks-peak-theni-557,Brooks Peak,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-beach-way-1009350768-chennai-1662,Beach (way/1009350768),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-anumanthai-kuppam-beach-cuddalore-1852,Anumanthai Kuppam Beach,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-place-chennai-626,சென்னை மெரினா கலங்கரை விளக்கம்,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-picnic-site-node-4450074089-nilgiris-299,Picnic Site (node/4450074089),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-memorial-node-11491532934-chennai-1136,Memorial (node/11491532934),3,3,0.0,0.0,0.0,0.6,0.4
+real-world-tourist-perumal-mudi-coimbatore-1351,Perumal Mudi,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-brahmi-kalvettu-madurai-1670,Brahmi Kalvettu,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-danushkodi-panorama-ramanathapuram-1094,Danushkodi panorama,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-peak-node-5879603767-nilgiris-549,Peak (node/5879603767),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-ongc-park-chennai-1252,ONGC Park,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-ruins-node-6227534406-pudukkottai-572,Ruins (node/6227534406),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-gulkal-nilgiris-74,Gulkal,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-free-entry-to-the-forest-theni-1179,Free entry to the forest,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-artwork-node-10316679599-chennai-961,Artwork (node/10316679599),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-monument-node-13157236508-kanchipuram-1268,Monument (node/13157236508),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-bhimrao-ramji-ambedkar-chennai-1134,Bhimrao Ramji Ambedkar,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-artwork-node-11481496431-chennai-1112,Artwork (node/11481496431),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-ks-house-chennai-353,Ks House,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-government-school-park-madurai-764,Government School Park,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-kuttam-beach-tirunelveli-1759,Kuttam Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-rajagiri-tiruvannamalai-30,Rajagiri,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-monument-node-9648122356-madurai-818,Monument (node/9648122356),3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-peak-node-10715990695-kanyakumari-1011,Peak (node/10715990695),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-eagle-park-madurai-1275,Eagle Park,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-m-ct-m-chidambaram-chettyar-chennai-963,M. Ct. M. Chidambaram Chettyar,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-chettiars-houses-pudukkottai-533,chettiars houses,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-palli-konda-vellore-413,Palli Konda,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-museum-way-253596094-kanyakumari-1463,Museum (way/253596094),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-monkey-falls-coimbatore-240,Monkey Falls,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-eraniel-palace-kanyakumari-1629,Eraniel Palace,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-chennai-railway-museum-chennai-344,Chennai Railway Museum,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-queensland-amusement-park-tiruvallur-1362,Queensland Amusement Park,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-clock-tower-kanyakumari-164,Clock Tower,3,3,0.0,0.0,0.2,0.8,0.0
+real-world-tourist-mullimunai-beach-ramanathapuram-1806,Mullimunai Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-aalanthalai-beach-thoothukudi-1756,Aalanthalai Beach,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-frog-hill-viewpoint-nilgiris-118,Frog Hill Viewpoint,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-molain-r-malai-tirupathur-420,Molainūr Malai,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-keelathottam-beach-thanjavur-1810,Keelathottam Beach,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-anna-statue-krishnagiri-745,Anna Statue,3,1,0.0,0.8333333333333334,0.0,0.16666666666666666,0.0
+real-world-tourist-viewpoint-node-4973472513-theni-374,Viewpoint (node/4973472513),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-marudeeswarar-temple-chennai-1626,Marudeeswarar Temple,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-vellore-fort-vellore-1587,Vellore Fort,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-beach-way-549725680-kanyakumari-1570,Beach (way/549725680),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-brahmapureerwasra-temple-tiruchirappalli-556,Brahmapureerwasra temple,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-temple-holy-car-shelter-madurai-140,Temple Holy Car Shelter,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-mgr-statue-tiruchirappalli-1331,MGR Statue,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-chakkilidurg-viluppuram-504,Chakkilidurg,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-sanguthurai-beach-kanyakumari-1546,Sanguthurai Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-peak-node-7813748851-tenkasi-708,Peak (node/7813748851),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-pykara-boat-house-nilgiris-598,Pykara Boat House,0,0,1.0,0.0,0.0,0.0,0.0
+kodaikanal-lake,Kodaikanal Lake,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-gandhi-statue-pudukkottai-615,Gandhi Statue,3,2,0.0,0.0,0.8,0.2,0.0
+real-world-tourist-tamarind-valley-collective-dharmapuri-1933,Tamarind Valley Collective,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-thiruvalluvar-tiruvallur-929,Thiruvalluvar,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-cooum-river-fountain-chennai-1708,Cooum River Fountain,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-national-fossil-wood-park-tiruvakkarai-viluppuram-677,"National Fossil Wood Park, Tiruvakkarai",2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-ayyampettai-beach-cuddalore-1841,Ayyampettai Beach,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-fort-st-george-chennai-1729,Fort St. George,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-kadalkuli-beach-ramanathapuram-1793,Kadalkuli Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-pichchi-malai-theni-1311,Pichchi Malai,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-archaeological-site-node-7379623436-theni-660,Archaeological Site (node/7379623436),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-peak-node-7813787917-tenkasi-738,Peak (node/7813787917),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-pachchal-kombu-theni-869,Pachchal Kombu,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-peak-node-10715980643-kanyakumari-1009,Peak (node/10715980643),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-beach-way-548983851-kanyakumari-1564,Beach (way/548983851),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-artwork-node-11481496429-chennai-1110,Artwork (node/11481496429),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-nilgiri-peak-nilgiris-623,Nilgiri Peak,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-memorial-node-10593460487-chennai-978,Memorial (node/10593460487),4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-alagappa-chettiar-statue-pudukkottai-618,Alagappa Chettiar Statue,2,2,0.0,0.0,0.6,0.4,0.0
+real-world-tourist-morpannai-beach-ramanathapuram-1804,Morpannai Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-puthupattu-beach-cuddalore-833,Puthupattu Beach,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-memorial-node-12805667608-ranipet-1249,Memorial (node/12805667608),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-aarde-pulicat-museum-chennai-1674,AARDE Pulicat Museum,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-maya-bazaar-vellore-601,Maya Bazaar,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-thalapalli-hill-krishnagiri-1339,Thalapalli Hill,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-issa-malai-vellore-412,Issa Malai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-narasimha-malai-krishnagiri-1340,Narasimha Malai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-zoo-park-salem-1098,ZOO PARK,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-thiruvagoundanur-roundabout-salem-247,ThiruvaGoundanur Roundabout,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-arunjas-penance-model-chengalpattu-512,Arunjas Penance Model,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-matrimandir-viewpoint-cuddalore-1173,Matrimandir Viewpoint,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-memorial-node-13355916662-ranipet-1283,Memorial (node/13355916662),1,1,0.0,0.8333333333333334,0.0,0.16666666666666666,0.0
+real-world-tourist-artwork-node-11195337026-vellore-1089,Artwork (node/11195337026),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-new-dutch-cemetery-chennai-1396,New Dutch Cemetery,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-durgam-malai-vellore-394,Durgam Malai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-44-british-tombs-thoothukudi-1886,44 British Tombs,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-artwork-node-712904559-cuddalore-82,Artwork (node/712904559),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-otter-chengalpattu-1383,Otter,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-water-falls-karur-310,Water falls,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-perarignar-anna-memorial-chennai-541,Perarignar Anna Memorial,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-sri-group-chennai-365,SRI GROUP,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-chitlapakkam-park-chennai-1304,Chitlapakkam Park,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-ambedkar-pudukkottai-614,Ambedkar,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-beach-way-392793238-cuddalore-1517,Beach (way/392793238),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-peak-node-5289927354-kanyakumari-467,Peak (node/5289927354),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-arapalayam-water-works-madurai-1690,Arapalayam Water Works,3,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-neelangarai-beach-chennai-1911,Neelangarai Beach,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-courtallam-boat-house-tenkasi-536,Courtallam Boat House,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-jain-sculptures-beds-and-inscriptions-viluppuram-1903,Jain Sculptures & Beds and Inscriptions,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-karungalakkudi-kalvettu-madurai-1877,Karungalakkudi Kalvettu,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-muthuregunathapuram-beach-ramanathapuram-1803,Muthuregunathapuram Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-patient-1-thanjavur-667,patient 1,1,3,0.0,0.0,0.0,1.0,0.0
+real-world-tourist-peak-node-11181169036-theni-1086,Peak (node/11181169036),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-beach-way-438752385-kanyakumari-1523,Beach (way/438752385),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-main-falls-tenkasi-1452,Main Falls,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-temple-nilgiris-63,Temple,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-swasthik-well-tiruchirappalli-1867,Swasthik Well,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-sardar-vallabhbhai-patel-chennai-51,Sardar Vallabhbhai Patel,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-kosapet-5-lights-chennai-357,Kosapet 5 lights,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-pancha-rathas-chengalpattu-1394,Pancha Rathas,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-todas-art-sales-unit-nilgiris-1366,Todas Art Sales unit,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-vanavanmahadevi-beach-nagapattinam-1815,Vanavanmahadevi Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-kasinathapuram-tenkasi-362,Kasinathapuram,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-adhirangam-kovil-tiruvarur-1437,Adhirangam Kovil,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-sweet-factory-pudukkottai-647,Sweet factory,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-kolukkamalai-sunrise-viewing-point-theni-1168,Kolukkamalai sunrise viewing point,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-tuppiyan-kanavai-theni-845,Tuppiyan Kanavai,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-free-entry-from-here-theni-1178,Free entry from here :),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-ambedkar-memorial-chennai-5,Ambedkar Memorial,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-cannon-chennai-921,Cannon,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-pichavaram-boathouse-cuddalore-90,Pichavaram Boathouse,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-moir-s-point-view-theni-272,Moir's Point View,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-devaneri-beach-chengalpattu-288,Devaneri beach,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-mig-display-chengalpattu-1539,MiG display,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-mangulam-tamil-inscription-madurai-1229,Mangulam Tamil inscription,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-peak-node-7858000699-coimbatore-741,Peak (node/7858000699),1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-ruins-way-1098342020-nilgiris-1698,Ruins (way/1098342020),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-jarugumalai-salem-1105,Jarugumalai,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-venki-kombu-theni-848,Venki Kombu,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-mannavanur-ecotourism-site-theni-1182,Mannavanur Ecotourism Site,0,0,1.0,0.0,0.0,0.0,0.0
+marudamalai-temple,Marudamalai Temple,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-nandi-chennai-1115,Nandi,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-archaeological-site-node-7379623437-theni-661,Archaeological Site (node/7379623437),0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-shiva-cave-tiruvannamalai-307,Shiva cave,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-chankallu-malai-tirupathur-436,Īchankallu Malai,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-museum-way-1096179349-tiruchirappalli-1696,Museum (way/1096179349),3,2,0.0,0.0,0.6,0.4,0.0
+real-world-tourist-ganesan-ayya-sivaganga-253,ganesan ayya,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-cit-colony-chennai-349,CIT colony,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-kodanadu-view-point-nilgiris-1603,Kodanadu View Point,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-peak-node-5294348543-kanyakumari-476,Peak (node/5294348543),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-yercaud-rose-gardens-salem-616,Yercaud Rose Gardens,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-chitharal-jain-temple-kanyakumari-1559,Chitharal Jain Temple,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-mahatma-gandhi-chennai-1125,Mahatma Gandhi,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-seniamman-kovil-arch-chennai-1750,Seniamman Kovil Arch,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-jegadevi-fort-krishnagiri-1869,Jegadevi Fort,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-theme-park-way-1471635421-kanyakumari-1921,Theme Park (way/1471635421),2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-totti-guddai-tirupathur-1055,Totti Guddai,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-pagoda-point-salem-1471,Pagoda Point,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-shooting-spot-nilgiris-1486,Shooting Spot,0,0,1.0,0.0,0.0,0.0,0.0
+real-world-tourist-calm-beach-chennai-824,Calm Beach,1,1,0.0,1.0,0.0,0.0,0.0
+real-world-tourist-jesus-christ-chennai-911,Jesus Christ,4,4,0.0,0.0,0.0,0.0,1.0
+real-world-tourist-vettuvankoil-tenkasi-1876,Vettuvankoil,1,1,0.0,0.8333333333333334,0.0,0.16666666666666666,0.0
+real-world-tourist-idinthakarai-west-beach-kanyakumari-1769,Idinthakarai West Beach,2,2,0.0,0.0,1.0,0.0,0.0
+real-world-tourist-statue-of-marudu-pandiyar-madurai-650,Statue of Marudu Pandiyar,3,1,0.0,0.5,0.0,0.5,0.0
+real-world-tourist-ramar-padham-nagapattinam-1425,Ramar Padham,2,2,0.0,0.0,1.0,0.0,0.0

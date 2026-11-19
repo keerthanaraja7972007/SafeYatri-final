@@ -1,30 +1,35 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { useTranslation } from '@/i18n';
 import { Circle, MapContainer, Marker, Polyline, Popup, TileLayer, useMap } from 'react-leaflet';
 import L from 'leaflet';
-import { AlertCircle, CalendarDays, LocateFixed, MapPin, Search, ShieldCheck, Thermometer, Wind, X } from 'lucide-react';
+import { AlertCircle, CalendarDays, LocateFixed, MapPin, Search, Thermometer, Wind, X } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { getTouristPlaces, isSupabaseConfigured } from '@/services/touristPlacesService';
+import { getTouristPlaces } from '@/services/touristPlacesService';
 import { getRecentWeatherDataByTouristPlace } from '@/services/weatherDataService';
 import { fetchDrivingRoute } from '@/services/routingService';
 import type { RouteResult } from '@/services/routingService';
-import type { TouristPlace } from '@/types/touristPlaces';
+import type { TouristPlace, TouristRiskLevel } from '@/types/touristPlaces';
+import RiskAssessmentBadge from '@/components/RiskAssessmentBadge';
+import RiskAssessmentPanel from '@/components/RiskAssessmentPanel';
+import { getRiskMarkerClass } from '@/utils/riskAssessment';
 import type { WeatherData } from '@/types/weatherData';
 import 'leaflet/dist/leaflet.css';
 import './SafetyMap.css';
+import { recordActivity } from '@/services/activityService';
 
 type LoadState = 'loading' | 'success' | 'empty' | 'error';
 type LocationState = 'idle' | 'loading' | 'active' | 'error';
 type RoutingState = 'idle' | 'loading' | 'success' | 'error';
 type GeoFenceState = 'outside' | 'inside' | 'idle';
 const tamilNaduCenter: [number, number] = [10.9, 78.4];
+const MAP_MARKER_LIMIT = 200;
 
-function createPlaceIcon(selected: boolean) {
+function createPlaceIcon(selected: boolean, riskLevel?: TouristRiskLevel | null) {
   return L.divIcon({
     className: 'safeyatri-place-marker',
-    html: `<span class="safeyatri-place-marker__pin${selected ? ' is-selected' : ''}"><span></span></span>`,
+    html: `<span class="safeyatri-place-marker__pin ${getRiskMarkerClass(riskLevel)}${selected ? ' is-selected' : ''}"><span></span></span>`,
     iconSize: [34, 42],
     iconAnchor: [17, 40],
     popupAnchor: [0, -36],
@@ -124,10 +129,17 @@ function WeatherHistory({ records, state }: { records: WeatherData[]; state: Loa
 
 export default function SafetyMap() {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
+  const requestedPlaceId = searchParams.get('placeId');
+  const requestedDistrict = searchParams.get('district');
   const [places, setPlaces] = useState<TouristPlace[]>([]);
   const [loadState, setLoadState] = useState<LoadState>('loading');
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [search, setSearch] = useState('');
+  const [selectedDistrict, setSelectedDistrict] = useState(requestedDistrict ?? 'All');
+  const [selectedRiskLevel, setSelectedRiskLevel] = useState<TouristRiskLevel | 'All'>('All');
+  const [selectedLocation, setSelectedLocation] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState('All');
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [weatherHistory, setWeatherHistory] = useState<WeatherData[]>([]);
   const [weatherState, setWeatherState] = useState<LoadState>('loading');
@@ -147,17 +159,55 @@ export default function SafetyMap() {
   const routeAbortController = useRef<AbortController | null>(null);
 
   useEffect(() => {
-    if (!isSupabaseConfigured) { setLoadState('error'); return; }
     getTouristPlaces().then((data) => {
-      setPlaces(data); setSelectedId(data[0]?.id ?? null); setLoadState(data.length > 0 ? 'success' : 'empty');
+      setPlaces(data);
+      const requested = data.find((place) => place.id === requestedPlaceId)
+        ?? data.find((place) => place.district === requestedDistrict)
+        ?? data[0];
+      setSelectedId(requested?.id ?? null);
+      setLoadState(data.length > 0 ? 'success' : 'empty');
     }).catch(() => setLoadState('error'));
-  }, []);
+  }, [requestedDistrict, requestedPlaceId]);
 
   const selectedPlace = places.find((place) => place.id === selectedId) ?? null;
+
+  useEffect(() => {
+    if (!selectedPlace) return;
+    void recordActivity('tourist_place_viewed', selectedPlace.id);
+    if (selectedPlace.risk_assessment) void recordActivity('risk_assessment_viewed', selectedPlace.id);
+  }, [selectedPlace]);
   const filteredPlaces = useMemo(() => {
     const query = search.trim().toLowerCase();
-    return query ? places.filter((place) => `${place.name} ${place.district}`.toLowerCase().includes(query)) : places;
-  }, [places, search]);
+    return places.filter((place) => {
+      const matchesSearch = !query || `${place.name} ${place.city ?? ''} ${place.location_label ?? ''} ${place.district} ${place.category}`.toLowerCase().includes(query);
+      const matchesDistrict = selectedDistrict === 'All' || place.district === selectedDistrict;
+      const matchesLocation = selectedLocation === 'All' || (place.city || place.district) === selectedLocation;
+      const matchesCategory = selectedCategory === 'All' || place.category === selectedCategory;
+      const matchesRiskLevel = selectedRiskLevel === 'All' || place.risk_assessment?.risk_level === selectedRiskLevel;
+      return matchesSearch && matchesDistrict && matchesLocation && matchesCategory && matchesRiskLevel;
+    });
+  }, [places, search, selectedDistrict, selectedLocation, selectedCategory, selectedRiskLevel]);
+
+  const districts = useMemo(() => ['All', ...new Set(places.map((place) => place.district).sort())], [places]);
+  const locations = useMemo(() => ['All', ...new Set(places.map((place) => place.city || place.district).sort())], [places]);
+  const categories = useMemo(() => ['All', ...new Set(places.map((place) => place.category).sort())], [places]);
+  const mapPlaces = useMemo(() => {
+    const selected = selectedPlace ? [selectedPlace] : [];
+    const candidates = filteredPlaces.filter((place) => place.id !== selectedId);
+    const sampleSize = Math.max(1, MAP_MARKER_LIMIT - selected.length);
+    const stride = Math.max(1, Math.ceil(candidates.length / sampleSize));
+    return [...selected, ...candidates.filter((_, index) => index % stride === 0).slice(0, sampleSize)];
+  }, [filteredPlaces, selectedId, selectedPlace]);
+
+  useEffect(() => {
+    if (filteredPlaces.length === 0) {
+      if (selectedId !== null) setSelectedId(null);
+      return;
+    }
+    if (!filteredPlaces.some((place) => place.id === selectedId)) {
+      setSelectedId(filteredPlaces[0].id);
+    }
+  }, [filteredPlaces, selectedId]);
 
   useEffect(() => {
     if (!selectedPlace) { setWeather(null); setWeatherHistory([]); return; }
@@ -259,28 +309,508 @@ export default function SafetyMap() {
   const distanceMeters = calculateDistanceMeters(userLocation ?? [0, 0], selectedPlace);
   const demoZoneRadiusMeters = 1000;
 
-  return <div className="min-h-screen bg-saf-bg">
-    <Navbar />
-    <main className="mx-auto max-w-[1600px] px-4 pb-8 pt-24 sm:px-6 lg:px-8">
-      <div className="mb-4 flex justify-end">
-        <Link
-          to="/ar-safety"
-          className="inline-flex items-center justify-center rounded-xl border border-saf-blue px-4 py-2.5 text-sm font-bold text-saf-blue transition hover:bg-saf-blue/10"
-        >
-          {t('openArSafety')}
-        </Link>
-      </div>
-      <div className="mb-5 flex flex-col justify-between gap-4 md:flex-row md:items-end"><div><div className="flex items-center gap-2 text-sm font-semibold text-saf-blue"><MapPin className="h-4 w-4" />Tamil Nadu Explorer</div><h1 className="mt-2 text-3xl font-extrabold tracking-tight text-saf-text sm:text-4xl">Tourist Safety Map</h1><p className="mt-2 max-w-2xl text-sm leading-6 text-saf-muted">Explore verified tourist places and their latest stored weather conditions. Safety risk modeling is pending validation.</p></div><button onClick={locationState === 'active' ? stopLocationTracking : startLocationTracking} disabled={locationState === 'loading'} className="inline-flex items-center justify-center gap-2 rounded-xl bg-saf-blue px-4 py-3 text-sm font-bold text-white shadow-soft transition hover:bg-saf-indigo disabled:cursor-wait disabled:opacity-70"><LocateFixed className="h-4 w-4" />{locationState === 'loading' ? 'Enabling location...' : locationState === 'active' ? 'Stop location' : 'Enable location'}</button></div>
-      {locationState !== 'idle' && <div className="mb-4 flex flex-col gap-2 rounded-xl border border-saf-border bg-saf-white px-4 py-3 text-sm shadow-soft sm:flex-row sm:items-center sm:justify-between"><div><p className="font-bold text-saf-text">{locationState === 'active' ? 'Live location tracking enabled' : locationState === 'loading' ? 'Requesting location permission...' : 'Location tracking unavailable'}</p>{userLocation && <p className="mt-1 text-xs text-saf-muted">Latitude {userLocation[0].toFixed(6)} · Longitude {userLocation[1].toFixed(6)}</p>}</div>{locationState === 'active' && <p className="font-bold text-saf-blue">{formatDistance(distanceMeters)}</p>}</div>}
-      {locationMessage && <div className="mb-4 flex items-center justify-between rounded-xl border border-saf-orange/20 bg-saf-orange/10 px-4 py-3 text-sm text-saf-text"><span className="flex items-center gap-2"><AlertCircle className="h-4 w-4 text-saf-orange" />{locationMessage}</span><button onClick={() => setLocationMessage(null)} aria-label="Dismiss location message"><X className="h-4 w-4" /></button></div>}
-      {geoFenceMessage && <div className="mb-4 flex items-center justify-between rounded-xl border border-saf-blue/20 bg-saf-blue/10 px-4 py-3 text-sm text-saf-text"><span><strong>Geo-fence notice:</strong> {geoFenceMessage}</span><button onClick={() => setGeoFenceMessage(null)} aria-label="Dismiss geo-fence notice"><X className="h-4 w-4" /></button></div>}
-      <div className="grid gap-4 lg:grid-cols-[340px_minmax(0,1fr)]">
-        <aside className="order-2 flex min-h-0 flex-col overflow-hidden rounded-2xl border border-saf-border bg-saf-white shadow-card lg:order-1 lg:h-[calc(100vh-190px)]"><div className="border-b border-saf-border p-4"><div className="flex items-center justify-between"><div><p className="text-xs font-bold uppercase tracking-wider text-saf-muted">Destinations</p><p className="mt-1 text-lg font-extrabold text-saf-text">{filteredPlaces.length} places</p></div><span className="rounded-full bg-saf-blue/10 px-2.5 py-1 text-xs font-bold text-saf-blue">18 total</span></div><label className="relative mt-4 block"><Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-saf-muted" /><input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search tourist places..." className="w-full rounded-xl border border-saf-border bg-saf-bg py-2.5 pl-9 pr-3 text-sm text-saf-text outline-none transition focus:border-saf-blue focus:ring-2 focus:ring-saf-blue/10" /></label></div><div className="no-scrollbar max-h-[390px] overflow-y-auto p-2 lg:max-h-none lg:flex-1">{loadState === 'loading' && <p className="p-4 text-sm text-saf-muted">Loading tourist places...</p>}{loadState === 'error' && <p className="p-4 text-sm text-saf-red">Tourist places could not be loaded.</p>}{loadState === 'empty' && <p className="p-4 text-sm text-saf-muted">No active tourist places found.</p>}{loadState === 'success' && filteredPlaces.length === 0 && <p className="p-4 text-sm text-saf-muted">No places match your search.</p>}{filteredPlaces.map((place) => { const selected = place.id === selectedId; return <button key={place.id} onClick={() => selectPlace(place)} className={`group mb-1 flex w-full items-center gap-3 rounded-xl p-3 text-left transition ${selected ? 'bg-saf-blue text-white shadow-soft' : 'text-saf-text hover:bg-saf-bg'}`}><span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg ${selected ? 'bg-white/15' : 'bg-saf-blue/10 text-saf-blue'}`}><MapPin className="h-4 w-4" /></span><span className="min-w-0 flex-1"><span className="block truncate text-sm font-bold">{place.name}</span><span className={`mt-0.5 block truncate text-xs ${selected ? 'text-white/75' : 'text-saf-muted'}`}>{place.district} · {place.category}</span></span><span className={`text-xs font-bold ${selected ? 'text-white' : 'text-saf-blue'}`}>View</span></button>; })}</div></aside>
-        <section className="order-1 flex min-h-0 flex-col gap-4 lg:order-2"><div className="grid gap-3 xl:grid-cols-[1fr_auto]"><div className="rounded-2xl border border-saf-border bg-saf-white p-4 shadow-card"><div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"><div><p className="text-xs font-bold uppercase tracking-wider text-saf-blue">Smart route</p><p className="mt-1 text-sm font-bold text-saf-text">{userLocation ? 'Current location' : 'Enable location to choose a source'} <span className="px-1 text-saf-muted">to</span> {selectedPlace?.name ?? 'Select a destination'}</p></div><button onClick={() => setRouteRequest((current) => current + 1)} disabled={!userLocation || !selectedPlace || routingState === 'loading'} className="rounded-xl bg-saf-blue px-4 py-2.5 text-sm font-bold text-white transition hover:bg-saf-indigo disabled:cursor-not-allowed disabled:opacity-50">{routingState === 'loading' ? 'Calculating...' : 'Calculate route'}</button></div>{routingState === 'success' && route && <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-saf-muted"><span><strong className="text-saf-text">{(route.distanceMeters / 1000).toFixed(1)} km</strong> road distance</span><span><strong className="text-saf-text">{formatRouteDuration(route.durationSeconds)}</strong></span></div>}{routingState === 'error' && <p className="mt-3 text-sm text-saf-red">{routingMessage}</p>}{routingState === 'idle' && <p className="mt-3 text-xs text-saf-muted">{!userLocation ? 'Enable location to calculate a road route.' : !selectedPlace ? 'Select a tourist destination to calculate a route.' : 'Ready to calculate a road route.'}</p>}</div><label className="flex cursor-pointer items-center gap-3 rounded-2xl border border-saf-border bg-saf-white p-4 shadow-card"><input type="checkbox" checked={womenSafetyMode} onChange={(event) => setWomenSafetyMode(event.target.checked)} className="h-4 w-4 accent-saf-blue" /><span><span className="block text-sm font-bold text-saf-text">Women Safety Mode</span><span className="mt-0.5 block text-xs text-saf-muted">{womenSafetyMode ? 'Active · configured data only' : 'Off'}</span></span></label></div><div className="rounded-xl border border-saf-border bg-saf-white px-4 py-3 text-xs text-saf-muted"><strong className="text-saf-text">Geo-fence:</strong> {geoFenceState === 'inside' ? 'Inside DEMO configured proximity zone' : geoFenceState === 'outside' ? 'Outside configured zone' : 'Waiting for live location'} · 1 km demonstration radius around the selected destination. This is not an unsafe-area claim.{womenSafetyMode && ' Women Safety Mode has no police, hospital, or road-safety dataset to apply yet.'}</div><div className="relative h-[500px] overflow-hidden rounded-2xl border border-saf-border bg-slate-200 shadow-card lg:h-[calc(100vh-190px)]"><MapContainer center={tamilNaduCenter} zoom={7} scrollWheelZoom className="h-full w-full"><TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" /><MapFocus place={selectedPlace} userLocation={userLocation} focusTarget={focusTarget} />{places.map((place) => <Marker key={place.id} position={[place.latitude, place.longitude]} icon={createPlaceIcon(place.id === selectedId)} eventHandlers={{ click: () => selectPlace(place) }}><Popup><div className="min-w-[190px]"><p className="font-extrabold text-saf-text">{place.name}</p><p className="mt-1 text-xs text-saf-muted">{place.district} · {place.category}</p><p className="mt-2 text-xs text-saf-muted">{place.latitude.toFixed(5)}, {place.longitude.toFixed(5)}</p></div></Popup></Marker>)}{selectedPlace && <Circle center={[selectedPlace.latitude, selectedPlace.longitude]} radius={demoZoneRadiusMeters} pathOptions={{ color: '#2563EB', fillColor: '#60A5FA', fillOpacity: 0.08, weight: 2, dashArray: '6 6' }} />}{userLocation && <Marker position={userLocation} icon={userLocationIcon}><Popup><div className="text-sm"><p className="font-extrabold text-saf-text">Your current location</p><p className="mt-1 text-xs text-saf-muted">{userLocation[0].toFixed(6)}, {userLocation[1].toFixed(6)}</p><p className="mt-1 text-xs font-bold text-saf-blue">{formatDistance(distanceMeters)}</p></div></Popup></Marker>}{route && <Polyline positions={route.coordinates} pathOptions={{ color: womenSafetyMode ? '#16A34A' : '#4F46E5', weight: 5, opacity: 0.82 }} />}</MapContainer><div className="pointer-events-none absolute left-4 top-4 rounded-xl border border-saf-border bg-white/95 px-3 py-2 shadow-soft"><p className="text-xs font-bold text-saf-text">Tamil Nadu</p><p className="text-[11px] text-saf-muted">OpenStreetMap</p></div></div>
-          {selectedPlace && <div className="space-y-4"><div className="grid gap-4 xl:grid-cols-[1.1fr_1fr]"><article className="rounded-2xl border border-saf-border bg-saf-white p-5 shadow-card"><div className="flex items-start justify-between gap-4"><div><p className="text-xs font-bold uppercase tracking-wider text-saf-blue">Selected destination</p><h2 className="mt-1 text-xl font-extrabold text-saf-text">{selectedPlace.name}</h2></div><span className="rounded-full bg-saf-cyan/10 px-3 py-1 text-xs font-bold text-saf-blue">{selectedPlace.category}</span></div><div className="mt-4 grid grid-cols-2 gap-3 text-sm"><div><p className="text-xs text-saf-muted">District</p><p className="mt-1 font-bold text-saf-text">{selectedPlace.district}</p></div><div><p className="text-xs text-saf-muted">Coordinates</p><p className="mt-1 font-bold text-saf-text">{selectedPlace.latitude.toFixed(4)}, {selectedPlace.longitude.toFixed(4)}</p></div></div><p className="mt-4 border-t border-saf-border pt-4 text-sm leading-6 text-saf-muted">{selectedPlace.description}</p></article><article className="rounded-2xl border border-saf-border bg-saf-white p-5 shadow-card"><div className="flex items-center justify-between"><div><p className="text-xs font-bold uppercase tracking-wider text-saf-blue">Latest stored weather</p><h2 className="mt-1 text-xl font-extrabold text-saf-text">Current conditions</h2></div><Thermometer className="h-5 w-5 text-saf-cyan" /></div><div className="mt-4"><WeatherPanel weather={weather} state={weatherState} /></div><div className="mt-4 flex items-center gap-2 border-t border-saf-border pt-3 text-xs text-saf-muted"><ShieldCheck className="h-4 w-4 text-saf-green" />Safety risk model: Pending validation</div></article></div><article className="rounded-2xl border border-saf-border bg-saf-white p-5 shadow-card"><div className="mb-4 flex items-center justify-between gap-4"><div><p className="text-xs font-bold uppercase tracking-wider text-saf-blue">Historical conditions</p><h2 className="mt-1 text-xl font-extrabold text-saf-text">Recent observations</h2></div><div className="flex items-center gap-2 text-xs text-saf-muted"><CalendarDays className="h-4 w-4 text-saf-cyan" />Last 24 stored records</div></div><WeatherHistory records={weatherHistory} state={weatherState} /></article></div>}
-        </section>
-      </div>
-      <p className="mt-5 text-center text-xs text-saf-muted">Weather values are displayed from stored source records only. This map does not provide ML risk predictions.</p>
-    </main><Footer />
-  </div>;
+  return (
+    <div className="min-h-screen bg-saf-bg">
+      <Navbar />
+      <main className="mx-auto max-w-[1600px] px-4 pb-8 pt-24 sm:px-6 lg:px-8">
+        <div className="mb-4 flex justify-end">
+          <Link
+            to="/ar-safety"
+            className="inline-flex items-center justify-center rounded-xl border border-saf-blue px-4 py-2.5 text-sm font-bold text-saf-blue transition hover:bg-saf-blue/10"
+          >
+            {t("openArSafety")}
+          </Link>
+        </div>
+        <div className="mb-5 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <div>
+            <div className="flex items-center gap-2 text-sm font-semibold text-saf-blue">
+              <MapPin className="h-4 w-4" />
+              Tamil Nadu Explorer
+            </div>
+            <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-saf-text sm:text-4xl">
+              Tourist Safety Map
+            </h1>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-saf-muted">
+              Explore tourist places, their ML risk assessment, and latest stored weather. Risk levels are not guaranteed safety status.
+            </p>
+          </div>
+          <button
+            onClick={
+              locationState === "active"
+                ? stopLocationTracking
+                : startLocationTracking
+            }
+            disabled={locationState === "loading"}
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-saf-blue px-4 py-3 text-sm font-bold text-white shadow-soft transition hover:bg-saf-indigo disabled:cursor-wait disabled:opacity-70"
+          >
+            <LocateFixed className="h-4 w-4" />
+            {locationState === "loading"
+              ? "Enabling location..."
+              : locationState === "active"
+                ? "Stop location"
+                : "Enable location"}
+          </button>
+        </div>
+        {locationState !== "idle" && (
+          <div className="mb-4 flex flex-col gap-2 rounded-xl border border-saf-border bg-saf-white px-4 py-3 text-sm shadow-soft sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="font-bold text-saf-text">
+                {locationState === "active"
+                  ? "Live location tracking enabled"
+                  : locationState === "loading"
+                    ? "Requesting location permission..."
+                    : "Location tracking unavailable"}
+              </p>
+              {userLocation && (
+                <p className="mt-1 text-xs text-saf-muted">
+                  Latitude {userLocation[0].toFixed(6)} · Longitude{" "}
+                  {userLocation[1].toFixed(6)}
+                </p>
+              )}
+            </div>
+            {locationState === "active" && (
+              <p className="font-bold text-saf-blue">
+                {formatDistance(distanceMeters)}
+              </p>
+            )}
+          </div>
+        )}
+        {locationMessage && (
+          <div className="mb-4 flex items-center justify-between rounded-xl border border-saf-orange/20 bg-saf-orange/10 px-4 py-3 text-sm text-saf-text">
+            <span className="flex items-center gap-2">
+              <AlertCircle className="h-4 w-4 text-saf-orange" />
+              {locationMessage}
+            </span>
+            <button
+              onClick={() => setLocationMessage(null)}
+              aria-label="Dismiss location message"
+            >
+              <X className="h-4 w-4" />
+            </button>
+          </div>
+        )}
+        {geoFenceMessage && (
+          <div className="mb-4 flex items-center justify-between rounded-xl border border-saf-blue/20 bg-saf-blue/10 px-4 py-3 text-sm text-saf-text">
+            <span>
+              <strong>Geo-fence notice:</strong> {geoFenceMessage}
+            </span>
+            <button
+              onClick={() => setGeoFenceMessage(null)}
+              aria-label="Dismiss geo-fence notice"
+            >
+              <X className="h-4 w-4" />
+            </button>
+          </div>
+        )}
+        <div className="mb-3 grid gap-2 sm:grid-cols-2 xl:grid-cols-4">
+          <select
+            aria-label="Filter tourist places by district"
+            value={selectedDistrict}
+            onChange={(event) => setSelectedDistrict(event.target.value)}
+            className="rounded-xl border border-saf-border bg-saf-white px-3 py-2.5 text-sm text-saf-text"
+          >
+            {districts.map((district) => (
+              <option key={district} value={district}>
+                {district === "All" ? "All source districts" : district}
+              </option>
+            ))}
+          </select>
+          <select
+            aria-label="Filter tourist places by city or location"
+            value={selectedLocation}
+            onChange={(event) => setSelectedLocation(event.target.value)}
+            className="rounded-xl border border-saf-border bg-saf-white px-3 py-2.5 text-sm text-saf-text"
+          >
+            {locations.map((location) => (
+              <option key={location} value={location}>
+                {location === "All" ? "All cities / locations" : location}
+              </option>
+            ))}
+          </select>
+          <select
+            aria-label="Filter tourist places by category"
+            value={selectedCategory}
+            onChange={(event) => setSelectedCategory(event.target.value)}
+            className="rounded-xl border border-saf-border bg-saf-white px-3 py-2.5 text-sm text-saf-text"
+          >
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category === "All" ? "All categories" : category}
+              </option>
+            ))}
+          </select>
+          <select
+            aria-label="Filter tourist places by ML risk level"
+            value={selectedRiskLevel}
+            onChange={(event) => setSelectedRiskLevel(event.target.value as TouristRiskLevel | 'All')}
+            className="rounded-xl border border-saf-border bg-saf-white px-3 py-2.5 text-sm text-saf-text"
+          >
+            <option value="All">All Risk Levels</option>
+            <option value="LOW RISK">Low Risk</option>
+            <option value="MODERATE RISK">Moderate Risk</option>
+            <option value="HIGH RISK">High Risk</option>
+          </select>
+        </div>
+        <p className="mb-3 text-xs text-saf-muted">
+          Map pins are capped at {MAP_MARKER_LIMIT} at once. Search the full{" "}
+          {places.length.toLocaleString()}-place list to select any destination.
+        </p>
+        <div className="grid gap-4 lg:grid-cols-[340px_minmax(0,1fr)]">
+          <aside className="order-2 flex min-h-0 flex-col overflow-hidden rounded-2xl border border-saf-border bg-saf-white shadow-card lg:order-1 lg:h-[calc(100vh-190px)]">
+            <div className="border-b border-saf-border p-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider text-saf-muted">
+                    Destinations
+                  </p>
+                  <p className="mt-1 text-lg font-extrabold text-saf-text">
+                    {filteredPlaces.length} places
+                  </p>
+                </div>
+                <span className="rounded-full bg-saf-blue/10 px-2.5 py-1 text-xs font-bold text-saf-blue">
+                  {places.length} total
+                </span>
+              </div>
+              <label className="relative mt-4 block">
+                <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-saf-muted" />
+                <input
+                  value={search}
+                  onChange={(event) => setSearch(event.target.value)}
+                  placeholder="Search tourist places..."
+                  className="w-full rounded-xl border border-saf-border bg-saf-bg py-2.5 pl-9 pr-3 text-sm text-saf-text outline-none transition focus:border-saf-blue focus:ring-2 focus:ring-saf-blue/10"
+                />
+              </label>
+            </div>
+            <div className="no-scrollbar max-h-[390px] overflow-y-auto p-2 lg:max-h-none lg:flex-1">
+              {loadState === "loading" && (
+                <p className="p-4 text-sm text-saf-muted">
+                  Loading tourist places...
+                </p>
+              )}
+              {loadState === "error" && (
+                <p className="p-4 text-sm text-saf-red">
+                  Tourist places could not be loaded.
+                </p>
+              )}
+              {loadState === "empty" && (
+                <p className="p-4 text-sm text-saf-muted">
+                  No active tourist places found.
+                </p>
+              )}
+              {loadState === "success" && filteredPlaces.length === 0 && (
+                <p className="p-4 text-sm text-saf-muted">
+                  No places match your search.
+                </p>
+              )}
+              {filteredPlaces.map((place) => {
+                const selected = place.id === selectedId;
+                return (
+                  <button
+                    key={place.id}
+                    onClick={() => selectPlace(place)}
+                    className={`group mb-1 flex w-full items-center gap-3 rounded-xl p-3 text-left transition ${selected ? "bg-saf-blue text-white shadow-soft" : "text-saf-text hover:bg-saf-bg"}`}
+                  >
+                    <span
+                      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg ${selected ? "bg-white/15" : "bg-saf-blue/10 text-saf-blue"}`}
+                    >
+                      <MapPin className="h-4 w-4" />
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block truncate text-sm font-bold">
+                        {place.name}
+                      </span>
+                      <span
+                        className={`mt-0.5 block truncate text-xs ${selected ? "text-white/75" : "text-saf-muted"}`}
+                      >
+                        {place.district} · {place.category}
+                      </span>
+                    </span>
+                    <span
+                      className={`text-xs font-bold ${selected ? "text-white" : "text-saf-blue"}`}
+                    >
+                      View
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </aside>
+          <section className="order-1 flex min-h-0 flex-col gap-4 lg:order-2">
+            <div className="grid gap-3 xl:grid-cols-[1fr_auto]">
+              <div className="rounded-2xl border border-saf-border bg-saf-white p-4 shadow-card">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <p className="text-xs font-bold uppercase tracking-wider text-saf-blue">
+                      Smart route
+                    </p>
+                    <p className="mt-1 text-sm font-bold text-saf-text">
+                      {userLocation
+                        ? "Current location"
+                        : "Enable location to choose a source"}{" "}
+                      <span className="px-1 text-saf-muted">to</span>{" "}
+                      {selectedPlace?.name ?? "Select a destination"}
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => setRouteRequest((current) => current + 1)}
+                    disabled={
+                      !userLocation ||
+                      !selectedPlace ||
+                      routingState === "loading"
+                    }
+                    className="rounded-xl bg-saf-blue px-4 py-2.5 text-sm font-bold text-white transition hover:bg-saf-indigo disabled:cursor-not-allowed disabled:opacity-50"
+                  >
+                    {routingState === "loading"
+                      ? "Calculating..."
+                      : "Calculate route"}
+                  </button>
+                </div>
+                {routingState === "success" && route && (
+                  <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm text-saf-muted">
+                    <span>
+                      <strong className="text-saf-text">
+                        {(route.distanceMeters / 1000).toFixed(1)} km
+                      </strong>{" "}
+                      road distance
+                    </span>
+                    <span>
+                      <strong className="text-saf-text">
+                        {formatRouteDuration(route.durationSeconds)}
+                      </strong>
+                    </span>
+                  </div>
+                )}
+                {routingState === "error" && (
+                  <p className="mt-3 text-sm text-saf-red">{routingMessage}</p>
+                )}
+                {routingState === "idle" && (
+                  <p className="mt-3 text-xs text-saf-muted">
+                    {!userLocation
+                      ? "Enable location to calculate a road route."
+                      : !selectedPlace
+                        ? "Select a tourist destination to calculate a route."
+                        : "Ready to calculate a road route."}
+                  </p>
+                )}
+              </div>
+              <label className="flex cursor-pointer items-center gap-3 rounded-2xl border border-saf-border bg-saf-white p-4 shadow-card">
+                <input
+                  type="checkbox"
+                  checked={womenSafetyMode}
+                  onChange={(event) => setWomenSafetyMode(event.target.checked)}
+                  className="h-4 w-4 accent-saf-blue"
+                />
+                <span>
+                  <span className="block text-sm font-bold text-saf-text">
+                    Women Safety Mode
+                  </span>
+                  <span className="mt-0.5 block text-xs text-saf-muted">
+                    {womenSafetyMode ? "Active · configured data only" : "Off"}
+                  </span>
+                </span>
+              </label>
+            </div>
+            <div className="rounded-xl border border-saf-border bg-saf-white px-4 py-3 text-xs text-saf-muted">
+              <strong className="text-saf-text">Geo-fence:</strong>{" "}
+              {geoFenceState === "inside"
+                ? "Inside DEMO configured proximity zone"
+                : geoFenceState === "outside"
+                  ? "Outside configured zone"
+                  : "Waiting for live location"}{" "}
+              · 1 km demonstration radius around the selected destination. This
+              is not an unsafe-area claim.
+              {womenSafetyMode &&
+                " Women Safety Mode has no police, hospital, or road-safety dataset to apply yet."}
+            </div>
+            <div className="relative h-[500px] overflow-hidden rounded-2xl border border-saf-border bg-slate-200 shadow-card lg:h-[calc(100vh-190px)]">
+              <MapContainer
+                center={tamilNaduCenter}
+                zoom={7}
+                scrollWheelZoom
+                className="h-full w-full"
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <MapFocus
+                  place={selectedPlace}
+                  userLocation={userLocation}
+                  focusTarget={focusTarget}
+                />
+                {mapPlaces.map((place) => (
+                  <Marker
+                    key={place.id}
+                    position={[place.latitude, place.longitude]}
+                    icon={createPlaceIcon(place.id === selectedId, place.risk_assessment?.risk_level)}
+                    eventHandlers={{ click: () => selectPlace(place) }}
+                  >
+                    <Popup>
+                      <div className="min-w-[190px]">
+                        <p className="font-extrabold text-saf-text">
+                          {place.name}
+                        </p>
+                        <p className="mt-1 text-xs text-saf-muted">
+                          {place.district} · {place.category}
+                        </p>
+                        <div className="mt-2">
+                          <RiskAssessmentBadge level={place.risk_assessment?.risk_level} />
+                        </div>
+                        <p className="mt-2 text-xs text-saf-text">
+                          Risk Score: {place.risk_assessment ? place.risk_assessment.risk_score.toFixed(2) : 'Unavailable'}
+                        </p>
+                        {place.risk_assessment && (
+                          <p className="mt-2 max-w-[280px] text-xs leading-5 text-saf-muted line-clamp-3">
+                            {place.risk_assessment.explanation}
+                          </p>
+                        )}
+                        <p className="mt-2 text-xs text-saf-muted">
+                          {place.latitude.toFixed(5)},{" "}
+                          {place.longitude.toFixed(5)}
+                        </p>
+                      </div>
+                    </Popup>
+                  </Marker>
+                ))}
+                {selectedPlace && (
+                  <Circle
+                    center={[selectedPlace.latitude, selectedPlace.longitude]}
+                    radius={demoZoneRadiusMeters}
+                    pathOptions={{
+                      color: "#2563EB",
+                      fillColor: "#60A5FA",
+                      fillOpacity: 0.08,
+                      weight: 2,
+                      dashArray: "6 6",
+                    }}
+                  />
+                )}
+                {userLocation && (
+                  <Marker position={userLocation} icon={userLocationIcon}>
+                    <Popup>
+                      <div className="text-sm">
+                        <p className="font-extrabold text-saf-text">
+                          Your current location
+                        </p>
+                        <p className="mt-1 text-xs text-saf-muted">
+                          {userLocation[0].toFixed(6)},{" "}
+                          {userLocation[1].toFixed(6)}
+                        </p>
+                        <p className="mt-1 text-xs font-bold text-saf-blue">
+                          {formatDistance(distanceMeters)}
+                        </p>
+                      </div>
+                    </Popup>
+                  </Marker>
+                )}
+                {route && (
+                  <Polyline
+                    positions={route.coordinates}
+                    pathOptions={{
+                      color: womenSafetyMode ? "#16A34A" : "#4F46E5",
+                      weight: 5,
+                      opacity: 0.82,
+                    }}
+                  />
+                )}
+              </MapContainer>
+              <div className="pointer-events-none absolute left-4 top-4 rounded-xl border border-saf-border bg-white/95 px-3 py-2 shadow-soft">
+                <p className="text-xs font-bold text-saf-text">Tamil Nadu</p>
+                <p className="text-[11px] text-saf-muted">OpenStreetMap</p>
+              </div>
+              <div className="pointer-events-none absolute bottom-4 left-4 rounded-xl border border-saf-border bg-white/95 p-3 shadow-soft">
+                <p className="mb-2 text-xs font-bold text-saf-text">SAFEYATRI ML Risk Assessment</p>
+                <div className="space-y-1.5 text-[11px] font-semibold text-saf-text">
+                  <p className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full bg-emerald-600" />LOW RISK</p>
+                  <p className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full bg-amber-400" />MODERATE RISK</p>
+                  <p className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full bg-red-600" />HIGH RISK</p>
+                </div>
+                <p className="mt-2 max-w-56 text-[10px] leading-4 text-saf-muted">Evidence-based assessment, not guaranteed safety status.</p>
+              </div>
+            </div>
+            {selectedPlace && (
+              <div className="space-y-4">
+                <div className="grid gap-4 xl:grid-cols-[1.1fr_1fr]">
+                  <article className="rounded-2xl border border-saf-border bg-saf-white p-5 shadow-card">
+                    <div className="flex items-start justify-between gap-4">
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-wider text-saf-blue">
+                          Selected destination
+                        </p>
+                        <h2 className="mt-1 text-xl font-extrabold text-saf-text">
+                          {selectedPlace.name}
+                        </h2>
+                      </div>
+                      <span className="rounded-full bg-saf-cyan/10 px-3 py-1 text-xs font-bold text-saf-blue">
+                        {selectedPlace.category}
+                      </span>
+                    </div>
+                    <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
+                      <div>
+                        <p className="text-xs text-saf-muted">District</p>
+                        <p className="mt-1 font-bold text-saf-text">
+                          {selectedPlace.district}
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-xs text-saf-muted">Coordinates</p>
+                        <p className="mt-1 font-bold text-saf-text">
+                          {selectedPlace.latitude.toFixed(4)},{" "}
+                          {selectedPlace.longitude.toFixed(4)}
+                        </p>
+                      </div>
+                    </div>
+                    <p className="mt-4 border-t border-saf-border pt-4 text-sm leading-6 text-saf-muted">
+                      {selectedPlace.description}
+                    </p>
+                  </article>
+                  <article className="rounded-2xl border border-saf-border bg-saf-white p-5 shadow-card">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-wider text-saf-blue">
+                          Latest stored weather
+                        </p>
+                        <h2 className="mt-1 text-xl font-extrabold text-saf-text">
+                          Current conditions
+                        </h2>
+                      </div>
+                      <Thermometer className="h-5 w-5 text-saf-cyan" />
+                    </div>
+                    <div className="mt-4">
+                      <WeatherPanel weather={weather} state={weatherState} />
+                    </div>
+                  </article>
+                </div>
+                <RiskAssessmentPanel assessment={selectedPlace.risk_assessment} />
+                <article className="rounded-2xl border border-saf-border bg-saf-white p-5 shadow-card">
+                  <div className="mb-4 flex items-center justify-between gap-4">
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-wider text-saf-blue">
+                        Historical conditions
+                      </p>
+                      <h2 className="mt-1 text-xl font-extrabold text-saf-text">
+                        Recent observations
+                      </h2>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-saf-muted">
+                      <CalendarDays className="h-4 w-4 text-saf-cyan" />
+                      Last 24 stored records
+                    </div>
+                  </div>
+                  <WeatherHistory
+                    records={weatherHistory}
+                    state={weatherState}
+                  />
+                </article>
+              </div>
+            )}
+          </section>
+        </div>
+        <p className="mt-5 text-center text-xs text-saf-muted">
+          Weather values come from stored records. The ML Risk Assessment uses available emergency-accessibility and contextual data and is not a guaranteed prediction of actual tourist safety.
+        </p>
+      </main>
+      <Footer />
+    </div>
+  );
 }
